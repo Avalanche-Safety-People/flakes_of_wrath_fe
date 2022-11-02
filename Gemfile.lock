@@ -44,8 +44,6 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
-    archive-zip (0.12.0)
-      io-like (~> 0.3.0)
     arel (9.0.0)
     bindex (0.8.1)
     bootsnap (1.13.0)
@@ -61,9 +59,6 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     childprocess (4.1.0)
-    chromedriver-helper (2.1.1)
-      archive-zip (~> 0.10)
-      nokogiri (~> 1.8)
     coderay (1.1.3)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
@@ -93,13 +88,14 @@ GEM
     hashie (5.0.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
-    io-like (0.3.1)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
     jsonapi-serializer (2.2.0)
       activesupport (>= 4.2)
     jwt (2.5.0)
+    launchy (2.5.0)
+      addressable (~> 2.7)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -270,12 +266,12 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   capybara (>= 2.15)
-  chromedriver-helper
   coffee-rails (~> 4.2)
   faraday
   figaro
   jbuilder (~> 2.5)
   jsonapi-serializer
+  launchy
   listen (>= 3.0.5, < 3.2)
   omniauth
   omniauth-google-oauth2

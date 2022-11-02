@@ -12,11 +12,11 @@ RSpec.describe 'Landing page' do
        	#   'User-Agent'=>'Ruby'
         #    }).
         #  to_return(status: 200, body: "", headers: {})
-        Capybara.current_driver = :selenium
-        visit root_path
-        save_and_open_page
-        expect(page).to have_button('Log in with Google')
-        # # click_button 'Log in with Google'
+        # Capybara.current_driver = :selenium
+        # visit login_path
+        # save_and_open_page
+        # expect(page).to have_button('Log in with Google')
+        # click_button 'Log in with Google'
         # save_and_open_page
         # expect(current_path).to eq(user_dashboard_path)
       end
