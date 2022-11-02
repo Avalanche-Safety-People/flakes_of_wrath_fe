@@ -5,6 +5,10 @@ class UserService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.find_or_create_user(oauth_params)
+    response = conn.post(""
+  end
+
   private
 
   def self.conn
