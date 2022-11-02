@@ -9,7 +9,13 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body >
+  <div id="nav_bar">
+    <%= link_to 'Home', users_path%>
+    <%= link_to 'Resources', resources_path%>
+    <%= link_to 'Edit Profile', edit_users_path%>
+    <%= link_to 'Log Off', users_path%>
+  </div>
     <%= yield %>
   </body>
 </html>
