@@ -19,7 +19,5 @@ RSpec.describe 'Resources page' do
       href = "https://avysavvy.avalanche.ca/en-ca/"
       expect(page).to have_selector "a[href='#{href}']", text: 'Get online training at Avalanche.ca'
     end
-
-    it 'Has a link to view weather forecasts'
   end
 end

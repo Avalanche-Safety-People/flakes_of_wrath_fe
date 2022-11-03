@@ -236,13 +236,19 @@
           1,
           1,
           1,
-          null,
+          1,
           1,
           null,
           null
         ]
       },
       "/Users/gavincarew/turing_work/3mod/projects/flakes_of_wrath_fe/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/gavincarew/turing_work/3mod/projects/flakes_of_wrath_fe/app/helpers/resources_helper.rb": {
         "lines": [
           1,
           null
@@ -286,6 +292,28 @@
       "/Users/gavincarew/turing_work/3mod/projects/flakes_of_wrath_fe/app/helpers/users_helper.rb": {
         "lines": [
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/gavincarew/turing_work/3mod/projects/flakes_of_wrath_fe/spec/features/sessions/new_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null,
           null
         ]
@@ -347,22 +375,14 @@
           null
         ]
       },
-      "/Users/gavincarew/turing_work/3mod/projects/flakes_of_wrath_fe/spec/helpers/users_helper_spec.rb": {
+      "/Users/gavincarew/turing_work/3mod/projects/flakes_of_wrath_fe/spec/requests/resources_spec.rb": {
         "lines": [
           1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           1,
           1,
+          1,
+          null,
           null
         ]
       },
@@ -457,21 +477,11 @@
           null
         ]
       },
-      "/Users/gavincarew/turing_work/3mod/projects/flakes_of_wrath_fe/app/controllers/sessions_controller.rb": {
+      "/Users/gavincarew/turing_work/3mod/projects/flakes_of_wrath_fe/app/controllers/resources_controller.rb": {
         "lines": [
           1,
           1,
           null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
           null,
           null
         ]
@@ -489,6 +499,25 @@
           0,
           0,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/gavincarew/turing_work/3mod/projects/flakes_of_wrath_fe/app/controllers/sessions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
           null,
           null
         ]
@@ -548,6 +577,6 @@
         ]
       }
     },
-    "timestamp": 1667456037
+    "timestamp": 1667497627
   }
 }
