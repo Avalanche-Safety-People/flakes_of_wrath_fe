@@ -3,5 +3,6 @@ class UsersController < ApplicationController
   
   def show
     @user ||= current_user
+    @trips ||= UserFacade.user_trips(session[:id])
   end
 end
