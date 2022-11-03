@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-03T10:47:07-07:00">2022-11-03T10:47:07-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-03T10:49:56-07:00">2022-11-03T10:49:56-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -4853,7 +4853,7 @@
 
             
 
-            <code class="ruby">      it &#39;They should see a link to Avalanche.org&#39; do </code>
+            <code class="ruby">      it &#39;They should see a link to the resources page&#39; do </code>
           </li>
         </div>
       
@@ -4875,7 +4875,7 @@
 
             
 
-            <code class="ruby">        href = &quot;https://avalanche.org&quot;</code>
+            <code class="ruby">        click_link &#39;Avalanche safety resources&#39;</code>
           </li>
         </div>
       
@@ -4886,7 +4886,7 @@
 
             
 
-            <code class="ruby">        expect(page).to have_selector &quot;a[href=&#39;#{href}&#39;]&quot;, text: &#39;View avalanche forecast on Avalanche.org&#39;</code>
+            <code class="ruby">        expect(current_path).to eq(resources_path)</code>
           </li>
         </div>
       
