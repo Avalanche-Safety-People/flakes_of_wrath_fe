@@ -4,9 +4,11 @@ class Trip
               :name,
               :description,
               :zone_id,
-              :zone_name
+              :zone_name,
+              :id
 
   def initialize(trip_data)
+    # binding.pry
     @id = trip_data[:id]
     @start_date = trip_data[:attributes][:start_date]
     @end_date = trip_data[:attributes][:end_date]
