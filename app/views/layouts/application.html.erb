@@ -10,12 +10,14 @@
   </head>
 
   <body >
-  <div id="nav_bar">
-    <%= link_to 'Home', users_path%>
-    <%= link_to 'Resources', resources_path%>
-    <%= link_to 'Edit Profile', edit_users_path%>
-    <%= link_to 'Log Off', users_path%>
-  </div>
+    <div id="nav_bar">
+      <%= link_to 'Resources'%>
+      <% if logged_in? %> 
+        <%= link_to 'Home', users_path%>
+        <%= link_to 'Edit Profile'%>
+        <%= link_to 'Log Off'%>
+      <% end %>
+    </div>
     <%= yield %>
   </body>
 </html>
