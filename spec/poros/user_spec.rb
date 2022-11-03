@@ -1,8 +1,11 @@
 require 'rails_helper'
 
-describe 'Student PORO Spec', type: :model do
+describe 'User PORO Spec', type: :model do
   let(:user1) { build(:user) }
-    it 'has user attributes' do
-      expect(user1).to respond_to(:id, :name)
-    end
+
+  it 'has user attributes' do
+    expect(user1.id).to be_a(Integer)
+    expect(user1.name).to be_a(String)
+    expect(user1.favorite_zone).to be_a(String)
+  end
 end
