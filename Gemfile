@@ -50,6 +50,8 @@ group :development, :test do
   gem 'webmock'
   gem 'jsonapi-serializer'
   gem 'launchy'
+  gem 'faker'
+  gem 'factory_bot_rails'
 end
 
 group :development do
