@@ -1,1 +1,9 @@
-<h1> Dashboard</h1>
+<h1> <%= @user.name %>'s Dashboard</h1>
+<p> Favorite zone: <%= @user.favorite_zone %>
+
+Upcoming Trips:
+<% @trips.each do |trip| %>
+  <p><%= trip.name %>
+  <%= trip.start_date %>
+  <%= trip.end_date %></p>
+<% end %>
