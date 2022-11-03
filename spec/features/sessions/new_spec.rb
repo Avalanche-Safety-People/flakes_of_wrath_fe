@@ -8,10 +8,10 @@ RSpec.describe 'Landing page' do
         expect(page).to have_button('Log in with Google')
       end
 
-      it 'They should see a link to Avalanche.org' do 
+      it 'They should see a link to the resources page' do 
         visit login_path
-        href = "https://avalanche.org"
-        expect(page).to have_selector "a[href='#{href}']", text: 'View avalanche forecast on Avalanche.org'
+        click_link 'Avalanche safety resources'
+        expect(current_path).to eq(resources_path)
       end
     end
   end
