@@ -1,6 +1,11 @@
 class UserFacade
+  def self.find_or_create_user(oauth_data)
+    user_data = UserService.find_or_create_user(oauth_data)
+    User.new(user_data)
+  end
+  
   def self.get_user(user_id)
-    user_data ||= UserService.find_or_create_user(user_id)
+    user_data = UserService.get_user(user_id)
     User.new(user_data)
   end
 
