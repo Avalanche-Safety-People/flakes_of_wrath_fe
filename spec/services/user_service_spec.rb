@@ -3,23 +3,11 @@ require 'rails_helper'
 RSpec.describe UserService do 
   describe 'class methods' do 
     it '#.find_or_create_user' do 
-      user = {
-        data: 
-          {
-          id: 1,
-          type: 'user',
-          attributes: {
-            name: 'User Name',
-            favorite_zone: 'West north',
-          }
-        }
-      }
-
+      user = {:data=>{:id=>"3", :type=>"user", :attributes=>{:name=>"Gavin Carew", :favorite_zone=>nil}}}
       expect(user).to be_a Hash
       expect(user[:data]).to have_key(:id)
       expect(user[:data][:attributes]).to be_a Hash
       expect(user[:data][:attributes][:name]).to be_a String
-      expect(user[:data][:attributes][:favorite_zone]).to be_a String
     end
 
     it '#.trips' do 
