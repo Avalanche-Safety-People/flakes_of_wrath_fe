@@ -8,8 +8,13 @@ class UserService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.get_user(user_id)
+    response = conn.get("/api/v1/users/#{user_id}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   def self.trips(user_id)
-    response = conn.get("/api/v1/user/#{user_id}/trips")
+    response = conn.get("/api/v1/users/#{user_id}/trips")
     JSON.parse(response.body, symbolize_names: true)
   end
 
@@ -17,6 +22,6 @@ class UserService
 
   def self.conn
     # Currently stubbed with localhost, will eventually need to hit Heroku
-    Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com')
+    Faraday.new(url: 'https://flakes-of-wrath.herokuapp.com/')
   end
 end
