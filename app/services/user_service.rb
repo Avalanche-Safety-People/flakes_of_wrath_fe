@@ -17,6 +17,6 @@ class UserService
 
   def self.conn
     # Currently stubbed with localhost, will eventually need to hit Heroku
-    Faraday.new(url: 'http://localhost:3000')
+    Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com/')
   end
 end
