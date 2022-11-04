@@ -6,6 +6,7 @@ class UserService
       request.body = oauth_params.to_json
     end
     JSON.parse(response.body, symbolize_names: true)
+
   end
 
   def self.get_user(user_id)
@@ -21,7 +22,6 @@ class UserService
   private
 
   def self.conn
-    # Currently stubbed with localhost, will eventually need to hit Heroku
-    Faraday.new(url: 'https://flakes-of-wrath.herokuapp.com/')
+    Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com')
   end
 end
