@@ -1,6 +1,9 @@
 <h1> <%= @user.name %>'s Dashboard</h1>
 <p> Favorite zone: <%= @user.favorite_zone %>
 
+
+<%= render 'shared/upcoming_trips' %>
+
 <div class="container">
   Upcoming Trips:
   <% @trips.each do |trip| %>
@@ -9,3 +12,4 @@
     <%= trip.end_date %></p>
   <% end %>
 </div>
+

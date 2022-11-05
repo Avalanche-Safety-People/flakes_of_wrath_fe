@@ -55,6 +55,7 @@ group :development, :test do
   gem 'jsonapi-serializer'
   gem 'launchy'
   gem 'faker'
+  gem 'vcr'
   gem 'factory_bot_rails'
 end
 

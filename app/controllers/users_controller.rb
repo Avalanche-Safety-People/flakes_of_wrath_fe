@@ -3,12 +3,13 @@ class UsersController < ApplicationController
   
   def show
     @user = current_user
-    # @trips = user_trips
+    @trips = user_trips
+
   end
 
   private
 
   def user_trips
-    @user_trips = UserFacade.user_trips(session[:id])
+    @user_trips = UserFacade.user_trips(session[:user_id])
   end
 end
