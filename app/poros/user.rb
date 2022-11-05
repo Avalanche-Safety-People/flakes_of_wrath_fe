@@ -1,5 +1,6 @@
 class User
-  attr_reader :name, :favorite_zone, :id
+  attr_reader :name, :id
+  attr_accessor :favorite_zone
 
   def initialize(user_data)
     # binding.pry

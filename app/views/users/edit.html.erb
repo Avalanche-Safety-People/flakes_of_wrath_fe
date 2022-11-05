@@ -1,0 +1,17 @@
+<h1><%= @user %>'s Profile</h1>
+<br>
+
+<div class="zone">
+<center><h2>Favorite Zone</h2>
+<%= form_with url: users_path, method: :patch, local: true  do |form| %>
+  <%= form.label :favorite_zone %>
+  <%= form.select :favorite_zone, options_for_select(avalanche_zones) %>
+  <%= form.submit "Update"%>
+<% end %>
+</center></div>
+<br>
+
+<div class="contacts">
+<center><h2>Emergency Contacts</h2>
+
+</center></div>
