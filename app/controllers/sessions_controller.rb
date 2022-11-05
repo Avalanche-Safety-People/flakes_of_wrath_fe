@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = UserService.find_or_create_user(request.env['omniauth.auth'])
+    user = UserFacade.find_or_create_user(request.env['omniauth.auth'])
     session[:user_id] = user.id
     redirect_to users_path
   end
