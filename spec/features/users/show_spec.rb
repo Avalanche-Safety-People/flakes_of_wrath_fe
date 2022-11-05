@@ -2,44 +2,32 @@ require 'rails_helper'
 
 RSpec.describe 'User dashboard/show page' do
   describe 'happy path' do 
-    it 'I see the user name and favorite zone' do
-      sample_user_data = File.read('spec/fixtures/user.json')
-      sample_trip_data = File.read('spec/fixtures/trips.json')
-      user = User.new(JSON.parse(JSON.parse(sample_user_data), symbolize_names: true))
-      
-      trips = JSON.parse(JSON.parse(sample_trip_data), symbolize_names: true)[:data].map do |trip| 
-        Trip.new(trip)
-      end
-      
+    it 'I see the user name and favorite zone', :vcr do
+      bob = UserFacade.get_user(1)
+      bobs_trips = UserFacade.user_trips(1)
       allow_any_instance_of(UsersController).to receive(:logged_in_user).and_return(true)
-      allow_any_instance_of(UsersController).to receive(:current_user).and_return(user)
-      allow_any_instance_of(UsersController).to receive(:user_trips).and_return(trips)
-
-
+      allow_any_instance_of(UsersController).to receive(:current_user).and_return(bob)
+      allow_any_instance_of(UsersController).to receive(:user_trips).and_return(bobs_trips)
+    
       visit users_path
-      expect(page).to have_content(user.name)
-      expect(page).to have_content(user.favorite_zone)
+      expect(page).to have_content(bob.name)
+      expect(page).to have_content(bob.favorite_zone)
     end
 
-    xit 'I see the trips the user is going on' do
-      sample_user_data = File.read('spec/fixtures/user.json')
-      sample_trip_data = File.read('spec/fixtures/trips.json')
-      user = User.new(JSON.parse(JSON.parse(sample_user_data), symbolize_names: true))
+    it 'I see the trips the user is going on', :vcr do
+      bob = UserFacade.get_user(1)
+      bobs_trips = UserFacade.user_trips(1)
 
-      trips = JSON.parse(JSON.parse(sample_trip_data), symbolize_names: true)[:data].map do |trip| 
-        Trip.new(trip)
-      end
       allow_any_instance_of(UsersController).to receive(:logged_in_user).and_return(true)
-      allow_any_instance_of(UsersController).to receive(:current_user).and_return(user)
-      allow_any_instance_of(UsersController).to receive(:user_trips).and_return(trips)
+      allow_any_instance_of(UsersController).to receive(:current_user).and_return(bob)
+      allow_any_instance_of(UsersController).to receive(:user_trips).and_return(bobs_trips)
 
       visit users_path
-      expect(page).to have_content(trips[0].name)
-      expect(page).to have_content(trips[1].name)
-      expect(page).to have_content(trips[0].start_date)
-      expect(page).to have_content(trips[1].start_date)
-      expect(page).to have_content(trips[0].end_date)
-      expect(page).to have_content(trips[1].end_date)
+      expect(page).to have_content('Adventure is out there')
+      expect(page).to have_content('Prom Night!')
+
+      # expect(page).to have_content('')
+      # expect(page).to have_content()
     end
   end
 end

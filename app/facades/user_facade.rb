@@ -11,7 +11,7 @@ class UserFacade
 
   def self.user_trips(user_id)
     trips = UserService.trips(user_id)
-    trips.each do |trip_data|
+    trips[:data].map do |trip_data|
       Trip.new(trip_data)
     end
   end
