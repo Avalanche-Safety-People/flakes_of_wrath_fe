@@ -25,9 +25,35 @@ RSpec.describe 'User dashboard/show page' do
       visit users_path
       expect(page).to have_content('Adventure is out there')
       expect(page).to have_content('Prom Night!')
+    end
 
-      # expect(page).to have_content('')
-      # expect(page).to have_content()
+    it 'I see a button to add a new trip', :vcr do 
+      bob = UserFacade.get_user(1)
+      bobs_trips = UserFacade.user_trips(1)
+
+      allow_any_instance_of(UsersController).to receive(:logged_in_user).and_return(true)
+      allow_any_instance_of(UsersController).to receive(:current_user).and_return(bob)
+      allow_any_instance_of(TripsController).to receive(:logged_in_user).and_return(true)
+      allow_any_instance_of(TripsController).to receive(:current_user).and_return(bob)
+      allow_any_instance_of(UsersController).to receive(:user_trips).and_return(bobs_trips)
+
+      visit users_path
+      click_button 'Add a new trip'
+      expect(current_path).to eq(new_users_trip_path)
+    end
+
+    it 'Each trip is a link to the show page for that trip', :vcr do 
+      bob = UserFacade.get_user(1)
+      bobs_trips = UserFacade.user_trips(1)
+
+      allow_any_instance_of(UsersController).to receive(:logged_in_user).and_return(true)
+      allow_any_instance_of(UsersController).to receive(:current_user).and_return(bob)
+      allow_any_instance_of(TripsController).to receive(:logged_in_user).and_return(true)
+      allow_any_instance_of(TripsController).to receive(:current_user).and_return(bob)
+      allow_any_instance_of(UsersController).to receive(:user_trips).and_return(bobs_trips)
+
+      visit users_path
+      require 'pry';binding.pry
     end
   end
 end
