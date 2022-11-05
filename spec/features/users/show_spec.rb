@@ -36,6 +36,7 @@ RSpec.describe 'User dashboard/show page' do
       allow_any_instance_of(TripsController).to receive(:logged_in_user).and_return(true)
       allow_any_instance_of(TripsController).to receive(:current_user).and_return(bob)
       allow_any_instance_of(UsersController).to receive(:user_trips).and_return(bobs_trips)
+      allow_any_instance_of(TripsController).to receive(:user_trips).and_return(bobs_trips)
 
       visit users_path
       click_button 'Add a new trip'

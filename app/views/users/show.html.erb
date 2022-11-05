@@ -2,3 +2,4 @@
 <p> Favorite zone: <%= @user.favorite_zone %>
 
 <%= render 'shared/upcoming_trips' %>
+<%= button_to 'Add a new trip', new_users_trip_path, method: :get, local: true %>

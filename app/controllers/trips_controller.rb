@@ -3,9 +3,10 @@ class TripsController < ApplicationController
   include ApplicationHelper
   
   def new
+    @user_trips = user_trips
   end
 
   def show
-    @trips = user_trips
+    @user_trips = user_trips
   end
 end
