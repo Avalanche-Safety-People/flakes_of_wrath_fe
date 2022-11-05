@@ -7,9 +7,8 @@ RSpec.describe UserFacade do
       expect(user).to be_a User
     end
 
-    xit '#.user_trips', :vcr do 
+    it '#.user_trips', :vcr do 
       trips = UserFacade.user_trips(1)
-      require 'pry';binding.pry
       expect(trips).to be_an Array
       expect(trips).to all(be_a Trip)
     end
