@@ -51,9 +51,11 @@ RSpec.describe 'User dashboard/show page' do
       allow_any_instance_of(TripsController).to receive(:logged_in_user).and_return(true)
       allow_any_instance_of(TripsController).to receive(:current_user).and_return(bob)
       allow_any_instance_of(UsersController).to receive(:user_trips).and_return(bobs_trips)
+      allow_any_instance_of(TripsController).to receive(:user_trips).and_return(bobs_trips)
 
       visit users_path
-      require 'pry';binding.pry
+      click_link 'Adventure is out there'
+      expect(current_path).to eq(users_trip_path(bobs_trips.first.id))
     end
   end
 end

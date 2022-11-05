@@ -1,5 +1,5 @@
 Upcoming trips: 
 <% @trips.each do |trip| %>
-  <p><%= trip.name %>
+  <p><%= link_to trip.name, users_trip_path(trip.id) %>
   <%= trip.start_date %> </p> 
 <% end %> 

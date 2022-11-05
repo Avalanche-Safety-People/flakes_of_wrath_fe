@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 04 Nov 2022 21:37:18 GMT
+      - Sat, 05 Nov 2022 21:05:47 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 28d48cfe-5089-4dd6-8822-0464a111c8fd
+      - 35d940d4-a8aa-45c6-9f75-807dac4c30ab
       X-Runtime:
-      - '0.004736'
+      - '0.005410'
       Transfer-Encoding:
       - chunked
       Via:
@@ -43,5 +43,5 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
         out there","zone_id":88,"start_date":"2023-02-03T00:00:00.000Z","description":"very
         moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":4,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
-  recorded_at: Fri, 04 Nov 2022 21:37:19 GMT
+  recorded_at: Sat, 05 Nov 2022 21:05:48 GMT
 recorded_with: VCR 6.1.0

@@ -15,29 +15,75 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 503
-      message: Service Unavailable
+      code: 200
+      message: OK
     headers:
-      Connection:
-      - keep-alive
       Server:
       - Cowboy
       Date:
-      - Sat, 05 Nov 2022 20:15:04 GMT
-      Content-Length:
-      - '506'
+      - Sat, 05 Nov 2022 21:06:54 GMT
+      Connection:
+      - keep-alive
       Content-Type:
-      - text/html; charset=utf-8
+      - application/json; charset=utf-8
+      Etag:
+      - W/"acef949a99975666e0e37f2fa2551c8c"
       Cache-Control:
-      - no-cache, no-store
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4dafe321-016e-42b9-9a50-cb6561b1a0eb
+      X-Runtime:
+      - '0.005490'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: "<!DOCTYPE html>\n\t<html>\n\t  <head>\n\t\t<meta name=\"viewport\"
-        content=\"width=device-width, initial-scale=1\">\n\t\t<meta charset=\"utf-8\">\n\t\t<title>Application
-        Error</title>\n\t\t<style media=\"screen\">\n\t\t  html,body,iframe {\n\t\t\tmargin:
-        0;\n\t\t\tpadding: 0;\n\t\t  }\n\t\t  html,body {\n\t\t\theight: 100%;\n\t\t\toverflow:
-        hidden;\n\t\t  }\n\t\t  iframe {\n\t\t\twidth: 100%;\n\t\t\theight: 100%;\n\t\t\tborder:
-        0;\n\t\t  }\n\t\t</style>\n\t  </head>\n\t  <body>\n\t\t<iframe src=\"//www.herokucdn.com/error-pages/application-error.html\"></iframe>\n\t
-        \ </body>\n\t</html>"
-  recorded_at: Sat, 05 Nov 2022 20:15:05 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":88}}}'
+  recorded_at: Sat, 05 Nov 2022 21:06:55 GMT
+- request:
+    method: get
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 05 Nov 2022 21:06:55 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f5e0c7548f4e5889ae4f016202860af6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6b0797b6-e126-4809-b8b7-4f61044bb0df
+      X-Runtime:
+      - '0.006271'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
+        out there","zone_id":88,"start_date":"2023-02-03T00:00:00.000Z","description":"very
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":4,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
+  recorded_at: Sat, 05 Nov 2022 21:06:55 GMT
 recorded_with: VCR 6.1.0
