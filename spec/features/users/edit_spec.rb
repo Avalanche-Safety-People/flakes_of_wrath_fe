@@ -21,7 +21,8 @@ RSpec.describe 'users profile page' do
         expect(page).to have_select('favorite_zone')
         select('Olympics', from: :favorite_zone)
         click_on 'Update'
-        expect(bob.favorite_zone).to eq("419")
+        updated_bob = UserFacade.get_user(1)
+        expect(updated_bob.favorite_zone).to eq("419")
       end
     end
   end

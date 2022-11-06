@@ -12,8 +12,10 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = current_user
-    @user.favorite_zone = params[:favorite_zone]
+    require 'pry' ; binding.pry
+    # needs an API call to backend to udpate user table
+    # @user = current_user
+    # @user.favorite_zone = params[:favorite_zone]
   end
 
   private

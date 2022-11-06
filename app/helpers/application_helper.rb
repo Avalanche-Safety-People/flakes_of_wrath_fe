@@ -1,6 +1,7 @@
 module ApplicationHelper
 
   def avalanche_zones
+    # have backend pass the names of the zones with ids
     [
       ['Olympics', 419],
       ['West Slopes North', 420],
