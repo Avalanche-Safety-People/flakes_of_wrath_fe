@@ -2,16 +2,11 @@
 <p> Favorite zone: <%= @user.favorite_zone %>
 
 
-<%= render 'shared/upcoming_trips' %>
 
 <%= button_to 'Add a new trip', new_users_trip_path, method: :get, local: true %>
 
 
 <div class="container">
-  Upcoming Trips:
-  <% @user_trips.each do |trip| %>
-    <p><%= trip.name %>
-    <%= trip.start_date %></p>
-  <% end %>
+<%= render 'shared/upcoming_trips' %>
 </div>
 
