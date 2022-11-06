@@ -30,7 +30,6 @@ RSpec.describe 'Trip Show Page' do
       allow_any_instance_of(TripsController).to receive(:user_trips).and_return(bobs_trips)
 
       visit users_trip_path(5)
-      save_and_open_page
     end
   end
 end
