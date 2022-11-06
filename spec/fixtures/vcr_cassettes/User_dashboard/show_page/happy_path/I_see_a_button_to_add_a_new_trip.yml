@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sat, 05 Nov 2022 21:05:44 GMT
+      - Sat, 05 Nov 2022 21:44:06 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 778401b4-9765-4a4f-91c6-8fddc473b2ae
+      - c58fb75e-2463-42f2-a6ae-b733067ce291
       X-Runtime:
-      - '0.004541'
+      - '0.005112'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":88}}}'
-  recorded_at: Sat, 05 Nov 2022 21:05:45 GMT
+  recorded_at: Sat, 05 Nov 2022 21:44:07 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sat, 05 Nov 2022 21:05:45 GMT
+      - Sat, 05 Nov 2022 21:44:07 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -73,9 +73,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4f1745e0-32ca-4928-924d-f885b7cf5128
+      - ca87c617-271e-4295-9803-81b95caba18a
       X-Runtime:
-      - '0.016346'
+      - '0.017595'
       Transfer-Encoding:
       - chunked
       Via:
@@ -85,5 +85,5 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
         out there","zone_id":88,"start_date":"2023-02-03T00:00:00.000Z","description":"very
         moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":4,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
-  recorded_at: Sat, 05 Nov 2022 21:05:46 GMT
+  recorded_at: Sat, 05 Nov 2022 21:44:08 GMT
 recorded_with: VCR 6.1.0

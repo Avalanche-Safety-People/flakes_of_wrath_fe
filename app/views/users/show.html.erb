@@ -4,6 +4,9 @@
 
 <%= render 'shared/upcoming_trips' %>
 
+<%= button_to 'Add a new trip', new_users_trip_path, method: :get, local: true %>
+
+
 <div class="container">
   Upcoming Trips:
   <% @trips.each do |trip| %>
