@@ -1,3 +1,4 @@
+require 'date'
 class Trip
   attr_reader :start_date,
               :name,

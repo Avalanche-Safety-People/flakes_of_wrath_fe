@@ -4,6 +4,17 @@ class TripsController < ApplicationController
 
   def new
     @user_trips = user_trips
+    @user = current_user
+  end
+
+  def create
+    response = UserService.create_trip(params)
+    if response.success?
+      redirect_to users_path
+    else
+      flash[:error] = 'Something went wrong'
+      render :new
+    end
   end
 
   def show

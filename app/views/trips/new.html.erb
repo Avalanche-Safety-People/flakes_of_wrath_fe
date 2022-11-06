@@ -1,2 +1,15 @@
 <h1> Create a trip </h1>
 <%= render 'shared/upcoming_trips' %>
+
+<%= form_with url: users_trips_path(@user.id), local: true do |f| %>
+  <%= f.hidden_field :user_id, value: @user.id %>
+  <%= f.label :name, 'Trip name' %>
+  <%= f.text_field :name %>
+  <%= f.label :zone_id, 'Forecast zone' %>
+  <%= f.select :zone_id, options_for_select(avalanche_zones) %>
+  <%= f.label :start_date, "Date:" %>
+  <%= f.date_field :start_date %>
+   <%= f.label :description, "Trip description:" %>
+  <%= f.text_area :description %>
+  <%= f.submit "Create"%>
+<% end %>
