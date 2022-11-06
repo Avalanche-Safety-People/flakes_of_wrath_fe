@@ -1,0 +1,141 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"3ff4d07e7c7bb39ff0059cabcb940bdc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9df50da2-73f9-4167-9d83-f7011ca433bb
+      X-Runtime:
+      - '0.003372'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Ryan Smith","favorite_zone":430}}}'
+  recorded_at: Sun, 06 Nov 2022 21:48:54 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1/trips
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f650fef6-f47d-459b-84e8-c1a44f7ea2bb
+      X-Runtime:
+      - '0.005475'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[]}'
+  recorded_at: Sun, 06 Nov 2022 21:48:54 GMT
+- request:
+    method: patch
+    uri: http://localhost:5000/api/v1/users/1?_method=patch&action=update&commit=Update&controller=users&favorite_zone=419&id=1&utf8=%E2%9C%93
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"105b9eaab5e5a75ede4aa9edab9fdffd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 370e9dfe-e54b-4ecc-a8d1-64c624554f2a
+      X-Runtime:
+      - '0.008261'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Ryan Smith","favorite_zone":419}}}'
+  recorded_at: Sun, 06 Nov 2022 21:48:54 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"105b9eaab5e5a75ede4aa9edab9fdffd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - aca046c4-cfeb-42d7-acba-e147cb9813bc
+      X-Runtime:
+      - '0.003093'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Ryan Smith","favorite_zone":419}}}'
+  recorded_at: Sun, 06 Nov 2022 21:48:54 GMT
+recorded_with: VCR 6.1.0

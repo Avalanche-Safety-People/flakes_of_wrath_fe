@@ -1,14 +1,16 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: http://localhost:5000/api/v1/users/1
+    method: patch
+    uri: http://localhost:5000/api/v1/users/1?favorite_zone=430&id=1
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       User-Agent:
       - Faraday v2.6.0
+      Content-Length:
+      - '0'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,17 +23,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"105b9eaab5e5a75ede4aa9edab9fdffd"
+      - W/"3ff4d07e7c7bb39ff0059cabcb940bdc"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4cdc7fe8-172f-4fb5-bbce-9e82711cb1e5
+      - 24afd95d-eec2-4df9-bc4b-7d7cb1c78a34
       X-Runtime:
-      - '0.006105'
+      - '0.007147'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Ryan Smith","favorite_zone":419}}}'
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Ryan Smith","favorite_zone":430}}}'
   recorded_at: Sun, 06 Nov 2022 21:48:54 GMT
 recorded_with: VCR 6.1.0

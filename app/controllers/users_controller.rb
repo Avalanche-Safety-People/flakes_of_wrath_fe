@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
   def update
     response = UserService.update_user(params)
-    if response.success?
+    if !response.nil?
       redirect_to edit_users_path
     else
       flash[:error] = 'Something went wrong'

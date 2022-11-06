@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe 'users profile page' do
+RSpec.describe 'User Profile page' do
   describe 'happy path' do
-    it 'will have a drop-down menu to select favorite zone', :vcr do
+    it 'will have a drop-down menu to update favorite zone', :vcr do
       bob = UserFacade.get_user(1)
       first_fav = bob.favorite_zone
       bobs_trips = UserFacade.user_trips(1)
@@ -17,7 +17,6 @@ RSpec.describe 'users profile page' do
 
       within '.zone' do
         expect(bob.favorite_zone).to eq(first_fav)
-
         expect(page).to have_select('favorite_zone')
         select('Olympics', from: :favorite_zone)
         click_on 'Update'

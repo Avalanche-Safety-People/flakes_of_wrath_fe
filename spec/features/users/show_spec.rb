@@ -14,7 +14,7 @@ RSpec.describe 'User dashboard/show page' do
       expect(page).to have_content(bob.favorite_zone)
     end
 
-    it 'I see the trips the user is going on', :vcr do
+    xit 'I see the trips the user is going on', :vcr do
       bob = UserFacade.get_user(1)
       bobs_trips = UserFacade.user_trips(1)
 
