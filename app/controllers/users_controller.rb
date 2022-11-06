@@ -12,10 +12,13 @@ class UsersController < ApplicationController
   end
 
   def update
-    require 'pry' ; binding.pry
-    # needs an API call to backend to udpate user table
-    # @user = current_user
-    # @user.favorite_zone = params[:favorite_zone]
+    response = UserService.update_user(params)
+    if response.success?
+      redirect_to edit_users_path
+    else
+      flash[:error] = 'Something went wrong'
+      render :edit
+    end
   end
 
   private
