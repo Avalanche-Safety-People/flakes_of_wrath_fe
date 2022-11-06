@@ -9,10 +9,9 @@
 
 <div class="container">
   Upcoming Trips:
-  <% @trips.each do |trip| %>
+  <% @user_trips.each do |trip| %>
     <p><%= trip.name %>
-    <%= trip.start_date %>
-    <%= trip.end_date %></p>
+    <%= trip.start_date %></p>
   <% end %>
 </div>
 

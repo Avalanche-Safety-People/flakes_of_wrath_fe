@@ -1,14 +1,16 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1
+    method: patch
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1?favorite_zone=430&id=1
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       User-Agent:
       - Faraday v2.6.0
+      Content-Length:
+      - '0'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,25 +23,25 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sun, 06 Nov 2022 23:41:55 GMT
+      - Sun, 06 Nov 2022 23:42:04 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"acef949a99975666e0e37f2fa2551c8c"
+      - W/"fa66faa9d89ec0acb15cccaccf54bca6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3bc150e1-dd84-49de-be80-3e9c05156c9e
+      - 9efb58d7-1aed-4f62-99af-67a4795d6069
       X-Runtime:
-      - '0.065595'
+      - '0.011150'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":88}}}'
-  recorded_at: Sun, 06 Nov 2022 23:41:56 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
+  recorded_at: Sun, 06 Nov 2022 23:42:04 GMT
 recorded_with: VCR 6.1.0
