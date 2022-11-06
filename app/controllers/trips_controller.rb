@@ -9,7 +9,7 @@ class TripsController < ApplicationController
   def show
     @user_trips = user_trips
     @trip = @user_trips.select do |trip| #does this make two calls???
-      trip.id == params[:id]
+      trip.id == params[:id].to_i
     end[0]
   end
 end
