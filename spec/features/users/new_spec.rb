@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'New trip' do 
   describe 'When I visit a new user page' do 
+
     it 'I see my upcoming trips', :vcr do 
       bob = UserFacade.get_user(1)
       bobs_trips = UserFacade.user_trips(1)

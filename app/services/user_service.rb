@@ -6,7 +6,6 @@ class UserService
       request.body = oauth_params.to_json
     end
     JSON.parse(response.body, symbolize_names: true)
-
   end
 
   def self.get_user(user_id)

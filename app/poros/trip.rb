@@ -14,6 +14,5 @@ class Trip
     @description = trip_data[:attributes][:description]
     @zone_id = trip_data[:attributes][:zone_id].to_i
     @user_id = trip_data[:attributes][:user_id].to_i
-  end 
-
+  end
 end
