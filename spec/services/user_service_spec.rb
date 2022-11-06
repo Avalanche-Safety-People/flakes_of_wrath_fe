@@ -26,7 +26,7 @@ RSpec.describe UserService do
       expect(user[:data][:type]).to eq('user')
     end
 
-    xit '#.trips', :vcr do
+    it '#.trips', :vcr do
       trips = UserService.trips(1)
       expect(trips).to be_a Hash
       expect(trips[:data]).to be_a Array

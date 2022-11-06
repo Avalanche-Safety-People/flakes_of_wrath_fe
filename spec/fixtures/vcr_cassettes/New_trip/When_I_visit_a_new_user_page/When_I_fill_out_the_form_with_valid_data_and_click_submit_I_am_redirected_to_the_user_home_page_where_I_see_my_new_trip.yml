@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sun, 06 Nov 2022 17:08:09 GMT
+      - Sun, 06 Nov 2022 23:42:00 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b6d89211-7d7c-4665-b8ae-da5b78786f03
+      - 7b5808a9-9b03-4fe7-8b82-314207083f5f
       X-Runtime:
-      - '0.004713'
+      - '0.004579'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":88}}}'
-  recorded_at: Sun, 06 Nov 2022 17:08:09 GMT
+  recorded_at: Sun, 06 Nov 2022 23:42:00 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -63,19 +63,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sun, 06 Nov 2022 17:08:09 GMT
+      - Sun, 06 Nov 2022 23:42:00 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"00acbc702d64697b406a505619d9448a"
+      - W/"1d20b0a657b1abef84608c044ec8ed67"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0dcca419-5760-4a3a-928e-157dbad78aea
+      - 4a7abcef-d688-4034-a741-a8f6ea2d6cda
       X-Runtime:
-      - '0.006320'
+      - '0.005373'
       Transfer-Encoding:
       - chunked
       Via:
@@ -86,8 +86,12 @@ http_interactions:
         out there","zone_id":88,"start_date":"2023-02-03T00:00:00.000Z","description":"very
         moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":4,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"4","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"7","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Sun, 06 Nov 2022 17:08:09 GMT
+  recorded_at: Sun, 06 Nov 2022 23:42:00 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -109,19 +113,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sun, 06 Nov 2022 17:08:09 GMT
+      - Sun, 06 Nov 2022 23:42:00 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"00acbc702d64697b406a505619d9448a"
+      - W/"1d20b0a657b1abef84608c044ec8ed67"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d743f523-9f6a-46d1-9b15-5c3e3b35c73f
+      - 7c3a0ca6-2003-4ee2-a257-e0b6ae35c107
       X-Runtime:
-      - '0.005737'
+      - '0.016298'
       Transfer-Encoding:
       - chunked
       Via:
@@ -132,8 +136,12 @@ http_interactions:
         out there","zone_id":88,"start_date":"2023-02-03T00:00:00.000Z","description":"very
         moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":4,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"4","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"7","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Sun, 06 Nov 2022 17:08:10 GMT
+  recorded_at: Sun, 06 Nov 2022 23:42:01 GMT
 - request:
     method: post
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips?action=create&commit=Create&controller=trips&description=Head%20over%20the%20Snoqualmie%20Mt%20Notch,%20then%20climb%20the%20S%20ridge%20of%20Avalanche%20Mt&format=1&name=Avalanche%20Mountain&start_date=30/12/2023&user_id=1&utf8=%E2%9C%93&zone_id=427
@@ -157,26 +165,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sun, 06 Nov 2022 17:08:10 GMT
+      - Sun, 06 Nov 2022 23:42:01 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"2638108797f116a9912996fde833242d"
+      - W/"b8bdea626c112ba769bafabd418e3e12"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 35bb41d5-b473-48fd-8eaf-b11c579f4489
+      - fd4f6097-4bfe-4c7c-909f-0263717f443a
       X-Runtime:
-      - '0.011996'
+      - '0.021013'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"trip","attributes":{"name":"Avalanche Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+      string: '{"data":{"id":"8","type":"trip","attributes":{"name":"Avalanche Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}}'
-  recorded_at: Sun, 06 Nov 2022 17:08:10 GMT
+  recorded_at: Sun, 06 Nov 2022 23:42:01 GMT
 recorded_with: VCR 6.1.0

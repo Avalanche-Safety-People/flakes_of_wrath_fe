@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/users/1
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1
     body:
       encoding: US-ASCII
       string: ''
@@ -18,25 +18,33 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 06 Nov 2022 23:44:10 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3ff4d07e7c7bb39ff0059cabcb940bdc"
+      - W/"fa66faa9d89ec0acb15cccaccf54bca6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9df50da2-73f9-4167-9d83-f7011ca433bb
+      - 6a7b7cec-3177-4b30-8c56-c5436001d5d8
       X-Runtime:
-      - '0.003372'
+      - '0.004544'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Ryan Smith","favorite_zone":430}}}'
-  recorded_at: Sun, 06 Nov 2022 21:48:54 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
+  recorded_at: Sun, 06 Nov 2022 23:44:11 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/users/1/trips
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
     body:
       encoding: US-ASCII
       string: ''
@@ -52,25 +60,43 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 06 Nov 2022 23:44:11 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8fe32e407a1038ee38753b70e5374b3a"
+      - W/"e7aa36f3ceb5c6b72330d708e87e538a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f650fef6-f47d-459b-84e8-c1a44f7ea2bb
+      - 51477c86-7637-4012-ae56-34b29c59eca6
       X-Runtime:
-      - '0.005475'
+      - '0.005290'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[]}'
-  recorded_at: Sun, 06 Nov 2022 21:48:54 GMT
+      string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
+        out there","zone_id":88,"start_date":"2023-02-03T00:00:00.000Z","description":"very
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":4,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"4","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"7","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"8","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
+  recorded_at: Sun, 06 Nov 2022 23:44:11 GMT
 - request:
     method: patch
-    uri: http://localhost:5000/api/v1/users/1?_method=patch&action=update&commit=Update&controller=users&favorite_zone=419&id=1&utf8=%E2%9C%93
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1?_method=patch&action=update&commit=Update&controller=users&favorite_zone=419&id=1&utf8=%E2%9C%93
     body:
       encoding: UTF-8
       string: ''
@@ -88,25 +114,33 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 06 Nov 2022 23:44:11 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"105b9eaab5e5a75ede4aa9edab9fdffd"
+      - W/"fb50acf9158d0b39d8501cc4858de0c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 370e9dfe-e54b-4ecc-a8d1-64c624554f2a
+      - b94a901f-d421-4e3a-a587-92d4afee5ef9
       X-Runtime:
-      - '0.008261'
+      - '0.009946'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Ryan Smith","favorite_zone":419}}}'
-  recorded_at: Sun, 06 Nov 2022 21:48:54 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
+  recorded_at: Sun, 06 Nov 2022 23:44:11 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/users/1
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1
     body:
       encoding: US-ASCII
       string: ''
@@ -122,20 +156,28 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 06 Nov 2022 23:44:12 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"105b9eaab5e5a75ede4aa9edab9fdffd"
+      - W/"fb50acf9158d0b39d8501cc4858de0c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - aca046c4-cfeb-42d7-acba-e147cb9813bc
+      - dd28aa2e-20a9-4ccf-b33f-dae934b21db9
       X-Runtime:
-      - '0.003093'
+      - '0.005255'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Ryan Smith","favorite_zone":419}}}'
-  recorded_at: Sun, 06 Nov 2022 21:48:54 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
+  recorded_at: Sun, 06 Nov 2022 23:44:12 GMT
 recorded_with: VCR 6.1.0
