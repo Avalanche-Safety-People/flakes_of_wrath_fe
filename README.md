@@ -80,8 +80,6 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#apis">APIs</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -101,7 +99,7 @@ Database tables are stored on the back end of the app, but to make sure you can 
 </center>
 <!-- GETTING STARTED -->
 
-### Prerequisites
+## Prerequisites
 
 This project requires Ruby 2.7.4
 - must use Rails 5.2.x
@@ -109,19 +107,23 @@ This project requires Ruby 2.7.4
 
 <br>
 
-### Setup/Install
+## Setup/Install
 * Fork this repository
 * Clone your fork
 * From the command line, install gems and set up your DB:
     * `bundle`
-    * `rails db:create`
+* APIs used
+  * Please follow the link to get your `client id` and `client secret` used later https://developers.google.com/identity/protocols/oauth2
+  * `bundle exec figaro install`
+    * go to `config/application.yml`
+    * name your API key from open weather `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET`
+<center>
+<img src="app/assets/images/api-key.png" width="350" height="200">
+</center>
+
+* Run `rails db:{create,migrate}`
 * Run the test suite with `bundle exec rspec`.
-* Run your development server with `rails s` to see the app in action.
-* Get a free API Key at [https://example.com](https://example.com)
-* Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+* To see the app in production go to [Flakes of Wrath](https://flakes-of-wrath.herokuapp.com/) on Heroku
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -152,6 +154,8 @@ See the [open issues](https://github.com/Avalanche-Safety-People/flakes_of_wrath
 
 <!-- CONTACT -->
 ## Contact
+
+Heroku Link: [Flakes of Wrath](https://flakes-of-wrath.herokuapp.com/)
 
 Project Link: [Flakes of Wrath FE](https://github.com/Avalanche-Safety-People/flakes_of_wrath_fe)
 

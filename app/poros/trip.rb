@@ -1,3 +1,4 @@
+require 'date'
 class Trip
   attr_reader :start_date,
               :name,
@@ -14,4 +15,5 @@ class Trip
     @zone_id = trip_data[:attributes][:zone_id].to_i
     @user_id = trip_data[:attributes][:user_id].to_i
   end
+
 end

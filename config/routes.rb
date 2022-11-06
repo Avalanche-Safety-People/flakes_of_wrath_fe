@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   delete '/session', to: 'sessions#destroy', as: :session_delete
   resources :resources, only: :index
   resource :users, only: %i[show edit] do 
-    resources :trips, only: %i[new show update destroy]
+    resources :trips
   end
 
 
