@@ -5,10 +5,11 @@ RSpec.describe 'User dashboard/show page' do
     it 'I see the user name and favorite zone', :vcr do
       bob = UserFacade.get_user(1)
       bobs_trips = UserFacade.user_trips(1)
+
       allow_any_instance_of(UsersController).to receive(:logged_in_user).and_return(true)
       allow_any_instance_of(UsersController).to receive(:current_user).and_return(bob)
       allow_any_instance_of(UsersController).to receive(:user_trips).and_return(bobs_trips)
-    
+
       visit users_path
       expect(page).to have_content(bob.name)
       expect(page).to have_content(bob.favorite_zone)

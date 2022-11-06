@@ -1,2 +1,15 @@
-<h1> Trip Show Page </h1>
+<div class="trip details">
+<center><h1><%= @trip.name %></h1>
+
+<p>Date: <%= @trip.start_date.strftime('%B %d, %Y') %></p>
+<p>Description: <%= @trip.description %></p>
+<p>Zone 'insert name here' | ID:<%= @trip.zone_id %></p>
+</center></div>
+
+
+
+<br>
+<hr>
+
+<h3>Other Up Coming Trips</h3>
 <%= render 'shared/upcoming_trips' %>
