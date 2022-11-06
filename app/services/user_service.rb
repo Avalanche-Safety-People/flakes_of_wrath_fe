@@ -1,12 +1,9 @@
 class UserService
-
   def self.find_or_create_user(oauth_params)
-    # This endpoint could change
     response = conn.get('/api/v1/users') do |request|
       request.body = oauth_params.to_json
     end
     JSON.parse(response.body, symbolize_names: true)
-
   end
 
   def self.get_user(user_id)
@@ -26,10 +23,15 @@ class UserService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.create_trip(trip_params)
+    conn.post("/api/v1/users/#{trip_params[:user_id]}/trips") do |req|
+      req.params = trip_params
+    end
+  end
+
   private
 
   def self.conn
-    # Faraday.new(url: 'http://localhost:5000')
-    Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com')
+    Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com/')
   end
 end

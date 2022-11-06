@@ -18,20 +18,26 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 04 Nov 2022 20:52:16 GMT
+      Connection:
+      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"105b9eaab5e5a75ede4aa9edab9fdffd"
+      - W/"acef949a99975666e0e37f2fa2551c8c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4cdc7fe8-172f-4fb5-bbce-9e82711cb1e5
+      - 1244f779-fd62-424f-a10f-e20b711f41f1
       X-Runtime:
-      - '0.006105'
+      - '0.067581'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Ryan Smith","favorite_zone":419}}}'
-  recorded_at: Sun, 06 Nov 2022 21:48:54 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Ryan","favorite_zone":null}}}'
+  recorded_at: Fri, 04 Nov 2022 20:52:17 GMT
 recorded_with: VCR 6.1.0
