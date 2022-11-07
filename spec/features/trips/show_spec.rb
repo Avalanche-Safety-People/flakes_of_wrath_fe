@@ -18,6 +18,8 @@ RSpec.describe 'Trip Show Page' do
         expect(page).to have_content(first_trip.description)
         expect(page).to have_content(first_trip.zone_id)
       end
+
+      save_and_open_page
     end
   end
 
