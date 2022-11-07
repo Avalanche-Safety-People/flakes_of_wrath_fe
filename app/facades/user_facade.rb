@@ -16,4 +16,12 @@ class UserFacade
     end
   end
 
+  def self.emergency_contacts(user_id)
+    contacts = UserService.all_emergency_contacts(user_id)
+    require 'pry' ; binding.pry
+    you = contacts[:data].map do |contact_data|
+      EmergencyContact.new(contact_data)
+    end
+  end
+
 end
