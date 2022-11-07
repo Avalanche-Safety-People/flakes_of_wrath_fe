@@ -21,27 +21,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 22:21:12 GMT
+      - Mon, 07 Nov 2022 23:00:54 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fb50acf9158d0b39d8501cc4858de0c0"
+      - W/"fa66faa9d89ec0acb15cccaccf54bca6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 43fefdf7-3523-4080-a8cc-6c42991ff3ba
+      - 699e0388-e5c8-43b7-98ca-6d00e25859c3
       X-Runtime:
-      - '0.004135'
+      - '0.004168'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Mon, 07 Nov 2022 22:21:12 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
+  recorded_at: Mon, 07 Nov 2022 23:00:54 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 22:21:12 GMT
+      - Mon, 07 Nov 2022 23:00:54 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -73,9 +73,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c123dd7b-bd3f-4718-afc2-428c90acf8fa
+      - 4a9b3cd8-bd50-4768-af04-8db7da3090e4
       X-Runtime:
-      - '0.007997'
+      - '0.007020'
       Transfer-Encoding:
       - chunked
       Via:
@@ -95,5 +95,5 @@ http_interactions:
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"9","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Mon, 07 Nov 2022 22:21:13 GMT
+  recorded_at: Mon, 07 Nov 2022 23:00:55 GMT
 recorded_with: VCR 6.1.0
