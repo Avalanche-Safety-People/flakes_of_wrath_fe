@@ -8,7 +8,15 @@ class TripsController < ApplicationController
   end
 
   def edit
-    
+    @user = current_user
+    @user_trips = user_trips
+    @trip = @user_trips.select do |trip| #does this make two calls???
+      trip.id == params[:id].to_i
+    end[0]
+  end
+
+  def update
+    response = UserService.update_trip
   end
 
   def create

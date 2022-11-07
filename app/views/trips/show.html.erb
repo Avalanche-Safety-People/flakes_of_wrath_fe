@@ -3,7 +3,7 @@
 <p>Date: <%= @trip.start_date.strftime('%B %d, %Y') %></p>
 <p>Description: <%= @trip.description %></p>
 <p>Zone 'insert name here' | ID:<%= @trip.zone_id %></p>
-<p><%= link_to "Edit #{@trip.name}", edit_users_trip_path(@trip.id)%></p>
+<p><%= link_to "Edit #{@trip.name}", edit_users_trip_path(@trip.id) %></p>
 </div>
 
 
