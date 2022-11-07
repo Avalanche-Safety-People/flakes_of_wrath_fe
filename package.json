@@ -1,5 +1,7 @@
 {
   "name": "flakes_of_wrath_fe",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "yarn": "^1.22.19"
+  }
 }
