@@ -4,7 +4,7 @@ RSpec.describe 'User Profile page' do
   describe 'happy path' do
     it 'will have a drop-down menu to update favorite zone', :vcr do
       bob = UserFacade.get_user(1)
-      first_fav = bob.favorite_zone
+      original_fav = bob.favorite_zone
       bobs_trips = UserFacade.user_trips(1)
       allow_any_instance_of(UsersController).to receive(:logged_in_user).and_return(true)
       allow_any_instance_of(UsersController).to receive(:current_user).and_return(bob)
@@ -16,7 +16,7 @@ RSpec.describe 'User Profile page' do
       expect(page).to have_content('Emergency Contacts')
 
       within '.zone' do
-        expect(bob.favorite_zone).to eq(first_fav)
+        expect(bob.favorite_zone).to eq(original_fav)
         expect(page).to have_select('favorite_zone')
         select('Olympics', from: :favorite_zone)
         click_on 'Update'
@@ -25,8 +25,25 @@ RSpec.describe 'User Profile page' do
       end
     end
 
-    it 'will have a list of emergency contacts for the user'
+    it 'will have a list of emergency contacts for the user', :vcr do
+      bob = UserFacade.get_user(1)
+      bobs_contacts = UserFacade.emergency_contacts(bob.id)
+      allow_any_instance_of(UsersController).to receive(:logged_in_user).and_return(true)
+      allow_any_instance_of(UsersController).to receive(:current_user).and_return(bob)
 
+      visit edit_users_path
+
+      within '.contacts' do
+        bobs_contacts.each do |contact|
+          expect(page).to have_content(contact.name)
+          expect(page).to have_content(contact.phone_number)
+        end
+      end
+    end
+
+    it 'will have an option to update or edit current contacts' do
+
+    end
     it 'will have an option to add an emergency contact'
   end
 end
