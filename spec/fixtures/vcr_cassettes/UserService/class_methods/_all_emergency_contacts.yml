@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"3ff4d07e7c7bb39ff0059cabcb940bdc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3d41859b-f9d2-454e-8da9-64d55dd8b4a6
+      X-Runtime:
+      - '0.001827'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Ryan Smith","favorite_zone":430}}}'
+  recorded_at: Mon, 07 Nov 2022 16:11:51 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1/emergency_contacts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b604842a15ae688a70cdfb326988692d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 82ce330f-0cce-4610-a2b7-fb616f1d8fa8
+      X-Runtime:
+      - '0.001779'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"John","phone_number":"3033333333","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"John
+        again","phone_number":"3035555555","user_id":1}}]}'
+  recorded_at: Mon, 07 Nov 2022 16:11:51 GMT
+recorded_with: VCR 6.1.0

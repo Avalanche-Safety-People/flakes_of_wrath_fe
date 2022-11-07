@@ -29,9 +29,15 @@ class UserService
     end
   end
 
+  def self.all_emergency_contacts(user_id)
+    response = conn.get("/api/v1/users/#{user_id}/emergency_contacts")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   private
 
   def self.conn
-    Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com/')
+    Faraday.new(url: 'http://localhost:5000')
+    # Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com/')
   end
 end

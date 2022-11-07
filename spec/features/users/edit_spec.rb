@@ -24,5 +24,9 @@ RSpec.describe 'User Profile page' do
         expect(updated_bob.favorite_zone).to eq(419)
       end
     end
+
+    it 'will have a list of emergency contacts for the user'
+
+    it 'will have an option to add an emergency contact'
   end
 end
