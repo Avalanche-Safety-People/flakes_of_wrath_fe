@@ -21,17 +21,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3ff4d07e7c7bb39ff0059cabcb940bdc"
+      - W/"fb50acf9158d0b39d8501cc4858de0c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6e3c4788-8ce5-4327-bc48-d2c3e658021c
+      - 8874926f-1e22-40e9-9f59-b157fc99d517
       X-Runtime:
-      - '0.001740'
+      - '0.001336'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Ryan Smith","favorite_zone":430}}}'
-  recorded_at: Mon, 07 Nov 2022 16:11:51 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
+  recorded_at: Mon, 07 Nov 2022 16:40:41 GMT
 recorded_with: VCR 6.1.0
