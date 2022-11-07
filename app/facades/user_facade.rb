@@ -15,5 +15,4 @@ class UserFacade
       Trip.new(trip_data)
     end
   end
-
 end
