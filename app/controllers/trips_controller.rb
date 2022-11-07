@@ -7,6 +7,10 @@ class TripsController < ApplicationController
     @user = current_user
   end
 
+  def edit
+    
+  end
+
   def create
     response = UserService.create_trip(params)
     if response.success?
