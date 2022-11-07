@@ -23,14 +23,8 @@ RSpec.describe 'Trip Show Page' do
   end
 
   describe 'sad path' do
-    it "As a user I see a single Trip's attributes"
-      # bob = UserFacade.get_user(1)
-      # bobs_trips = UserFacade.user_trips(1)
-      # allow_any_instance_of(TripsController).to receive(:logged_in_user).and_return(true)
-      # allow_any_instance_of(TripsController).to receive(:current_user).and_return(bob)
-      # allow_any_instance_of(TripsController).to receive(:user_trips).and_return(bobs_trips)
+    xit "redirect to user page if trip does not exist" do
 
-      # visit users_trip_path(5)
-    # end
+    end
   end
 end
