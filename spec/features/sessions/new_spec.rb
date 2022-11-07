@@ -16,9 +16,7 @@ RSpec.describe 'Landing page' do
 
       it 'I see links to login' do 
         visit login_path
-        expect(page).to have_link('Log in')
-        click_on 'Log in'
-        expect(current_path).to eq(login_path)
+        expect(page).to have_button('Log in')
       end
 
       xit 'I see a link to the forecast page' do 
