@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 04:09:19 GMT
+      - Tue, 08 Nov 2022 19:02:38 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fed74869-cd75-4ff5-80c9-434032b58f3d
+      - d05e1c40-8080-42fe-b121-46974ac47783
       X-Runtime:
-      - '0.004202'
+      - '0.004315'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Tue, 08 Nov 2022 04:09:19 GMT
+  recorded_at: Tue, 08 Nov 2022 19:02:39 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/emergency_contacts
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 04:09:19 GMT
+      - Tue, 08 Nov 2022 19:02:38 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -73,9 +73,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3c34e4cc-1a5f-421c-b03a-bc2a64bf08a4
+      - 6a17e1a6-05b5-47e5-9917-a3376ab918e4
       X-Runtime:
-      - '0.004473'
+      - '0.004032'
       Transfer-Encoding:
       - chunked
       Via:
@@ -85,7 +85,7 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
         800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Tue, 08 Nov 2022 04:09:19 GMT
+  recorded_at: Tue, 08 Nov 2022 19:02:39 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/emergency_contacts
@@ -107,7 +107,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 04:09:19 GMT
+      - Tue, 08 Nov 2022 19:02:39 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -117,9 +117,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 447c8461-5a14-48ab-93b8-03ed2923b5f9
+      - a6c417e6-24de-4e95-877e-f1a215b94711
       X-Runtime:
-      - '0.004289'
+      - '0.003724'
       Transfer-Encoding:
       - chunked
       Via:
@@ -129,7 +129,50 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
         800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Tue, 08 Nov 2022 04:09:19 GMT
+  recorded_at: Tue, 08 Nov 2022 19:02:39 GMT
+- request:
+    method: get
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/emergency_contacts/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 08 Nov 2022 19:02:39 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"80d1c5bd2cab1c8c0ec5648dae69b2b0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c50e3453-a8c6-4771-989c-e3e8d5905eb9
+      X-Runtime:
+      - '0.003751'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
+        800 588 2300","user_id":1}}}'
+  recorded_at: Tue, 08 Nov 2022 19:02:39 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/emergency_contacts
@@ -151,7 +194,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 04:09:20 GMT
+      - Tue, 08 Nov 2022 19:02:39 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -161,9 +204,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7cff6d3e-cf39-4ca9-a419-6fb844f92c1f
+      - 60cd9986-ecd1-4369-a9c0-c7b7bafe7457
       X-Runtime:
-      - '0.004386'
+      - '0.003890'
       Transfer-Encoding:
       - chunked
       Via:
@@ -173,5 +216,48 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
         800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Tue, 08 Nov 2022 04:09:20 GMT
+  recorded_at: Tue, 08 Nov 2022 19:02:40 GMT
+- request:
+    method: get
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/emergency_contacts/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 08 Nov 2022 19:02:40 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ce48ca6fbc4c90889d2dd79b9e1013c3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 032b6493-0be6-447a-be20-59ec52c44d0e
+      X-Runtime:
+      - '0.003820'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
+        Vader","phone_number":"911","user_id":1}}}'
+  recorded_at: Tue, 08 Nov 2022 19:02:40 GMT
 recorded_with: VCR 6.1.0
