@@ -21,19 +21,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 17:22:53 GMT
+      - Tue, 08 Nov 2022 18:31:28 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e0061aeaffbb07a59e3805227a8dc8bd"
+      - W/"3a4887672a4e5f36780137aedb3dd92a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 17f53625-4728-4ef7-aacc-4edbbe2b1070
+      - 251250bc-dc60-4240-a76a-91ac4f483092
       X-Runtime:
-      - '0.649171'
+      - '1.037759'
       Transfer-Encoding:
       - chunked
       Via:
@@ -42,6 +42,6 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"419","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Olympics","state":"WA","travel_advice":"Watch
         for signs of unstable snow such as recent avalanches, cracking in the snow,
-        and audible collapsing. Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/olympics","av_danger":[1,1,1,1,1,1,1,1]}}}'
-  recorded_at: Mon, 07 Nov 2022 17:22:54 GMT
+        and audible collapsing. Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/olympics","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.98,-123.49]}}}'
+  recorded_at: Tue, 08 Nov 2022 18:31:28 GMT
 recorded_with: VCR 6.1.0

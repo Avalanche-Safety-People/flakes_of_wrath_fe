@@ -12,12 +12,10 @@ RSpec.describe 'Trip Show Page' do
       allow_any_instance_of(TripsController).to receive(:user_trips).and_return(bobs_trips)
 
       visit users_trip_path(first_trip.id)
-
       within '.trip_details' do
         expect(page).to have_content(first_trip.name)
         expect(page).to have_content('February 03, 2023')
         expect(page).to have_content(first_trip.description)
-        expect(page).to have_content(first_trip.zone_id)
       end
     end
   end

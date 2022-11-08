@@ -1,6 +1,6 @@
 require 'date'
 class Area
-  attr_reader :id, :name, :start_date, :end_date, :description, :current_av_risk, :av_danger, :state, :url
+  attr_reader :id, :name, :start_date, :end_date, :description, :current_av_risk, :av_danger, :state, :url, :lat, :long
 
   def initialize(area_data)
     @id = area_data[:id].to_i
@@ -12,5 +12,7 @@ class Area
     @av_danger = area_data[:attributes][:av_danger]
     @state = area_data[:attributes][:state]
     @url = area_data[:attributes][:url]
+    @lat = area_data[:attributes][:lat_long][0]
+    @long = area_data[:attributes][:lat_long][1]
   end
 end

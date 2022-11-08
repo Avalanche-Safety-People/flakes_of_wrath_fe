@@ -62,7 +62,6 @@ RSpec.describe 'User Profile page' do
       allow_any_instance_of(UsersController).to receive(:logged_in_user).and_return(true)
       allow_any_instance_of(UsersController).to receive(:current_user).and_return(bob)
 
-      
       bobs_contacts.each do |contact|
         visit edit_users_path
         within "#one_contact-#{contact.id}" do

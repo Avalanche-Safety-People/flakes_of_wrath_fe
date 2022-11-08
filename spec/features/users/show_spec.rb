@@ -12,7 +12,6 @@ RSpec.describe 'User dashboard/show page' do
 
       visit users_path
       expect(page).to have_content(bob.name)
-      expect(page).to have_content(bob.favorite_zone)
     end
 
     it 'I see the trips the user is going on', :vcr do
