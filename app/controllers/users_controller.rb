@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def edit
     @user = current_user
+    @emergency_contacts = UserFacade.emergency_contacts(@user.id)
   end
 
   def update
