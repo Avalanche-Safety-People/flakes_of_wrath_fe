@@ -16,8 +16,10 @@ class UserService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.update_trip(user_id, trip_id)
-    response = conn.patch("/api/v1/users/#{user_id}/trips/#{trip_id}")
+  def self.update_trip(params)
+    response = conn.patch("/api/v1/users/#{params[:user_id]}/trips/#{params[:id]}") do |request|
+      request.params = params
+    end
     JSON.parse(response.body, symbolize_names: true)
   end
 
