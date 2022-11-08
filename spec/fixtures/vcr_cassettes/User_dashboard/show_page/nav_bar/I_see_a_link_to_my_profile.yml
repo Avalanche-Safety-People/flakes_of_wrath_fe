@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 17:27:53 GMT
+      - Tue, 08 Nov 2022 00:35:59 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 91cc6439-8619-409d-a568-3b5aba7f6f9b
+      - edd799bd-6269-43c1-8a97-debadbd2cec8
       X-Runtime:
-      - '0.003829'
+      - '0.004764'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Mon, 07 Nov 2022 17:27:54 GMT
+  recorded_at: Tue, 08 Nov 2022 00:36:00 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 17:27:53 GMT
+      - Tue, 08 Nov 2022 00:35:59 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -73,9 +73,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f9be681d-3972-4214-8838-9e1d3236f289
+      - 4fd6445a-8964-4d60-83d3-45e67a0c41ed
       X-Runtime:
-      - '0.004596'
+      - '0.022081'
       Transfer-Encoding:
       - chunked
       Via:
@@ -95,5 +95,49 @@ http_interactions:
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"9","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Mon, 07 Nov 2022 17:27:54 GMT
+  recorded_at: Tue, 08 Nov 2022 00:36:00 GMT
+- request:
+    method: get
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/emergency_contacts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 08 Nov 2022 00:36:00 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f670bbf60f248fe9e512dd6ec78c57f3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a259f01e-9896-4b2c-aeac-a58cc280da5a
+      X-Runtime:
+      - '0.004482'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
+        800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
+        Vader","phone_number":"911","user_id":1}}]}'
+  recorded_at: Tue, 08 Nov 2022 00:36:01 GMT
 recorded_with: VCR 6.1.0
