@@ -37,8 +37,7 @@ class UserService
   end
 
   def self.create_emergency_contact(contact_params)
-    binding.pry
-    conn.post("/api/v1/users/#{contact_params[:user_id]}/trips") do |req|
+    conn.post("/api/v1/users/#{contact_params[:user_id]}/emergency_contacts") do |req|
       req.params = contact_params
     end
   end
