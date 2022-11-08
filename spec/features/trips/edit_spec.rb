@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Trip Update' do
- it 'has a link to update your trips on the trips show page' do
+ it 'has a link to update your trips on the trips show page', :vcr do
    bob = UserFacade.get_user(1)
    bobs_trips = UserFacade.user_trips(1)
    first_trip = bobs_trips[0]
@@ -14,8 +14,8 @@ RSpec.describe 'Trip Update' do
    expect(page).to have_link("Edit #{first_trip.name}")
  end
 
- it 'When I click the link I am taken to a page with a form to update my trip' do
-  bob = UserFacade.get_user(1)
+ it 'When I click the link I am taken to a page with a form to update my trip', :vcr do
+   bob = UserFacade.get_user(1)
    bobs_trips = UserFacade.user_trips(1)
    first_trip = bobs_trips[0]
    allow_any_instance_of(TripsController).to receive(:logged_in_user).and_return(true)
@@ -30,7 +30,7 @@ RSpec.describe 'Trip Update' do
    expect(page).to have_content("Edit #{first_trip.name} Trip")
  end
 
- it 'When I fill in the edit form for my trip and click update I am redirected to the trip show page with updated info' do
+ it 'When I fill in the edit form for my trip and click update I am redirected to the trip show page with updated info', :vcr do
    bob = UserFacade.get_user(1)
    bobs_trips = UserFacade.user_trips(1)
    first_trip = bobs_trips[0]
@@ -57,7 +57,7 @@ RSpec.describe 'Trip Update' do
    expect(updated_trip[0].description).to eq("We're jumping out of helicopters now!")
  end
 
- it 'can update bobs updated trip back to the original befoe the update' do
+ it 'can update bobs updated trip back to the original befoe the update', :vcr do
    bob = UserFacade.get_user(1)
    bobs_trips = UserFacade.user_trips(1)
    first_trip = bobs_trips[0]
