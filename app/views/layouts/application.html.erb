@@ -11,6 +11,38 @@
   </head>
 
   <body>
+    <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <% if logged_in? %>
+
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><%= link_to 'Dashboard', users_path, class: "nav-link px-2 text-white" %></li>
+            <li><%= link_to 'Profile', edit_users_path, class: "nav-link px-2 text-white" %></li>
+            <li><%= link_to 'Resources', resources_path, class: "nav-link px-2 text-white" %></li>
+            <li><%= link_to 'Forecast', areas_path, class: "nav-link px-2 text-white" %></li>
+          </ul>
+          <div class="text-end">
+            <%= button_to "Log Out", '/session', method: :delete, class: "btn btn-outline-light me-2"  %>
+          </div>
+        <% else %>
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><%= link_to 'Resources', resources_path, class: "nav-link px-2 text-white" %></li>
+            <li><%= link_to 'Forecast', areas_path, class: "nav-link px-2 text-white" %></li>
+          </ul>
+
+          <div class="text-end">
+            <%= button_to "Log in", '/auth/google_oauth2', class: "btn btn-warning"  %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </header>
+  <% flash.each do |key, value| %>
+    <div class="<%= flash_class(key) %>">
+          <%= value %>
+    </div>
+  <% end %>
     <%= yield %>
   </body>
 </html>

@@ -15,6 +15,7 @@ class UsersController < ApplicationController
     response = UserService.update_user(params)
     if !response.nil?
       redirect_to edit_users_path
+      flash[:success] = 'Favorite zone updated'
     else
       flash[:error] = 'Something went wrong'
       render :edit
