@@ -1,2 +1,13 @@
-<h1>EmergencyContacts#edit</h1>
-<p>Find me in app/views/emergency_contacts/edit.html.erb</p>
+<h1>Edit <%= @contact.name %>'s info </h1>
+<br>
+
+<%= form_with url: users_emergency_contact_path, method: :patch, local: true do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, value: @contact.name %>
+  <%= f.label :phone_number %>
+  <%= f.text_field :phone_number, value: @contact.phone_number %>
+  <%= f.submit 'Update' %>
+
+<% end %>
+
+
