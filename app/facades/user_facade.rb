@@ -15,4 +15,17 @@ class UserFacade
       Trip.new(trip_data)
     end
   end
+
+  def self.emergency_contacts(user_id)
+    contacts = UserService.all_emergency_contacts(user_id)
+    contacts[:data].map do |contact_data|
+      EmergencyContact.new(contact_data)
+    end
+  end
+
+  def self.one_contact(user_id, contact_id)
+    contact = UserService.one_emergency_contact(user_id, contact_id)
+    EmergencyContact.new(contact[:data])
+  end
+
 end

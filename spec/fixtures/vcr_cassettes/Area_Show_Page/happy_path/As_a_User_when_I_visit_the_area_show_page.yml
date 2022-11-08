@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/areas/419
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 08 Nov 2022 21:26:03 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"3a4887672a4e5f36780137aedb3dd92a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d4b913ad-45ef-406c-98c5-78231b716f17
+      X-Runtime:
+      - '0.663602'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"419","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Olympics","state":"WA","travel_advice":"Watch
+        for signs of unstable snow such as recent avalanches, cracking in the snow,
+        and audible collapsing. Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/olympics","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.98,-123.49]}}}'
+  recorded_at: Tue, 08 Nov 2022 21:26:04 GMT
+recorded_with: VCR 6.1.0

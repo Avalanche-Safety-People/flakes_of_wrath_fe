@@ -1,0 +1,192 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 08 Nov 2022 21:26:32 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"fb50acf9158d0b39d8501cc4858de0c0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5832beaf-6f37-45eb-86fd-ea7c32e1386f
+      X-Runtime:
+      - '0.006546'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
+  recorded_at: Tue, 08 Nov 2022 21:26:32 GMT
+- request:
+    method: get
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 08 Nov 2022 21:26:32 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"22050171d3237d217f1953c428adcf52"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a3739fc2-b82c-4fc7-ac62-47a087119377
+      X-Runtime:
+      - '0.010037'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
+        out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"4","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"5","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"7","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"8","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"9","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"10","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"11","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"12","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"13","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"14","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"15","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"16","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"17","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"18","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"19","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"20","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"21","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"22","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"23","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"24","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"25","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"26","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"27","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"28","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"29","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"30","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"31","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"32","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
+  recorded_at: Tue, 08 Nov 2022 21:26:32 GMT
+- request:
+    method: get
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/areas/427
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 08 Nov 2022 21:26:32 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a7446e3e71e3ad0be7a76826dead2f5c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6d3146e5-be64-4a00-985a-fe2fcec68b6c
+      X-Runtime:
+      - '0.317590'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"427","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Snoqualmie
+        Pass","state":"WA","travel_advice":"Watch for signs of unstable snow such
+        as recent avalanches, cracking in the snow, and audible collapsing. Avoid
+        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.43,-121.42]}}}'
+  recorded_at: Tue, 08 Nov 2022 21:26:33 GMT
+recorded_with: VCR 6.1.0
