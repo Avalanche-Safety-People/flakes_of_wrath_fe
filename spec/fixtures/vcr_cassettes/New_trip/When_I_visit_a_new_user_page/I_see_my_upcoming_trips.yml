@@ -21,27 +21,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sun, 06 Nov 2022 23:41:59 GMT
+      - Tue, 08 Nov 2022 17:15:51 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"acef949a99975666e0e37f2fa2551c8c"
+      - W/"fb50acf9158d0b39d8501cc4858de0c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d65c92b0-2bb9-4d7e-9c59-1e10a9666362
+      - 5682b3cd-f108-4b45-8817-58c7b74ba36c
       X-Runtime:
-      - '0.004911'
+      - '0.004037'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":88}}}'
-  recorded_at: Sun, 06 Nov 2022 23:41:59 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
+  recorded_at: Tue, 08 Nov 2022 17:15:52 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -63,19 +63,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sun, 06 Nov 2022 23:41:59 GMT
+      - Tue, 08 Nov 2022 17:15:51 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"1d20b0a657b1abef84608c044ec8ed67"
+      - W/"c431ed6369f118d0a0b33197d4b23608"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e233db3d-de8b-4c31-b6ab-71fccb06ded6
+      - ca41a6bd-1295-4e6e-ae16-903a7a22601d
       X-Runtime:
-      - '0.004937'
+      - '0.005279'
       Transfer-Encoding:
       - chunked
       Via:
@@ -83,13 +83,11 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
-        out there","zone_id":88,"start_date":"2023-02-03T00:00:00.000Z","description":"very
-        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":4,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
+        out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"4","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"7","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Sun, 06 Nov 2022 23:41:59 GMT
+  recorded_at: Tue, 08 Nov 2022 17:15:52 GMT
 recorded_with: VCR 6.1.0

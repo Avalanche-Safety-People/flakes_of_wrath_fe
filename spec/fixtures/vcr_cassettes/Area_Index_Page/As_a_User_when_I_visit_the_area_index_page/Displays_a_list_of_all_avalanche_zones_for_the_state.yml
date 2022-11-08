@@ -2,98 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Date:
-      - Tue, 08 Nov 2022 17:15:54 GMT
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"fb50acf9158d0b39d8501cc4858de0c0"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 4304262e-9ffd-4c3c-916b-e559587d4a45
-      X-Runtime:
-      - '0.004511'
-      Transfer-Encoding:
-      - chunked
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Tue, 08 Nov 2022 17:15:55 GMT
-- request:
-    method: get
-    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Date:
-      - Tue, 08 Nov 2022 17:15:54 GMT
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"b9150395020d7f832b9c11d8962f262c"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - a72ec514-ef4d-4b44-bf30-190178eb1382
-      X-Runtime:
-      - '0.005025'
-      Transfer-Encoding:
-      - chunked
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
-        out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
-        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"4","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"5","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Tue, 08 Nov 2022 17:15:55 GMT
-- request:
-    method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/areas
     body:
       encoding: US-ASCII
@@ -113,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 17:15:55 GMT
+      - Tue, 08 Nov 2022 17:15:39 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -123,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 44a9baba-690d-4061-845c-445e656df101
+      - 980ba911-0051-437c-9691-45effc374817
       X-Runtime:
-      - '0.696499'
+      - '5.064520'
       Transfer-Encoding:
       - chunked
       Via:
@@ -162,5 +70,76 @@ http_interactions:
         Slopes South","state":"WA","travel_advice":"Watch for signs of unstable snow
         such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
         traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-south","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[46.94,-121.08]}}]}'
-  recorded_at: Tue, 08 Nov 2022 17:15:56 GMT
+  recorded_at: Tue, 08 Nov 2022 17:15:40 GMT
+- request:
+    method: get
+    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/areas
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 08 Nov 2022 17:15:43 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0f9d73404b6b712f34c9f694b7c437a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ae8ace7a-a61e-4826-83c0-f277372ba400
+      X-Runtime:
+      - '4.003973'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"419","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Olympics","state":"WA","travel_advice":"Watch
+        for signs of unstable snow such as recent avalanches, cracking in the snow,
+        and audible collapsing. Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/olympics","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.98,-123.49]}},{"id":"431","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Mt
+        Hood","state":"OR","travel_advice":"Watch for signs of unstable snow such
+        as recent avalanches, cracking in the snow, and audible collapsing. Avoid
+        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/mt-hood\n","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[45.31,-121.77]}},{"id":"423","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Stevens
+        Pass","state":"WA","travel_advice":"Watch for signs of unstable snow such
+        as recent avalanches, cracking in the snow, and audible collapsing. Avoid
+        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/stevens-pass","av_danger":[-1,1,1,1,1,1,2,1],"lat_long":[47.75,-121.09]}},{"id":"427","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Snoqualmie
+        Pass","state":"WA","travel_advice":"Watch for signs of unstable snow such
+        as recent avalanches, cracking in the snow, and audible collapsing. Avoid
+        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.43,-121.42]}},{"id":"420","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"West
+        Slopes North","state":"WA","travel_advice":"Watch for signs of unstable snow
+        such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
+        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/west-slopes-north","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[46.18,-121.93]}},{"id":"421","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"West
+        Slopes Central","state":"WA","travel_advice":"Watch for signs of unstable
+        snow such as recent avalanches, cracking in the snow, and audible collapsing.
+        Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/west-slopes-central","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[48.68,-121.11]}},{"id":"422","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"West
+        Slopes South","state":"WA","travel_advice":"Watch for signs of unstable snow
+        such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
+        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/west-slopes-south","av_danger":[-1,1,1,2,3,4,5,5],"lat_long":[46.61,-121.66]}},{"id":"428","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"East
+        Slopes North","state":"WA","travel_advice":"Watch for signs of unstable snow
+        such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
+        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-north","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[48.53,-120.65]}},{"id":"429","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"East
+        Slopes Central","state":"WA","travel_advice":"Watch for signs of unstable
+        snow such as recent avalanches, cracking in the snow, and audible collapsing.
+        Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-central","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.35,-120.57]}},{"id":"430","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"East
+        Slopes South","state":"WA","travel_advice":"Watch for signs of unstable snow
+        such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
+        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-south","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[46.94,-121.08]}}]}'
+  recorded_at: Tue, 08 Nov 2022 17:15:44 GMT
 recorded_with: VCR 6.1.0

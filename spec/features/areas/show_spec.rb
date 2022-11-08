@@ -12,6 +12,7 @@ RSpec.describe 'Area Show Page' do
 
       visit area_path(419)
 
+      expect(page).to have_content "Olympics"
     end
   end
 end
