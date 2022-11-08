@@ -1,12 +1,16 @@
-<h1> <%= @user.name %>'s Dashboard</h1>
-<p> Favorite zone: <%= @user.favorite_zone %>
+ <div class="cover-container d-flex p-3 mx-auto flex-column">
+  <main class="px-3">
+    <h1> <%= @user.name %>'s Dashboard</h1>
+    <p> Favorite zone: <%= @user.favorite_zone %>
 
 
 
-<%= button_to 'Add a new trip', new_users_trip_path, method: :get, local: true %>
-<iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=47.665&lon=-122.300&detailLat=47.665&detailLon=-122.300&width=650&height=450&zoom=10&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
+    <%= button_to 'Add a new trip', new_users_trip_path, method: :get, local: true %>
+    
 
-<div class="container">
-<%= render 'shared/upcoming_trips' %>
+  <div class="container">
+  <%= render 'shared/upcoming_trips' %>
+  </div>
+</main>
 </div>
 
