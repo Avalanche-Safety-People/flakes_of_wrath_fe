@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 22:21:16 GMT
+      - Tue, 08 Nov 2022 01:47:15 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 39061b8b-2dac-400f-a102-37f1303ed28b
+      - 1b80a129-e00e-4d1b-9394-3b079a3eb364
       X-Runtime:
-      - '0.005796'
+      - '0.004733'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Mon, 07 Nov 2022 22:21:16 GMT
+  recorded_at: Tue, 08 Nov 2022 01:47:15 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 22:21:16 GMT
+      - Tue, 08 Nov 2022 01:47:15 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -73,9 +73,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d590162e-5115-4565-8e0d-28ffa68fc4ae
+      - e46aa993-c4a1-4e4a-b4b1-d089e3de548f
       X-Runtime:
-      - '0.006159'
+      - '0.006695'
       Transfer-Encoding:
       - chunked
       Via:
@@ -95,7 +95,7 @@ http_interactions:
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"9","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Mon, 07 Nov 2022 22:21:17 GMT
+  recorded_at: Tue, 08 Nov 2022 01:47:16 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -117,7 +117,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 22:21:16 GMT
+      - Tue, 08 Nov 2022 01:47:15 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -127,9 +127,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7c292e5c-93d8-419d-a557-7e00352f70a1
+      - 65980093-feff-4470-91f8-dd4db0e2a433
       X-Runtime:
-      - '0.007824'
+      - '0.005056'
       Transfer-Encoding:
       - chunked
       Via:
@@ -149,7 +149,7 @@ http_interactions:
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"9","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Mon, 07 Nov 2022 22:21:17 GMT
+  recorded_at: Tue, 08 Nov 2022 01:47:16 GMT
 - request:
     method: post
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips?action=create&commit=Create&controller=trips&description=Head%20over%20the%20Snoqualmie%20Mt%20Notch,%20then%20climb%20the%20S%20ridge%20of%20Avalanche%20Mt&format=1&name=Avalanche%20Mountain&start_date=30/12/2023&user_id=1&utf8=%E2%9C%93&zone_id=427
@@ -173,7 +173,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 22:21:17 GMT
+      - Tue, 08 Nov 2022 01:47:15 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -183,9 +183,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 612cd63d-23cc-4266-b548-9580c9325bd4
+      - cf345897-3ab0-43d2-908c-e74b32a5f050
       X-Runtime:
-      - '0.014646'
+      - '0.011558'
       Transfer-Encoding:
       - chunked
       Via:
@@ -193,5 +193,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"error":"trip unsuccessfully created"}'
-  recorded_at: Mon, 07 Nov 2022 22:21:17 GMT
+  recorded_at: Tue, 08 Nov 2022 01:47:16 GMT
 recorded_with: VCR 6.1.0
