@@ -2,11 +2,13 @@
 <h1><%= @trip.name %></h1>
 <p>Date: <%= @trip.start_date.strftime('%B %d, %Y') %></p>
 <p>Description: <%= @trip.description %></p>
+
+
 <p>Zone <%= zone_id_to_name(@trip.zone_id) %></p>
-</div>
-
-
+<p><%= link_to "Edit #{@trip.name}", edit_users_trip_path(@trip.id) %></p>
 <%= render 'shared/zone_weather_forecast' %>
+
+</div>
 
 <br>
 <hr>

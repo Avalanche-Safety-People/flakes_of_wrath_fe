@@ -12,7 +12,6 @@ RSpec.describe 'User dashboard/show page' do
 
       visit users_path
       expect(page).to have_content(bob.name)
-      expect(page).to have_content(bob.favorite_zone)
     end
 
     it 'I see the trips the user is going on', :vcr do
@@ -78,21 +77,23 @@ RSpec.describe 'User dashboard/show page' do
       allow_any_instance_of(ApplicationController).to receive(:logged_in_user).and_return(true)
       allow_any_instance_of(UsersController).to receive(:current_user).and_return(bob)
       allow_any_instance_of(UsersController).to receive(:user_trips).and_return(bobs_trips)
+      allow_any_instance_of(ApplicationController).to receive(:logged_in?).and_return(true)
+
       visit users_path
       expect(page).to have_button('Log Out')
-      click_on 'Log Out'
-      expect(current_path).to eq(login_path)
     end
 
-    xit 'I see a link to the forecast page', :vcr do 
+    it 'I see a link to the forecast page', :vcr do 
       bob = UserFacade.get_user(1)
       bobs_trips = UserFacade.user_trips(1)
       allow_any_instance_of(ApplicationController).to receive(:logged_in_user).and_return(true)
       allow_any_instance_of(UsersController).to receive(:current_user).and_return(bob)
       allow_any_instance_of(UsersController).to receive(:user_trips).and_return(bobs_trips)
+      allow_any_instance_of(ApplicationController).to receive(:logged_in?).and_return(true)
+
       visit users_path
       click_link 'Forecast'
-      expect(current_path).to eq(area_path)
+      expect(current_path).to eq(areas_path)
     end
 
     it 'I see a link to my profile', :vcr do 

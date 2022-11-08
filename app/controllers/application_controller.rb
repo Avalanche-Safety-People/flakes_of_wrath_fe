@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   include SessionsHelper
-  before_action :current_user
+  helper_method :logged_in?
 
   private
 

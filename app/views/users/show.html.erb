@@ -1,12 +1,10 @@
-<h1> <%= @user.name %>'s Dashboard</h1>
-<p> Favorite zone: <%= @user.favorite_zone %>
-
-
-
-<%= button_to 'Add a new trip', new_users_trip_path, method: :get, local: true %>
-
-
-<div class="container">
-<%= render 'shared/upcoming_trips' %>
+ <div class="cover-container d-flex p-3 mx-auto flex-column">
+  <main class="px-3">
+    <h1> <%= @user.name %>'s Dashboard</h1>
+    <p> Favorite zone: <%= zone_id_to_name(@user.favorite_zone) %>
+  <div class="container">
+  <%= render 'shared/upcoming_trips' %>
+  </div>
+</main>
 </div>
 

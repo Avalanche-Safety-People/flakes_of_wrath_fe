@@ -19,10 +19,10 @@ RSpec.describe 'Landing page' do
         expect(page).to have_button('Log in')
       end
 
-      xit 'I see a link to the forecast page' do 
+      it 'I see a link to the forecast page', :vcr do 
         visit login_path 
         click_link 'Forecast'
-        expect(current_path).to eq(area_path)
+        expect(current_path).to eq(areas_path)
       end
     end
   end

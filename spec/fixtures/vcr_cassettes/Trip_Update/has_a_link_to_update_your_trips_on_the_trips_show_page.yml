@@ -21,27 +21,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 18:31:37 GMT
+      - Tue, 08 Nov 2022 18:30:19 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fb50acf9158d0b39d8501cc4858de0c0"
+      - W/"fa66faa9d89ec0acb15cccaccf54bca6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c857ca7c-2f3a-4a4a-9580-6784342cbec0
+      - 9289eb39-6a2f-489f-a170-c4fd2f03b3db
       X-Runtime:
-      - '0.004339'
+      - '0.004102'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Tue, 08 Nov 2022 18:31:38 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
+  recorded_at: Tue, 08 Nov 2022 18:30:19 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -63,19 +63,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 18:31:38 GMT
+      - Tue, 08 Nov 2022 18:30:19 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ad4925da32036965f52cf6ee05c31669"
+      - W/"8bbf3298c8affa8b8bee4e270889d72a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 03eea673-180f-413e-a4ae-5783d7d5935e
+      - dece5c83-b617-458f-a4ad-47740d3d7326
       X-Runtime:
-      - '0.008989'
+      - '0.005513'
       Transfer-Encoding:
       - chunked
       Via:
@@ -93,5 +93,5 @@ http_interactions:
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"7","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Tue, 08 Nov 2022 18:31:39 GMT
+  recorded_at: Tue, 08 Nov 2022 18:30:19 GMT
 recorded_with: VCR 6.1.0

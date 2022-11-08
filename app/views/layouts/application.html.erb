@@ -8,21 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <%= javascript_include_tag 'application' %>
+
   </head>
 
   <body>
     <header class="p-3 bg-dark text-white">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <% if @user  %>
+        <% if logged_in? %>
 
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li><%= link_to 'Dashboard', users_path, class: "nav-link px-2 text-white" %></li>
             <li><%= link_to 'Profile', edit_users_path, class: "nav-link px-2 text-white" %></li>
             <li><%= link_to 'Resources', resources_path, class: "nav-link px-2 text-white" %></li>
-            <%# <li><%= link_to 'Forecast', area_path, class: "nav-link px-2 text-white" %></li>
-            
-            
+            <li><%= link_to 'Forecast', areas_path, class: "nav-link px-2 text-white" %></li>
           </ul>
           <div class="text-end">
             <%= button_to "Log Out", '/session', method: :delete, class: "btn btn-outline-light me-2"  %>
@@ -30,14 +29,11 @@
         <% else %>
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li><%= link_to 'Resources', resources_path, class: "nav-link px-2 text-white" %></li>
-            <%# <li><%= link_to 'Forecast', area_path, class: "nav-link px-2 text-white" %></li>
-            <%# <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li> %>
+            <li><%= link_to 'Forecast', areas_path, class: "nav-link px-2 text-white" %></li>
           </ul>
 
           <div class="text-end">
-            <%= button_to "Log in", '/auth/google_oauth2', class: "btn btn-outline-light me-2"  %>
-            <%# <button type="button" class="btn btn-outline-light me-2">Login</button>
-            <button type="button" class="btn btn-warning">Sign-up</button> %>
+            <%= button_to "Log in", '/auth/google_oauth2', class: "btn btn-warning"  %>
           </div>
         <% end %>
       </div>

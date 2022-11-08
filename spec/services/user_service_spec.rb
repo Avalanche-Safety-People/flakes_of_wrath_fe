@@ -54,5 +54,31 @@ RSpec.describe UserService do
       expect(updated_user[:data][:attributes]).to have_key(:favorite_zone)
       expect(updated_user[:data][:attributes][:favorite_zone]).to be_a Integer
     end
+
+    it '#all_emergency_contacts', :vcr do
+      bob = UserFacade.get_user(1)
+      bobs_contacts = UserService.all_emergency_contacts(bob.id)
+
+      expect(bobs_contacts).to be_a Hash
+      expect(bobs_contacts[:data]).to be_a Array
+
+      bobs_contacts[:data].each do |contact|
+        expect(contact).to have_key(:id)
+        expect(contact[:id]).to be_a String
+
+        expect(contact).to have_key(:type)
+        expect(contact[:type]).to be_a String
+
+        expect(contact).to have_key(:attributes)
+        expect(contact[:attributes]).to have_key(:name)
+        expect(contact[:attributes][:name]).to be_a String
+
+        expect(contact[:attributes]).to have_key(:phone_number)
+        expect(contact[:attributes][:phone_number]).to be_a String
+
+        expect(contact[:attributes]).to have_key(:user_id)
+        expect(contact[:attributes][:user_id]).to be_a Integer
+      end
+    end
   end
 end
