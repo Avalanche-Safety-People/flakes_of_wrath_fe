@@ -17,7 +17,6 @@ RSpec.describe 'Trip Show Page' do
         expect(page).to have_content(first_trip.name)
         expect(page).to have_content('February 03, 2023')
         expect(page).to have_content(first_trip.description)
-        expect(page).to have_content(first_trip.zone_id)
       end
     end
   end
