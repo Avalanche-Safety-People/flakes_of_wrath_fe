@@ -8,5 +8,5 @@ Rails.application.routes.draw do
     resources :trips
   end
 
-
+  resources :areas, only: [:index, :show]
 end
