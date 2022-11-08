@@ -22,5 +22,4 @@ class UserFacade
       EmergencyContact.new(contact_data)
     end
   end
-
 end
