@@ -16,20 +16,22 @@
 <center class="contacts">
 <h2>Emergency Contacts</h2>
 <table align="center" class="table table-sm table-striped  ml-4"style="max-width: 40rem;">
-<thead>
-        <tr>
-          <stong><th>Name</th>
-          <th>Phone Number</th></strong>
-        </tr>
-      </thead>
-    <tbody>
-  <% @emergency_contacts.each do |contact| %>
-  <tr>
-  <td><%= contact.name %></td>
-  <td><%= contact.phone_number %></td>
-  <td><%= button_to "Edit", users_emergency_contact_path(@user.id), method: :patch %></td>
-  <td><%= button_to "Delete", users_emergency_contact_path(@user.id), method: :destroy %></td>
-  <% end  %>
+  <thead>
+    <tr>
+      <stong><th>Name</th>
+      <th>Phone Number</th></strong>
+    </tr>
+  </thead>
+  <tbody>
+    <% @emergency_contacts.each do |contact| %>
+      <tr id="one_contact-<%= contact.id%>">
+        <td><%= contact.name %></td>
+        <td><%= contact.phone_number %></td>
+        <td><%= button_to "Edit", edit_users_emergency_contact_path(contact.id), method: :get %></td>
+        <td><%= button_to "Delete", users_emergency_contact_path(@user.id), method: :destroy %></td>
+      </tr>
+    <% end  %>
+  </tbody>
 </table>
   <%= button_to 'Add an Emergency Contact' %>
   </center>
