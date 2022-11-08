@@ -1,0 +1,14 @@
+<div class="area_information">
+  <h2><%= "Details for #{@area.name}" %></h2>
+
+    <p>Today's Avalanche Risk <%= @area.current_av_risk %></p>
+    <p><%= @area.start_date %></p>
+    <p><%= @area.description %></p>
+    <p><%= link_to @area.url %></p>
+    <ul><% @area.av_danger.each do |day| %>
+      <li><%= day %></li>
+    <% end %></ul>
+</div>
+
+
+
