@@ -41,6 +41,11 @@ class UserService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.one_emergency_contact(user_id, contact_id)
+    response = conn.get("/api/v1/users/#{user_id}/emergency_contacts/#{contact_id}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   private
 
   def self.conn

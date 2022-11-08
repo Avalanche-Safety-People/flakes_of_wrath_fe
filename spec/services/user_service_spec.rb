@@ -80,5 +80,15 @@ RSpec.describe UserService do
         expect(contact[:attributes][:user_id]).to be_a Integer
       end
     end
+
+    it '#one_emergency_contact', :vcr do
+      bob = UserFacade.get_user(1)
+      contact = UserFacade.emergency_contacts(bob.id).first
+      retrieved_contact = UserService.one_emergency_contact(bob.id, contact.id)
+      expect(retrieved_contact).to be_a Hash
+
+      expect(retrieved_contact[:data][:id]).to eq(contact.id)
+      expect(retrieved_contact[:data][:attributes][:user_id]).to eq(bob.id.to_i)
+    end
   end
 end
