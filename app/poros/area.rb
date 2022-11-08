@@ -15,4 +15,27 @@ class Area
     @lat = area_data[:attributes][:lat_long][0]
     @long = area_data[:attributes][:lat_long][1]
   end
+
+  def current_av_risk_string
+    risk_description(@current_av_risk)
+  end
+
+  def av_forecast_string
+    @av_danger.map do |day|
+      risk_description(day)
+    end
+  end
+
+
+  def risk_description(risk_integer)
+      risk_integer_to_string = {
+        -1 => "No Report",
+        1 => "Low",
+        2 => "Moderate",
+        3 => "Considerable",
+        4 => "High",
+        5 => "Extreme"
+      }
+      risk_integer_to_string[risk_integer]
+  end
 end
