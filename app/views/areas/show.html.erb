@@ -1,10 +1,5 @@
-Planning on visiting <%= @area.name %>? Check out some deets
+<h3>Planning on visiting <%= @area.name %>? Check out what's going on</h3>
 
-<%= @area.current_av_risk %>
-<%= @area.state %>
-<%= @area.description %>
-<%= @area.url %>
-<%= @area.av_danger %>
-
-
-<%= render 'shared/zone_weather_forecast' %>
+<div>
+  <%= render '/shared/area_detailed'  %>
+</div>
