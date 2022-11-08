@@ -22,5 +22,7 @@ class TripsController < ApplicationController
     @trip = @user_trips.select do |trip| #does this make two calls???
       trip.id == params[:id].to_i
     end[0]
+    # binding.pry
+    # @area = AreaFacade.find_zone(@trip.zone_id)
   end
 end
