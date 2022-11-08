@@ -1,0 +1,18 @@
+
+<h1>Edit <%= @trip.name %> Trip</h1>
+
+ <h2>Your Trip</h2>
+ <%= form_with url: users_trip_path(@user.id, @trip.id), method: :patch, local: true  do |form| %>
+   <%= form.hidden_field :user_id, value: @user.id %>
+   <%= form.hidden_field :id, value: @trip.id %>
+   <p><%= form.label :name %>
+   <%= form.text_field :name, value: @trip.name %></p>
+   <p><%= form.label :start_date %>
+   <%= form.date_field :start_date, value: @trip.start_date %></p>
+   <p><%= form.label :description %>
+   <%= form.text_area :description, value: @trip.description %></p>
+   <p><%= form.label :zone_id %>
+   <%= form.select :zone_id, options_for_select(avalanche_zones, @trip.zone_id) %></p>
+   <%= form.submit "Update"%>
+ <% end %>
+

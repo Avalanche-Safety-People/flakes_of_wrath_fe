@@ -7,6 +7,25 @@ class TripsController < ApplicationController
     @user = current_user
   end
 
+  def edit
+    @user = current_user
+    @user_trips = user_trips
+    @trip = @user_trips.select { |trip| trip.id == params[:id].to_i }[0]
+  end
+
+  def update
+    @user_trips = user_trips
+    @trip = @user_trips.select { |trip| trip.id == params[:id].to_i }[0]
+
+    response = UserService.update_trip(params)
+    if response != nil
+      redirect_to users_trip_path(@trip.id)
+    else
+      flash[:error] = 'Unable to update trip. Try Again.'
+      redirect_to edit_users_trip_path(@trip.id)
+    end
+  end
+
   def create
     response = UserService.create_trip(params)
     if response.success?

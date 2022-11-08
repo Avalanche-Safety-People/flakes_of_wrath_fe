@@ -6,6 +6,7 @@ RSpec.describe 'Trip Show Page' do
       bob = UserFacade.get_user(1)
       bobs_trips = UserFacade.user_trips(1)
       first_trip = bobs_trips[0]
+
       allow_any_instance_of(TripsController).to receive(:logged_in_user).and_return(true)
       allow_any_instance_of(TripsController).to receive(:current_user).and_return(bob)
       allow_any_instance_of(TripsController).to receive(:user_trips).and_return(bobs_trips)
