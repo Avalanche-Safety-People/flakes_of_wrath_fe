@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 21:26:30 GMT
+      - Tue, 08 Nov 2022 21:47:33 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 62663f58-b924-4289-bb1f-972d24533450
+      - a0d83b1b-213a-421f-a9c9-6d87864a6856
       X-Runtime:
-      - '0.004655'
+      - '0.004132'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Tue, 08 Nov 2022 21:26:30 GMT
+  recorded_at: Tue, 08 Nov 2022 21:47:33 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -63,19 +63,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 21:26:30 GMT
+      - Tue, 08 Nov 2022 21:47:32 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"22050171d3237d217f1953c428adcf52"
+      - W/"fa123aa426ca3e283c4c0262d75ed7ce"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 75d570a6-21c9-4f9d-bdd2-8387f34bce05
+      - e1dfc35c-ab0c-47f6-93f2-6442ccad3833
       X-Runtime:
-      - '0.009137'
+      - '0.008856'
       Transfer-Encoding:
       - chunked
       Via:
@@ -142,6 +142,10 @@ http_interactions:
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"32","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"33","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"35","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Tue, 08 Nov 2022 21:26:30 GMT
+  recorded_at: Tue, 08 Nov 2022 21:47:33 GMT
 recorded_with: VCR 6.1.0
