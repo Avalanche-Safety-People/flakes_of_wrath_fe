@@ -39,7 +39,7 @@ class UserService
   private
 
   def self.conn
-    Faraday.new(url: 'http://localhost:5000')
-  #  Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com/')
+    # Faraday.new(url: 'http://localhost:5000')
+   Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com/')
   end
 end
