@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 01:47:09 GMT
+      - Tue, 08 Nov 2022 04:09:15 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d3d8e5ce-db0e-45f7-9fd7-288b540288c6
+      - 7b593af7-5c5e-4e7c-811d-c6a37c8258b7
       X-Runtime:
-      - '0.008953'
+      - '0.004756'
       Transfer-Encoding:
       - chunked
       Via:
@@ -43,5 +43,5 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
         800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Tue, 08 Nov 2022 01:47:10 GMT
+  recorded_at: Tue, 08 Nov 2022 04:09:15 GMT
 recorded_with: VCR 6.1.0

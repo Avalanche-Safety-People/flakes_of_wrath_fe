@@ -23,4 +23,9 @@ class UserFacade
     end
   end
 
+  def self.one_contact(user_id, contact_id)
+    contact = UserService.one_emergency_contact(user_id, contact_id)
+    EmergencyContact.new(contact[:data])
+  end
+
 end

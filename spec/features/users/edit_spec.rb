@@ -56,12 +56,11 @@ RSpec.describe 'User Profile page' do
       end
     end
 
-    it 'will be able to edit an existing emergency contact', :vcr do
+    it 'will be send you to an edit existing emergency contact page', :vcr do
       bob = UserFacade.get_user(1)
       bobs_contacts = UserFacade.emergency_contacts(bob.id)
       allow_any_instance_of(UsersController).to receive(:logged_in_user).and_return(true)
       allow_any_instance_of(UsersController).to receive(:current_user).and_return(bob)
-
 
       bobs_contacts.each do |contact|
         visit edit_users_path
@@ -70,7 +69,7 @@ RSpec.describe 'User Profile page' do
           expect(current_path).to eq(edit_users_emergency_contact_path(contact.id))
         end
       end
-
     end
+
   end
 end

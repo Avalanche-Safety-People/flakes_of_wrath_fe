@@ -1,3 +1,6 @@
 class EmergencyContactsController < ApplicationController
-  def edit;  end
+
+  def edit
+    require 'pry' ; binding.pry
+  end
 end

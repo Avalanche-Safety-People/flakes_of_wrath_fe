@@ -20,5 +20,11 @@ RSpec.describe UserFacade do
       expect(contacts).to all(be_a EmergencyContact)
     end
 
+    it '#one_contact', :vcr do
+      contact = UserFacade.one_contact(1, 1)
+
+      expect(contact).to be_a EmergencyContact
+    end
+
   end
 end

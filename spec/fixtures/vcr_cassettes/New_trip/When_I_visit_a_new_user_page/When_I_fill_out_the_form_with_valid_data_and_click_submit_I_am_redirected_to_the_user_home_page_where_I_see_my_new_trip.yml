@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 01:47:15 GMT
+      - Tue, 08 Nov 2022 04:09:20 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1b80a129-e00e-4d1b-9394-3b079a3eb364
+      - 2c68a658-37bb-4c84-8d66-8fc46b24b750
       X-Runtime:
-      - '0.004733'
+      - '0.004623'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Tue, 08 Nov 2022 01:47:15 GMT
+  recorded_at: Tue, 08 Nov 2022 04:09:20 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 01:47:15 GMT
+      - Tue, 08 Nov 2022 04:09:20 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -73,9 +73,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e46aa993-c4a1-4e4a-b4b1-d089e3de548f
+      - b30f9465-880b-49af-b6f7-f6d75b5f0dfa
       X-Runtime:
-      - '0.006695'
+      - '0.005316'
       Transfer-Encoding:
       - chunked
       Via:
@@ -95,7 +95,7 @@ http_interactions:
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"9","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Tue, 08 Nov 2022 01:47:16 GMT
+  recorded_at: Tue, 08 Nov 2022 04:09:21 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -117,7 +117,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 01:47:15 GMT
+      - Tue, 08 Nov 2022 04:09:20 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -127,9 +127,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 65980093-feff-4470-91f8-dd4db0e2a433
+      - a4ed8f59-dac9-4410-9e3a-bf251763af04
       X-Runtime:
-      - '0.005056'
+      - '0.005300'
       Transfer-Encoding:
       - chunked
       Via:
@@ -149,7 +149,7 @@ http_interactions:
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"9","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Tue, 08 Nov 2022 01:47:16 GMT
+  recorded_at: Tue, 08 Nov 2022 04:09:21 GMT
 - request:
     method: post
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips?action=create&commit=Create&controller=trips&description=Head%20over%20the%20Snoqualmie%20Mt%20Notch,%20then%20climb%20the%20S%20ridge%20of%20Avalanche%20Mt&format=1&name=Avalanche%20Mountain&start_date=30/12/2023&user_id=1&utf8=%E2%9C%93&zone_id=427
@@ -167,31 +167,32 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 201
+      message: Created
     headers:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 01:47:15 GMT
+      - Tue, 08 Nov 2022 04:09:21 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0006c8b2f23f4e98452081fe36ec165d"
+      - W/"0a1758de886ed5ca3b0c976d38522772"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - cf345897-3ab0-43d2-908c-e74b32a5f050
+      - 0c5219a6-725c-4d43-852e-1923f5aa7cdb
       X-Runtime:
-      - '0.011558'
+      - '0.014585'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"error":"trip unsuccessfully created"}'
-  recorded_at: Tue, 08 Nov 2022 01:47:16 GMT
+      string: '{"data":{"id":"16","type":"trip","attributes":{"name":"Avalanche Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}}'
+  recorded_at: Tue, 08 Nov 2022 04:09:21 GMT
 recorded_with: VCR 6.1.0
