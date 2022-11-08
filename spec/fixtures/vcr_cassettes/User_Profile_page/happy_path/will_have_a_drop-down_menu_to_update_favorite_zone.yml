@@ -21,27 +21,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 22:21:13 GMT
+      - Tue, 08 Nov 2022 01:45:40 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fb50acf9158d0b39d8501cc4858de0c0"
+      - W/"fa66faa9d89ec0acb15cccaccf54bca6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3e2a54ae-897e-4199-bc16-e75f1c55a7df
+      - 79e0fa04-fa4a-4ca9-9d16-a4ba5ba47c6e
       X-Runtime:
-      - '0.009770'
+      - '0.005542'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Mon, 07 Nov 2022 22:21:13 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
+  recorded_at: Tue, 08 Nov 2022 01:45:41 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 22:21:12 GMT
+      - Tue, 08 Nov 2022 01:45:41 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -73,9 +73,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fef407d9-62de-4cf0-ae08-89fa71aa2ee2
+      - 5b5e7e3a-8a8d-4128-a078-de6150cd3753
       X-Runtime:
-      - '0.006208'
+      - '0.007464'
       Transfer-Encoding:
       - chunked
       Via:
@@ -95,7 +95,7 @@ http_interactions:
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"9","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Mon, 07 Nov 2022 22:21:13 GMT
+  recorded_at: Tue, 08 Nov 2022 01:45:41 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/emergency_contacts
@@ -117,7 +117,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 22:21:13 GMT
+      - Tue, 08 Nov 2022 01:45:41 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -127,9 +127,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b3372e8e-d0d4-4f98-8fd7-41b31000e25f
+      - 2c798e3e-df81-4f48-b839-e30ef7cf256e
       X-Runtime:
-      - '0.005087'
+      - '0.014111'
       Transfer-Encoding:
       - chunked
       Via:
@@ -139,7 +139,7 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
         800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Mon, 07 Nov 2022 22:21:13 GMT
+  recorded_at: Tue, 08 Nov 2022 01:45:41 GMT
 - request:
     method: patch
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1?_method=patch&action=update&commit=Update&controller=users&favorite_zone=419&id=1&utf8=%E2%9C%93
@@ -163,7 +163,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 22:21:13 GMT
+      - Tue, 08 Nov 2022 01:45:41 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -173,9 +173,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2c44cde9-6f87-49f8-bdfe-7ddea80fcf81
+      - 23923ff6-754c-4cd3-99a4-97fc1aceb08a
       X-Runtime:
-      - '0.010587'
+      - '0.019771'
       Transfer-Encoding:
       - chunked
       Via:
@@ -183,7 +183,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Mon, 07 Nov 2022 22:21:14 GMT
+  recorded_at: Tue, 08 Nov 2022 01:45:42 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/emergency_contacts
@@ -205,7 +205,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 22:21:13 GMT
+      - Tue, 08 Nov 2022 01:45:41 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -215,9 +215,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8abb4ee6-ba46-4121-8515-a52e5d4f446e
+      - fb0528e0-3429-4b55-977c-37ecd48058bd
       X-Runtime:
-      - '0.004993'
+      - '0.004667'
       Transfer-Encoding:
       - chunked
       Via:
@@ -227,7 +227,7 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
         800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Mon, 07 Nov 2022 22:21:14 GMT
+  recorded_at: Tue, 08 Nov 2022 01:45:42 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1
@@ -249,7 +249,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 07 Nov 2022 22:21:14 GMT
+      - Tue, 08 Nov 2022 01:45:41 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -259,9 +259,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2a0ddb87-d014-4649-9c33-2d165e537e18
+      - 83830fc8-16ab-4a8c-99b0-86245e48c330
       X-Runtime:
-      - '0.005213'
+      - '0.005427'
       Transfer-Encoding:
       - chunked
       Via:
@@ -269,5 +269,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Mon, 07 Nov 2022 22:21:14 GMT
+  recorded_at: Tue, 08 Nov 2022 01:45:42 GMT
 recorded_with: VCR 6.1.0
