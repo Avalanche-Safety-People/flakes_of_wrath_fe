@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 18:25:07 GMT
+      - Tue, 08 Nov 2022 18:31:39 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bf904809-cc2b-4b6c-a3ea-5ff605c54122
+      - c59e298b-49a4-4cac-83bd-52adcd6627c2
       X-Runtime:
-      - '0.004127'
+      - '0.004068'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Tue, 08 Nov 2022 18:25:08 GMT
+  recorded_at: Tue, 08 Nov 2022 18:31:39 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/trips
@@ -63,19 +63,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 18:25:08 GMT
+      - Tue, 08 Nov 2022 18:31:40 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8bbf3298c8affa8b8bee4e270889d72a"
+      - W/"ad4925da32036965f52cf6ee05c31669"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9c405c5e-f67e-4854-ae8f-89bfbba1df89
+      - 3ac3b355-4075-4680-866d-4449bd99a09a
       X-Runtime:
-      - '0.004693'
+      - '0.004967'
       Transfer-Encoding:
       - chunked
       Via:
@@ -93,5 +93,5 @@ http_interactions:
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"7","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Tue, 08 Nov 2022 18:25:08 GMT
+  recorded_at: Tue, 08 Nov 2022 18:31:40 GMT
 recorded_with: VCR 6.1.0

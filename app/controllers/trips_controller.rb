@@ -37,9 +37,10 @@ class TripsController < ApplicationController
   end
 
   def show
-    @user_trips = user_trips
+  @user_trips = user_trips
     @trip = @user_trips.select do |trip| #does this make two calls???
       trip.id == params[:id].to_i
     end[0]
+    @area = AreaFacade.find_zone(@trip.zone_id)
   end
 end
