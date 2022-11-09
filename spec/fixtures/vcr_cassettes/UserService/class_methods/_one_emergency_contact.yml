@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ee21c2d7-748c-46b8-b094-28ddd56ecab7
+      - ad2e07dd-cc6d-4356-ba70-4575b1553c1f
       X-Runtime:
-      - '0.001530'
+      - '0.001575'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Wed, 09 Nov 2022 07:26:38 GMT
+  recorded_at: Wed, 09 Nov 2022 16:43:01 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -59,7 +59,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - db27f4a2-3fc4-48b3-a501-2f12c1f30b70
+      - e4b30f62-1b7a-48db-88d4-a8273c94461a
       X-Runtime:
       - '0.001618'
       Transfer-Encoding:
@@ -69,7 +69,7 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"Not
         the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 07:26:38 GMT
+  recorded_at: Wed, 09 Nov 2022 16:43:01 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts/1
@@ -95,14 +95,14 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 682aebb6-4b51-43f1-9aff-132bad4a465b
+      - cc532fcc-9922-4276-988b-48b0f9e834c7
       X-Runtime:
-      - '0.002152'
+      - '0.002343'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"Not
         the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}}}'
-  recorded_at: Wed, 09 Nov 2022 07:26:38 GMT
+  recorded_at: Wed, 09 Nov 2022 16:43:01 GMT
 recorded_with: VCR 6.1.0

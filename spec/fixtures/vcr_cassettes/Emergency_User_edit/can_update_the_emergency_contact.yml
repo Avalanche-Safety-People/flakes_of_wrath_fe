@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 97a74c57-e571-491f-8692-a39988117d52
+      - b50a3c81-bd65-4ac2-b4b7-e05957ed6677
       X-Runtime:
-      - '0.001931'
+      - '0.001787'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 07:26:29 GMT
+  recorded_at: Wed, 09 Nov 2022 16:42:51 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -59,9 +59,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6b66a47b-34aa-454d-9f97-bb85473e89ed
+      - 63366215-923b-499b-ab70-f2e17b01a968
       X-Runtime:
-      - '0.002659'
+      - '0.001837'
       Transfer-Encoding:
       - chunked
     body:
@@ -69,7 +69,7 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"Dad","phone_number":"1
         800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 07:26:29 GMT
+  recorded_at: Wed, 09 Nov 2022 16:42:51 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts/1
@@ -95,16 +95,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d0721e86-dd67-4fda-aa00-8272126c8e3a
+      - 85396d44-da4a-4c96-ab0b-80bc0b22ffe2
       X-Runtime:
-      - '0.001813'
+      - '0.002049'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"Dad","phone_number":"1
         800 588 2300","user_id":1}}}'
-  recorded_at: Wed, 09 Nov 2022 07:26:29 GMT
+  recorded_at: Wed, 09 Nov 2022 16:42:51 GMT
 - request:
     method: patch
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts/1?_method=patch&action=update&commit=Update&controller=emergency_contacts&id=1&name=Not%20the%20contact%20you%20wanna%20call&phone_number=1%20800%20588%202300&user_id=1&utf8=%E2%9C%93
@@ -132,16 +132,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ed95ac44-8ffd-4e2f-ab6e-e25571b6aaea
+      - 80ca8d4b-5b3b-4f36-b393-83b7ecb37959
       X-Runtime:
-      - '0.005214'
+      - '0.004546'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"Not
         the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}}}'
-  recorded_at: Wed, 09 Nov 2022 07:26:29 GMT
+  recorded_at: Wed, 09 Nov 2022 16:42:51 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -167,9 +167,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c004edbf-714b-43fc-a6ad-542b36f5a5b5
+      - fdc214ed-0f7e-45b3-948d-794f7425e8f1
       X-Runtime:
-      - '0.001966'
+      - '0.001774'
       Transfer-Encoding:
       - chunked
     body:
@@ -177,5 +177,5 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"Not
         the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 07:26:29 GMT
+  recorded_at: Wed, 09 Nov 2022 16:42:51 GMT
 recorded_with: VCR 6.1.0
