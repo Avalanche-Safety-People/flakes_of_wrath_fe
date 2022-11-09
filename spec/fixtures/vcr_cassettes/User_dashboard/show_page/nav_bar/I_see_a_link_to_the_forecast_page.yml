@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 12424a99-801f-4d3e-94c5-84865d7cd199
+      - 698b80a6-7f9b-4808-8474-db68074d784f
       X-Runtime:
-      - '0.003575'
+      - '0.002005'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 07:16:56 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:27 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/trips
@@ -55,71 +55,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b63e2bbd57330de90e847fb21a92c6a2"
+      - W/"ceab67384389733fabcc6b4abaaaca52"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 23234453-9ce8-45d0-b15e-4f3ebc443dd3
+      - 76816475-97f3-4dea-ad5a-17e8b5830f3f
       X-Runtime:
-      - '0.002551'
+      - '0.002068'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
-        out there","zone_id":88,"start_date":"2023-02-03T00:00:00.000Z","description":"very
-        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":4,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"6","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"7","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"9","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"10","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"11","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"14","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"15","type":"trip","attributes":{"name":"Avalanche
+        out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 07:16:56 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/areas/419
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.6.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"3a4887672a4e5f36780137aedb3dd92a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - df93989b-35fa-49de-b21b-a4f2af34309a
-      X-Runtime:
-      - '0.536730'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"419","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Olympics","state":"WA","travel_advice":"Watch
-        for signs of unstable snow such as recent avalanches, cracking in the snow,
-        and audible collapsing. Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/olympics","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.98,-123.49]}}}'
-  recorded_at: Wed, 09 Nov 2022 07:16:56 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:27 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/areas
@@ -145,9 +97,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b649d88c-7d16-4bf4-99e9-935f85c4e459
+      - 15e9194c-930d-400e-a620-69c7376bf55b
       X-Runtime:
-      - '3.989518'
+      - '4.947397'
       Transfer-Encoding:
       - chunked
     body:
@@ -182,5 +134,5 @@ http_interactions:
         Slopes South","state":"WA","travel_advice":"Watch for signs of unstable snow
         such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
         traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-south","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[46.94,-121.08]}}]}'
-  recorded_at: Wed, 09 Nov 2022 07:17:00 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:32 GMT
 recorded_with: VCR 6.1.0

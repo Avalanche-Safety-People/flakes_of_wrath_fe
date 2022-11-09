@@ -2,7 +2,7 @@
 <h1>Edit <%= @trip.name %> Trip</h1>
 
  <h2>Your Trip</h2>
- <%= form_with url: users_trip_path(@user.id, @trip.id), method: :patch, local: true  do |form| %>
+ <%= form_with url: users_trip_path(@trip.id), method: :patch, local: true  do |form| %>
    <%= form.hidden_field :user_id, value: @user.id %>
    <%= form.hidden_field :id, value: @trip.id %>
    <p><%= form.label :name %>

@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 66741277-164f-46c4-932d-fdb3d45e2f0a
+      - 96e2b71a-51c5-41cf-b00c-7d5f49c5162e
       X-Runtime:
-      - '0.001540'
+      - '0.001698'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Wed, 09 Nov 2022 07:17:01 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:32 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -59,16 +59,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b8744f93-995f-4e31-9519-bc6540affb5c
+      - 4fbd8129-2153-4461-a9e2-f7149cde4ebe
       X-Runtime:
-      - '0.001743'
+      - '0.001731'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"2","type":"emergency_contact","attributes":{"name":"Not
         the contact you wanna call","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 07:17:01 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:32 GMT
 - request:
     method: patch
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts/2?id=2&name=Not%20the%20one&user_id=1
@@ -96,14 +96,14 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3b5b74c5-e13a-44f4-ac89-620cc22498ae
+      - 3796dc80-cf60-4245-acf8-794ee707068f
       X-Runtime:
-      - '0.005371'
+      - '0.004575'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2","type":"emergency_contact","attributes":{"name":"Not
-        the one","phone_number":"911","user_id":1}}}'
-  recorded_at: Wed, 09 Nov 2022 07:17:01 GMT
+      string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"Not
+        the one","phone_number":"1 800 588 2300","user_id":1}}}'
+  recorded_at: Wed, 09 Nov 2022 04:03:32 GMT
 recorded_with: VCR 6.1.0

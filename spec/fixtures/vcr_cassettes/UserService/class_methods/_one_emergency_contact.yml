@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fe1fefc9-660a-459b-b4d7-bc1fb015d04a
+      - c44d82a4-4bdf-4cb4-9759-c2376fc6ffe7
       X-Runtime:
-      - '0.002034'
+      - '0.001600'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Wed, 09 Nov 2022 07:17:01 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:32 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -59,16 +59,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3d650b5a-0eb0-4443-a0a6-c1c379567c52
+      - cdc9766f-6d4a-45a5-8835-a75a0b824c91
       X-Runtime:
-      - '0.001964'
+      - '0.001597'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"2","type":"emergency_contact","attributes":{"name":"Not
         the contact you wanna call","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 07:17:01 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:32 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts/2
@@ -94,14 +94,14 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fe4d2b31-0941-4e2d-9be0-d5b370ba7340
+      - efe96604-e9e0-46c7-ac05-19846c80b228
       X-Runtime:
-      - '0.001655'
+      - '0.001430'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2","type":"emergency_contact","attributes":{"name":"Not
-        the contact you wanna call","phone_number":"911","user_id":1}}}'
-  recorded_at: Wed, 09 Nov 2022 07:17:01 GMT
+      string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"Dad","phone_number":"1
+        800 588 2300","user_id":1}}}'
+  recorded_at: Wed, 09 Nov 2022 04:03:32 GMT
 recorded_with: VCR 6.1.0

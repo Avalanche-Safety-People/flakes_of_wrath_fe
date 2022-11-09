@@ -21,19 +21,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fa66faa9d89ec0acb15cccaccf54bca6"
+      - W/"69136f84e19ea9af12ca868594d93634"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 682d2ded-d521-431e-9195-44dd164b35ad
+      - 4f55f1a6-3698-4c31-823a-7f356d709863
       X-Runtime:
-      - '0.002305'
+      - '0.002841'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Wed, 09 Nov 2022 07:16:51 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":427}}}'
+  recorded_at: Wed, 09 Nov 2022 04:03:25 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/trips
@@ -55,33 +55,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8db3a6dc32d1ec5d219af2794a8aa9e9"
+      - W/"b153c03aaee55effa45ffeb389d10183"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6d78b425-73ef-4084-8b64-2daeae91c0c5
+      - fc469e19-c7ff-4f86-9b82-e39bd2173d75
       X-Runtime:
-      - '0.002739'
+      - '0.003754'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
-        out there","zone_id":88,"start_date":"2023-02-03T00:00:00.000Z","description":"very
-        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":4,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"6","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"7","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"9","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"10","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"11","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"14","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 07:16:51 GMT
+        out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 04:03:25 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -103,20 +91,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"d5438c52ed50cedfcbc6eebcbd9bbb92"
+      - W/"f670bbf60f248fe9e512dd6ec78c57f3"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9da798be-e508-4f62-80d0-671faf90d14f
+      - 18682223-c4a9-4a2b-b3d8-6c0183ad2640
       X-Runtime:
-      - '0.002105'
+      - '0.002182'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"2","type":"emergency_contact","attributes":{"name":"Not
-        the one","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 07:16:51 GMT
+      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
+        800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
+        Vader","phone_number":"911","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 04:03:25 GMT
 - request:
     method: patch
     uri: http://localhost:5000/api/v1/users/1?_method=patch&action=update&commit=Update&controller=users&favorite_zone=419&id=1&utf8=%E2%9C%93
@@ -144,15 +133,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9cb18e55-898d-4a70-8acc-ee0b0090528b
+      - 18ef729d-9d70-4af1-954f-6a9e4a0b8c09
       X-Runtime:
-      - '0.009087'
+      - '0.004578'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 07:16:51 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:25 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -174,20 +163,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"d5438c52ed50cedfcbc6eebcbd9bbb92"
+      - W/"f670bbf60f248fe9e512dd6ec78c57f3"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e57e640b-61af-4563-80a2-a5be034ed9ab
+      - 53ecd379-57da-4404-aa6d-b06b714a8b61
       X-Runtime:
-      - '0.002068'
+      - '0.001831'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"2","type":"emergency_contact","attributes":{"name":"Not
-        the one","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 07:16:51 GMT
+      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
+        800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
+        Vader","phone_number":"911","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 04:03:25 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -213,13 +203,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3e032190-46a8-4b6d-9e98-c08c54633180
+      - 77a66a0b-3883-4f5d-8633-976b01a6686e
       X-Runtime:
-      - '0.001513'
+      - '0.001700'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 07:16:51 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:25 GMT
 recorded_with: VCR 6.1.0

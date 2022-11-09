@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fd35c284-dedf-452f-8db0-9f4b2eab92e5
+      - 7cfacb60-d0ce-4410-b5ba-bbba2b428d52
       X-Runtime:
-      - '0.001642'
+      - '0.002083'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Wed, 09 Nov 2022 07:17:01 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:32 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -59,14 +59,14 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e7f796ea-b85b-4ba9-a14e-eaffca6dea0c
+      - 9b17fd13-4eb5-4a90-804c-4f92ae9f5b36
       X-Runtime:
-      - '0.002406'
+      - '0.002044'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"2","type":"emergency_contact","attributes":{"name":"Not
         the contact you wanna call","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 07:17:01 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:32 GMT
 recorded_with: VCR 6.1.0
