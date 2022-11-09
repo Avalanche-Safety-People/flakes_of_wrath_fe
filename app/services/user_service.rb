@@ -52,11 +52,17 @@ class UserService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.delete_contact(user_id, contact_id)
+    conn.delete("/api/v1/users/#{user_id}/emergency_contacts/#{contact_id}")
+  end
+
   private
 
   def self.conn
-    # Faraday.new(url: 'http://localhost:5000')
-    Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com/')
-
+    if ENV['RAILS_ENV'] == 'development'
+      Faraday.new(url: 'http://localhost:5000/')
+    else
+      Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com/')
+    end
   end
 end

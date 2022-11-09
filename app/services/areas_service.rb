@@ -19,14 +19,4 @@ private
       Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com/')
     end
   end
-
-  # def is_dev
-  #   if ENV['RAILS_ENV'] == 'development'
-  #   end
-  # end
-
-  # def is_test?
-  #   if ENV['RAILS_ENV'] == 'test'
-  #   end
-  # end
 end

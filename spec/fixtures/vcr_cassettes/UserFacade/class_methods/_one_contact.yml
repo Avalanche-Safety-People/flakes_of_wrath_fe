@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 21:43:18 GMT
+      - Tue, 08 Nov 2022 21:32:24 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7dfe2a9a-0f3b-4b41-888b-e7ab484a692d
+      - f7e0e968-2fc1-49ca-be74-8c4ebd46c8cd
       X-Runtime:
-      - '0.007315'
+      - '0.006018'
       Transfer-Encoding:
       - chunked
       Via:
@@ -42,5 +42,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
         800 588 2300","user_id":1}}}'
-  recorded_at: Tue, 08 Nov 2022 21:43:19 GMT
+  recorded_at: Tue, 08 Nov 2022 21:32:25 GMT
 recorded_with: VCR 6.1.0

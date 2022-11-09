@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 21:43:28 GMT
+      - Tue, 08 Nov 2022 21:32:29 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3ca712ba-9280-4070-9342-492de75d5cb3
+      - 5b2f944b-ac61-40c0-aa1f-20c248e345f2
       X-Runtime:
-      - '0.005036'
+      - '0.005830'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,7 +41,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Tue, 08 Nov 2022 21:43:29 GMT
+  recorded_at: Tue, 08 Nov 2022 21:32:30 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/emergency_contacts
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 21:43:29 GMT
+      - Tue, 08 Nov 2022 21:32:30 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -73,9 +73,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0cb195d1-4444-4261-8afb-aae3c042e8e8
+      - b12ad68a-47ff-4da1-ace5-9650f59ac048
       X-Runtime:
-      - '0.004487'
+      - '0.004389'
       Transfer-Encoding:
       - chunked
       Via:
@@ -85,7 +85,7 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
         800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Tue, 08 Nov 2022 21:43:30 GMT
+  recorded_at: Tue, 08 Nov 2022 21:32:31 GMT
 - request:
     method: get
     uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/emergency_contacts/1
@@ -107,7 +107,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 08 Nov 2022 21:43:29 GMT
+      - Tue, 08 Nov 2022 21:32:31 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -117,9 +117,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 748d73e4-9986-49c2-b61b-c10c0532c62b
+      - ba010993-4df6-4b1a-a380-3ea3d9a6069b
       X-Runtime:
-      - '0.008202'
+      - '0.004704'
       Transfer-Encoding:
       - chunked
       Via:
@@ -128,5 +128,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
         800 588 2300","user_id":1}}}'
-  recorded_at: Tue, 08 Nov 2022 21:43:30 GMT
+  recorded_at: Tue, 08 Nov 2022 21:32:31 GMT
 recorded_with: VCR 6.1.0

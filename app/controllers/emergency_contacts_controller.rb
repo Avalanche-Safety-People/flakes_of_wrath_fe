@@ -28,8 +28,15 @@ class EmergencyContactsController < ApplicationController
     #   flash[:error] = 'Something went wrong'
     #   render :edit
   end
+
+  def destroy
+    UserService.delete_contact(params[:id], params[:contact_id])
+    if response.successful?
+      flash[:success] = 'Emergency contact deleted'
+      redirect_to edit_users_path
+    else
+      flash[:error] = 'Something went wrong'
+      render :edit
+    end
+  end
 end
-
-private
-
-
