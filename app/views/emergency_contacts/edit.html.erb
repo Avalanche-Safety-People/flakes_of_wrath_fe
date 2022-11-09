@@ -1,13 +1,26 @@
-<h1>Edit <%= @contact.name %>'s info </h1>
+<main class="px-3">
+  <div class="cover-container d-flex p-3 mx-auto flex-column">
+    <h1>Edit <%= @contact.name %>'s info </h1>
+  </div>
 <br>
 
-<%= form_with url: users_emergency_contact_path(user_id: @user.id), method: :patch, local: true do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name, value: @contact.name %>
-  <%= f.label :phone_number %>
-  <%= f.text_field :phone_number, value: @contact.phone_number %>
-  <%= f.submit 'Update' %>
+  <div class="row">
+    <div class="container col-lg-10 card-bg p-3">
+      <%= form_with url: users_emergency_contact_path(user_id: @user.id), method: :patch, local: true do |f| %>
+          <div class="mb-3">
+            <%= f.label :name, { class: "form-label fw-bold"}%>
+            <%= f.text_field :name, value: @contact.name, class: "form-control"%>
+          </div>
 
-<% end %>
+          <div class="mb-3">
+            <%= f.label :phone_number, { class: "form-label fw-bold"} %>
+            <%= f.text_field :phone_number, value: @contact.phone_number, class: "form-control"%>
+
+          </div>
+            <%= f.submit 'Update', {class: "btn btn-lg btn-secondary border-white bg-black"} %>
+      <% end %>
+      </div>
+    </div>
 
 
+</main>
