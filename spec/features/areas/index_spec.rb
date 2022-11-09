@@ -9,7 +9,7 @@ RSpec.describe 'Area Index Page' do
       visit areas_path
       expect(page).to have_content(areas.first.name)
       expect(page).to have_content(areas.last.name)
-      expect(page).to have_content(areas.first.current_av_risk)
+      expect(page).to have_content(areas.first.current_av_risk_string)
     end
 
     it "has links that direct you to a show page for the zone", :vcr do

@@ -2,9 +2,6 @@ Welcome to Flakes of Wrath -- Washington state
 
 Take a look at some zones:
 
-<% @areas.each do |area| %>
-  <div>
-    <%= link_to area.name, area_path(area.id) %>
-    <%= area.current_av_risk %>
-  <% end %>
-  </div>
+<div>
+  <%= render '/shared/areas_overview'  %>
+</div>
