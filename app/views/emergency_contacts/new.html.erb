@@ -4,10 +4,10 @@
   </div>
 
   <div class="row">
-    <div class="container col-md-8">
+    <div class="container col-lg-10 card-bg h-50">
       <%= form_with url: users_emergency_contacts_path, local: true do |f| %>
-      <div class="card mb-3">
-        <div class="card-body">
+      <%# <div class="card mb-3">
+        <div class="card-body"> %>
         <%= f.hidden_field :user_id, value: @user.id %>
         
         <div class="mb-3">
@@ -21,8 +21,8 @@
         </div>
 
         <%= f.submit 'Create', {class: "btn btn-lg btn-secondary  border-white bg-black"}%>
-        </div>
-      </div>
+        <%# </div>
+      </div> %>
       <% end %>
     </div>
   </div>
