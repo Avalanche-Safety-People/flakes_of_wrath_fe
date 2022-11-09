@@ -25,13 +25,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5f8a7170-92ed-498a-b7d9-29b465209750
+      - 4cf6e917-b496-4ce2-afe6-24dcae5881f7
       X-Runtime:
-      - '0.001375'
+      - '0.002086'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 03:37:27 GMT
+  recorded_at: Wed, 09 Nov 2022 07:17:01 GMT
 recorded_with: VCR 6.1.0

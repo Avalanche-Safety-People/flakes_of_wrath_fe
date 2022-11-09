@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a6420d57-e27f-480d-b548-ec1984fbb192
+      - fe1fefc9-660a-459b-b4d7-bc1fb015d04a
       X-Runtime:
-      - '0.001382'
+      - '0.002034'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Wed, 09 Nov 2022 03:37:27 GMT
+  recorded_at: Wed, 09 Nov 2022 07:17:01 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -55,24 +55,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"529c6534574cfe647557f2bf86841815"
+      - W/"1a24096de82c46077adc86605165791a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5e0a6ab0-d60d-40f1-ab90-335906e215b9
+      - 3d650b5a-0eb0-4443-a0a6-c1c379567c52
       X-Runtime:
-      - '0.001493'
+      - '0.001964'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"Dad","phone_number":"1
-        800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Not
+      string: '{"data":[{"id":"2","type":"emergency_contact","attributes":{"name":"Not
         the contact you wanna call","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 03:37:27 GMT
+  recorded_at: Wed, 09 Nov 2022 07:17:01 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/users/1/emergency_contacts/1
+    uri: http://localhost:5000/api/v1/users/1/emergency_contacts/2
     body:
       encoding: US-ASCII
       string: ''
@@ -91,18 +90,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"86ee26cc732d7c6892d74bd40596e106"
+      - W/"7336ea3e842441d0b14179f0164c0b16"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c4a89968-8888-406f-b4c4-165f0770fc55
+      - fe4d2b31-0941-4e2d-9be0-d5b370ba7340
       X-Runtime:
-      - '0.001699'
+      - '0.001655'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"Dad","phone_number":"1
-        800 588 2300","user_id":1}}}'
-  recorded_at: Wed, 09 Nov 2022 03:37:27 GMT
+      string: '{"data":{"id":"2","type":"emergency_contact","attributes":{"name":"Not
+        the contact you wanna call","phone_number":"911","user_id":1}}}'
+  recorded_at: Wed, 09 Nov 2022 07:17:01 GMT
 recorded_with: VCR 6.1.0
