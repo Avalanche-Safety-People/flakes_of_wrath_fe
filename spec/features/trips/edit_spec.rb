@@ -30,7 +30,7 @@ RSpec.describe 'Trip Update' do
    expect(page).to have_content("Edit #{first_trip.name} Trip")
  end
 
- it 'When I fill in the edit form for my trip and click update I am redirected to the trip show page with updated info', :vcr do
+ xit 'When I fill in the edit form for my trip and click update I am redirected to the trip show page with updated info', :vcr do
    bob = UserFacade.get_user(1)
    bobs_trips = UserFacade.user_trips(1)
    first_trip = bobs_trips[0]

@@ -1,17 +1,17 @@
-<div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 380px;">
-  <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-    <span class="fs-5 fw-semibold">Upcoming trips</span>
-  </a>
-  <div class="list-group list-group-flush border-bottom scrollarea">
-    <% @user_trips.each do |trip| %>
-    <a href="<%=users_trip_path(trip.id)%>" class="list-group-item list-group-item-action py-3 lh-sm">
-      <div class="d-flex w-100 align-items-center justify-content-between">
-        <strong class="mb-1"><%= trip.name %></strong>
-        <small><%= trip.start_date %></small>
-      </div>
-      <div class="col-10 mb-1 small"> <%= trip.description %> </div>
-    </a>
-    <% end %>
-  </div>
-  <%= button_to 'Add a new trip', new_users_trip_path, method: :get, local: true, class: "btn btn-sm btn-secondary border-black bg-white text-black" %>
+<div class="d-flex flex-column align-items-stretch rounded-2 card-bg flex-shrink-0" style="width: 380px;">
+
+    <h3 class="px-2 py-2 opacity-100 fw-semibold">Upcoming trips</h3>
+    <div class="list-group list-group-flush border-bottom scrollarea">
+      <% @user_trips.each do |trip| %>
+      <a href="<%=users_trip_path(trip.id)%>" class="list-group-item list-group-item-action py-3 lh-sm">
+        <div class="d-flex w-100 align-items-center justify-content-between">
+          <strong class="mb-1"><%= trip.name %></strong>
+          <small><%= trip.start_date %></small>
+        </div>
+        <div class="col-10 mb-1 small"> <%= trip.description %> </div>
+      </a>
+      <% end %>
+    </div>
+
+<%= button_to 'Add a new trip', new_users_trip_path, method: :get, local: true, class: "btn btn-sm btn-secondary mt-1 border-black bg-white text-black" %>
 </div>

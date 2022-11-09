@@ -1,18 +1,38 @@
-<h1> Resources </h1>
 
-<p> Winter backcountry travel is inherently dangerous.  Flakes of Wrath is just
+
+<main>
+    <div class="p-5 mb-4 rounded-3">
+      <div class="container-fluid py-1">
+        <h1 class="display-5 fw-bold">Get your local forecast</h1>
+        <p class="col-md-8 fs-4">Winter backcountry travel is inherently dangerous.  Flakes of Wrath is just
 one tool to help you stay safer. Your local avalanche center will have detailed 
 forecasts and snowpack discussion. Always check the forecast with your local
-avalanche center before you head out. </p>
-<%= link_to 'View detailed avalanche forecasts on Avalanche.org', 'https://avalanche.org' %>
-<p> Forecasts are just one aspect of safe winter backcountry travel. It's 
+avalanche center before you head out.</p>
+        <%= button_to 'Find your forecast', 'https://avalanche.org', class: "btn btn-secondary btn-lg", method: :get %>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-4 card-bg border rounded-3">
+          <h2>Take an avalanche safety course</h2>
+          <p>Forecasts are just one aspect of safe winter backcountry travel. It's 
 important to get in-person training so you can confirm that your observations
  in the field align with the forecasts and so you can confidently make judgement
- calls. The best way to do that is with an in-person avalanche safety course. In 
- the United States, the gold standard is the American Institute for Avalanche
- Research and Education. <p>
- <%= link_to 'Find upcoming AIARE courses near you', 'https://avtraining.org/upcoming-public-avalanche-training-courses/' %>
- <p> If you can't make it to an in-person course, we recommend completing the AvySavvy
+ calls. The best way to do that is with an in-person avalanche safety course.</p>
+          <%= button_to 'Find a course', 'https://avtraining.org/upcoming-public-avalanche-training-courses/', class: "btn btn-outline-secondary", method: :get %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 card-bg border rounded-3">
+          <h2>Hone your skills online</h2>
+          <p>If you can't make it to an in-person course, we recommend completing the AvySavvy
  course through Avalanche.ca. It it is free and has a lot of useful and practical 
- information on safe backcountry travel. </p>
- <%= link_to 'Get online training at Avalanche.ca', 'https://avysavvy.avalanche.ca/en-ca/' %>
+ information on safe backcountry travel.</p>
+           <%= button_to 'Practice online', 'https://avysavvy.avalanche.ca/en-ca/', class: "btn btn-outline-secondary", method: :get %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>

@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7cfacb60-d0ce-4410-b5ba-bbba2b428d52
+      - 3eee0ee9-c13f-44d4-94b6-c0288944d74e
       X-Runtime:
-      - '0.002083'
+      - '0.002551'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Wed, 09 Nov 2022 04:03:32 GMT
+  recorded_at: Wed, 09 Nov 2022 07:26:38 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -55,19 +55,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"529c6534574cfe647557f2bf86841815"
+      - W/"6a12cf1638522ee0a9e8377aa560fa8e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9b17fd13-4eb5-4a90-804c-4f92ae9f5b36
+      - 63dec846-90e9-42bb-b82c-12f34aa6a2ca
       X-Runtime:
-      - '0.002044'
+      - '0.002975'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"Dad","phone_number":"1
-        800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Not
-        the contact you wanna call","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 04:03:32 GMT
+      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"Not
+        the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
+        Vader","phone_number":"911","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 07:26:38 GMT
 recorded_with: VCR 6.1.0

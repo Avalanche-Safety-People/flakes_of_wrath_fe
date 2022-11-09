@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   def show
     @user = current_user
     @user_trips = user_trips
+    @area = AreaFacade.find_zone(@user.favorite_zone)
   end
 
 
