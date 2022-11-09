@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a7d6b203-ef7a-415e-a320-803a1a73c5cc
+      - 189253b9-6da2-4fe7-965a-67a86c2415d2
       X-Runtime:
-      - '0.001263'
+      - '0.002919'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 03:16:08 GMT
+  recorded_at: Wed, 09 Nov 2022 03:37:24 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/trips
@@ -55,13 +55,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e2acd64f096ee73714e5497260a3d38a"
+      - W/"900a105d53b32a7c4eaab1783b773551"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f8698086-3edc-4a59-af5c-f90be33924d8
+      - 1334c51d-27a6-4bd1-88cf-f90b5ebc7f09
       X-Runtime:
-      - '0.001976'
+      - '0.002806'
       Transfer-Encoding:
       - chunked
     body:
@@ -76,8 +76,10 @@ http_interactions:
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"6","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"7","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 03:16:09 GMT
+  recorded_at: Wed, 09 Nov 2022 03:37:24 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/areas/427
@@ -103,9 +105,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ad257b23-c437-46cb-a314-00e2c8aa37d3
+      - 75b187a0-1720-4d4e-a69b-c8d4e77bc6c8
       X-Runtime:
-      - '0.413584'
+      - '0.347920'
       Transfer-Encoding:
       - chunked
     body:
@@ -114,5 +116,5 @@ http_interactions:
         Pass","state":"WA","travel_advice":"Watch for signs of unstable snow such
         as recent avalanches, cracking in the snow, and audible collapsing. Avoid
         traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.43,-121.42]}}}'
-  recorded_at: Wed, 09 Nov 2022 03:16:09 GMT
+  recorded_at: Wed, 09 Nov 2022 03:37:24 GMT
 recorded_with: VCR 6.1.0

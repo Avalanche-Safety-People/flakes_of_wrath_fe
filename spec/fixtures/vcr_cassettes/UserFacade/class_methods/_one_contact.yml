@@ -21,18 +21,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"5fa7b708a1bab017b391b207b80edee8"
+      - W/"34d30c643c027f955a1fd8bf276a84d5"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 74bbffaa-2f2c-44f5-9b30-9694001ec204
+      - 25db2e41-76bd-44f3-9c2b-80f98dd31ab8
       X-Runtime:
-      - '0.005597'
+      - '0.006760'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"Not
-        the one","phone_number":"1 800 588 2300","user_id":1}}}'
-  recorded_at: Wed, 09 Nov 2022 03:15:58 GMT
+        the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}}}'
+  recorded_at: Wed, 09 Nov 2022 03:37:01 GMT
 recorded_with: VCR 6.1.0

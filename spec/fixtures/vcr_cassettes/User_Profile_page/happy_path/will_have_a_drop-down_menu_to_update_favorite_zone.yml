@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e7d8e38a-5876-41dc-ac34-0ce3e47cb2da
+      - 51fa8c20-552b-43f4-8c84-5d6b79cb3a93
       X-Runtime:
-      - '0.001632'
+      - '0.009332'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Wed, 09 Nov 2022 03:16:08 GMT
+  recorded_at: Wed, 09 Nov 2022 03:37:23 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/trips
@@ -55,13 +55,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b9150395020d7f832b9c11d8962f262c"
+      - W/"e2acd64f096ee73714e5497260a3d38a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 77d9c090-4ebc-4bbf-a82b-1b8b811554e7
+      - dab364ea-e26a-4f47-9c4c-d30d86ebb8ed
       X-Runtime:
-      - '0.003222'
+      - '0.003298'
       Transfer-Encoding:
       - chunked
     body:
@@ -74,8 +74,10 @@ http_interactions:
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"5","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"6","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 03:16:08 GMT
+  recorded_at: Wed, 09 Nov 2022 03:37:23 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -97,21 +99,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ff55183c699982ccf307722f415963d3"
+      - W/"9d1cfb1cca32621ceea05fd57f24da3e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6a80ade6-9078-4085-abe4-241ef691b539
+      - 1faada34-93f4-49cc-9413-c5886fa22489
       X-Runtime:
-      - '0.001729'
+      - '0.001486'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"2","type":"emergency_contact","attributes":{"name":"Not
-        the contact you wanna call","phone_number":"911","user_id":1}},{"id":"1","type":"emergency_contact","attributes":{"name":"Not
-        the one","phone_number":"1 800 588 2300","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 03:16:08 GMT
+      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"Not
+        the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Not
+        the one","phone_number":"911","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 03:37:23 GMT
 - request:
     method: patch
     uri: http://localhost:5000/api/v1/users/1?_method=patch&action=update&commit=Update&controller=users&favorite_zone=419&id=1&utf8=%E2%9C%93
@@ -139,15 +141,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 180dc8d0-0df7-4a58-9615-646340663bf3
+      - d401f880-4408-4664-835f-006f33133483
       X-Runtime:
-      - '0.002776'
+      - '0.002804'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 03:16:08 GMT
+  recorded_at: Wed, 09 Nov 2022 03:37:23 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -169,21 +171,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ff55183c699982ccf307722f415963d3"
+      - W/"9d1cfb1cca32621ceea05fd57f24da3e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 85e29cb6-38a1-4e20-8bde-a49c45f808b5
+      - 87308362-e406-4f40-ac70-df4c60c4d52a
       X-Runtime:
-      - '0.005200'
+      - '0.001379'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"2","type":"emergency_contact","attributes":{"name":"Not
-        the contact you wanna call","phone_number":"911","user_id":1}},{"id":"1","type":"emergency_contact","attributes":{"name":"Not
-        the one","phone_number":"1 800 588 2300","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 03:16:08 GMT
+      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"Not
+        the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Not
+        the one","phone_number":"911","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 03:37:23 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -209,13 +211,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8dc522b4-0c49-4c96-b80d-255d5e75c283
+      - d48f82e0-528d-47c0-9611-8a2bcff55b8e
       X-Runtime:
-      - '0.001332'
+      - '0.002324'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 03:16:08 GMT
+  recorded_at: Wed, 09 Nov 2022 03:37:23 GMT
 recorded_with: VCR 6.1.0

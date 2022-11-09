@@ -1,0 +1,181 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"fb50acf9158d0b39d8501cc4858de0c0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1ff23bb0-5f63-4e28-8dbc-20e566fc61c7
+      X-Runtime:
+      - '0.001267'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
+  recorded_at: Wed, 09 Nov 2022 03:37:24 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1/emergency_contacts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"9d1cfb1cca32621ceea05fd57f24da3e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 718ab47c-bf2c-4604-ab5f-8299b0ff28f2
+      X-Runtime:
+      - '0.002301'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"Not
+        the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Not
+        the one","phone_number":"911","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 03:37:24 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1/emergency_contacts/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"34d30c643c027f955a1fd8bf276a84d5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2ea7a618-6b6a-4107-80cc-05022acfe554
+      X-Runtime:
+      - '0.003231'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"Not
+        the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}}}'
+  recorded_at: Wed, 09 Nov 2022 03:37:24 GMT
+- request:
+    method: patch
+    uri: http://localhost:5000/api/v1/users/1/emergency_contacts/1?_method=patch&action=update&commit=Update&controller=emergency_contacts&id=1&name=Dad&phone_number=1%20800%20588%202300&user_id=1&utf8=%E2%9C%93
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"86ee26cc732d7c6892d74bd40596e106"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fa68e0c0-ece8-4067-b3a8-c95b8db0a08b
+      X-Runtime:
+      - '0.007482'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"Dad","phone_number":"1
+        800 588 2300","user_id":1}}}'
+  recorded_at: Wed, 09 Nov 2022 03:37:24 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users/1/emergency_contacts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"bd2017a00f1a45d4822111a837eb8aa3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 961b0a39-08b2-487e-877c-8b5e018eabab
+      X-Runtime:
+      - '0.001731'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"2","type":"emergency_contact","attributes":{"name":"Not
+        the one","phone_number":"911","user_id":1}},{"id":"1","type":"emergency_contact","attributes":{"name":"Dad","phone_number":"1
+        800 588 2300","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 03:37:24 GMT
+recorded_with: VCR 6.1.0

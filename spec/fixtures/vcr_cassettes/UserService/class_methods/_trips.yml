@@ -21,13 +21,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e2acd64f096ee73714e5497260a3d38a"
+      - W/"900a105d53b32a7c4eaab1783b773551"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 97991ef1-49a9-452c-bfe0-ebf84fff0c2d
+      - 3eec73fc-23c8-4223-bb1e-5eb523d38a0f
       X-Runtime:
-      - '0.002183'
+      - '0.002706'
       Transfer-Encoding:
       - chunked
     body:
@@ -42,6 +42,8 @@ http_interactions:
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"6","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"7","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 03:16:13 GMT
+  recorded_at: Wed, 09 Nov 2022 03:37:27 GMT
 recorded_with: VCR 6.1.0
