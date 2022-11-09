@@ -7,10 +7,12 @@ class UsersController < ApplicationController
     @user_trips = user_trips
   end
 
+
   def edit
     @user = current_user
     @emergency_contacts = UserFacade.emergency_contacts(@user.id)
   end
+
 
   def update
     response = UserService.update_user(params)

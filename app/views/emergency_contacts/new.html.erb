@@ -1,0 +1,10 @@
+<h1> Add Emergency Contact</h1>
+
+<%= form_with url: users_emergency_contacts_path, local: true do |f| %>
+  <%= f.hidden_field :user_id, value: @user.id %>
+  <%= f.label :name, 'name' %>
+  <%= f.text_field :name%>
+  <%= f.label :phone_number, 'phone number' %>
+  <%= f.text_field :phone_number %>
+  <%= f.submit 'Create' %>
+<% end %>
