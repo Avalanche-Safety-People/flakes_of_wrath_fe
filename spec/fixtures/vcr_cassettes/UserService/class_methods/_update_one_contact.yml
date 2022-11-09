@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b2a93b33-f9c6-47c3-8dfc-58cede347a8d
+      - 99d5f608-9f68-496b-a237-6302549d27c2
       X-Runtime:
-      - '0.001481'
+      - '0.001700'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Wed, 09 Nov 2022 07:26:38 GMT
+  recorded_at: Wed, 09 Nov 2022 16:43:01 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -59,9 +59,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f6584759-9ef9-41e3-99ff-e057b3f3aadb
+      - 5abc1392-152e-444f-a144-c14596723e93
       X-Runtime:
-      - '0.002346'
+      - '0.001903'
       Transfer-Encoding:
       - chunked
     body:
@@ -69,7 +69,7 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"Not
         the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 07:26:39 GMT
+  recorded_at: Wed, 09 Nov 2022 16:43:01 GMT
 - request:
     method: patch
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts/1?id=1&name=Not%20the%20one&user_id=1
@@ -97,14 +97,14 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 63ad5064-17ae-44ec-a133-fa15550401e2
+      - 916782e6-fc7b-4bcf-bcc3-572b2f48d290
       X-Runtime:
-      - '0.004558'
+      - '0.004132'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"Not
         the one","phone_number":"1 800 588 2300","user_id":1}}}'
-  recorded_at: Wed, 09 Nov 2022 07:26:39 GMT
+  recorded_at: Wed, 09 Nov 2022 16:43:01 GMT
 recorded_with: VCR 6.1.0
