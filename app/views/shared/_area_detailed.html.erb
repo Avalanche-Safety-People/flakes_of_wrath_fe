@@ -1,5 +1,5 @@
-<div class="area_information">
-  <h4><%= "Details for #{@area.name}" %></h4>
+<div class="area_information rounded-2 card-bg px-3">
+  <h3><%= "Details for #{@area.name}" %></h3>
 
     <p>Today's Avalanche Risk: <%= @area.current_av_risk %></p>
     <p>Day of last forecast: <%= @area.start_date %></p> <%# make this smaller font than forecast risk%>
@@ -10,8 +10,6 @@
         <li><%= day %></li>
       <% end %></ul>
     </div>
-
-  <iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=47.665&lon=-122.300&detailLat=47.665&detailLon=-122.300&width=650&height=450&zoom=10&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
 </div>
 
 
