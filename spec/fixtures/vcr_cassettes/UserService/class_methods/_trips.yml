@@ -21,13 +21,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"900a105d53b32a7c4eaab1783b773551"
+      - W/"ceab67384389733fabcc6b4abaaaca52"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3eec73fc-23c8-4223-bb1e-5eb523d38a0f
+      - 355b500b-2f75-4076-931c-8f4492e39233
       X-Runtime:
-      - '0.002706'
+      - '0.001896'
       Transfer-Encoding:
       - chunked
     body:
@@ -36,14 +36,6 @@ http_interactions:
         out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
         moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"4","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"5","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"6","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"7","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 03:37:27 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:32 GMT
 recorded_with: VCR 6.1.0
