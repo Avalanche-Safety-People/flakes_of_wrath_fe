@@ -20,6 +20,7 @@ class Area
     risk_description(@current_av_risk)
   end
 
+
   def av_forecast_string
     @av_danger.map do |day|
       risk_description(day)

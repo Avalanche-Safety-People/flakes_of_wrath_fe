@@ -1,0 +1,9 @@
+<div class="list-group list-group-flush">
+  <% @areas.each do |area| %>
+    <div class="d-flex w-100 align-items-center justify-content-between">
+      <strong class="mb-1"><%= link_to area.name, area_path(area.id) %></strong>
+      Current Avalanche Risk: <%= area.current_av_risk_string %>
+      <p>Travel Advice: <%= area.description %></p>
+    </div>
+  <% end %>
+</div>
