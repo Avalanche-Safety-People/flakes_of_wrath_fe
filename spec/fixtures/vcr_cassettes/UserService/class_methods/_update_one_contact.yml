@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1
+    uri: http://localhost:5000/api/v1/users/1
     body:
       encoding: US-ASCII
       string: ''
@@ -18,12 +18,6 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - Cowboy
-      Date:
-      - Tue, 08 Nov 2022 23:57:47 GMT
-      Connection:
-      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
@@ -31,20 +25,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 56f0ce1a-25dc-4d6b-8333-eadd15f725dd
+      - faf26289-2fd8-46f3-957d-3aa52a65a0a4
       X-Runtime:
-      - '0.004108'
+      - '0.001744'
       Transfer-Encoding:
       - chunked
-      Via:
-      - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Tue, 08 Nov 2022 23:57:48 GMT
+  recorded_at: Wed, 09 Nov 2022 03:16:13 GMT
 - request:
     method: get
-    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/emergency_contacts
+    uri: http://localhost:5000/api/v1/users/1/emergency_contacts
     body:
       encoding: US-ASCII
       string: ''
@@ -60,36 +52,26 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - Cowboy
-      Date:
-      - Tue, 08 Nov 2022 23:57:47 GMT
-      Connection:
-      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"852c998c7e9324013ab89bedf845b052"
+      - W/"9b1c55187c0725042fbed40d935afe36"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f3558b4f-e294-4f84-8656-23db1269830d
+      - 2e6e0bed-3ab6-4b38-ab38-d2c4c1c30dab
       X-Runtime:
-      - '0.006074'
+      - '0.001659'
       Transfer-Encoding:
       - chunked
-      Via:
-      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"3","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
-        800 588 2300","user_id":4}},{"id":"4","type":"emergency_contact","attributes":{"name":"father","phone_number":"888888","user_id":4}},{"id":"5","type":"emergency_contact","attributes":{"name":"sister","phone_number":"44444444","user_id":4}},{"id":"6","type":"emergency_contact","attributes":{"name":"joe","phone_number":"123123","user_id":6}},{"id":"1","type":"emergency_contact","attributes":{"name":"Not
-        the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Not
-        the contact you wanna call","phone_number":"911","user_id":1}}]}'
-  recorded_at: Tue, 08 Nov 2022 23:57:48 GMT
+      string: '{"data":[{"id":"2","type":"emergency_contact","attributes":{"name":"Dad","phone_number":"911","user_id":1}},{"id":"1","type":"emergency_contact","attributes":{"name":"Not
+        the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 03:16:13 GMT
 - request:
     method: patch
-    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/emergency_contacts/3?id=3&name=Not%20the%20one&user_id=1
+    uri: http://localhost:5000/api/v1/users/1/emergency_contacts/2?id=2&name=Not%20the%20one&user_id=1
     body:
       encoding: UTF-8
       string: ''
@@ -104,27 +86,24 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
-      Server:
-      - Cowboy
-      Date:
-      - Tue, 08 Nov 2022 23:57:48 GMT
-      Connection:
-      - keep-alive
       Content-Type:
-      - text/html; charset=UTF-8
+      - application/json; charset=utf-8
+      Etag:
+      - W/"5f116013433dae9e70dda4de0a37e8c0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b7d52adc-47e1-4d4d-a372-71bf8fa85c27
+      - 4aef523b-cf56-482f-8b8f-fe0442f317e3
       X-Runtime:
-      - '0.009486'
-      Content-Length:
-      - '0'
-      Via:
-      - 1.1 vegur
+      - '0.005972'
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: UTF-8
-      string: ''
-  recorded_at: Tue, 08 Nov 2022 23:57:48 GMT
+      string: '{"data":{"id":"2","type":"emergency_contact","attributes":{"name":"Not
+        the one","phone_number":"911","user_id":1}}}'
+  recorded_at: Wed, 09 Nov 2022 03:16:13 GMT
 recorded_with: VCR 6.1.0

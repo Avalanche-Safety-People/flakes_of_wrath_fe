@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1/emergency_contacts/1
+    uri: http://localhost:5000/api/v1/users/1/emergency_contacts/1
     body:
       encoding: US-ASCII
       string: ''
@@ -18,29 +18,21 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - Cowboy
-      Date:
-      - Tue, 08 Nov 2022 21:47:09 GMT
-      Connection:
-      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"80d1c5bd2cab1c8c0ec5648dae69b2b0"
+      - W/"5fa7b708a1bab017b391b207b80edee8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e39f48ea-21e5-48a2-a892-99461ec48476
+      - 74bbffaa-2f2c-44f5-9b30-9694001ec204
       X-Runtime:
-      - '0.007392'
+      - '0.005597'
       Transfer-Encoding:
       - chunked
-      Via:
-      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
-        800 588 2300","user_id":1}}}'
-  recorded_at: Tue, 08 Nov 2022 21:47:09 GMT
+      string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"Not
+        the one","phone_number":"1 800 588 2300","user_id":1}}}'
+  recorded_at: Wed, 09 Nov 2022 03:15:58 GMT
 recorded_with: VCR 6.1.0

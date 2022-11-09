@@ -56,8 +56,10 @@ class UserService
   private
 
   def self.conn
-    # Faraday.new(url: 'http://localhost:5000')
-    Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com/')
-
+    if ENV['RAILS_ENV'] == 'development' || ENV['RAILS_ENV'] == 'test'
+      Faraday.new(url: 'http://localhost:5000/')
+    else
+      Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com/')
+    end
   end
 end
