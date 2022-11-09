@@ -6,8 +6,10 @@
     <p>Travel advice: <%= @area.description %></p>
     <a href="<%= @area.url %>">Check the NWAC forecast</a>
     <div>
+      <% i = 0 %>
       <ul><% @area.av_forecast_string.each do |day| %>
-        <li><%= day %></li>
+        <li>Avalanche forecast for  <%= "#{(Date.today + i).strftime("%A")}: #{day}" %>
+              <% i += 1 %>
       <% end %></ul>
     </div>
 </div>
