@@ -2,12 +2,20 @@
 <br>
 
 <%= form_with url: users_emergency_contact_path(user_id: @user.id), method: :patch, local: true do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name, value: @contact.name %>
-  <%= f.label :phone_number %>
-  <%= f.text_field :phone_number, value: @contact.phone_number %>
-  <%= f.submit 'Update' %>
+  <div class="card mb-3">
+    <div class="card-body">
+    <div class="mb-3">
+      <%= f.label :name, { class: "form-label fw-bold"}%>
+      <%= f.text_field :name, { class: "form-control"}, value: @contact.name%>
+      </div>
 
+      <div class="mb-3">
+      <%= f.label :phone_number, { class: "form-label fw-bold"} %>
+      <%= f.text_field :phone_number, value: @contact.phone_number, { class: "form-control"} %>
+      </div>
+      <%= f.submit 'Update', {class: "btn btn-lg btn-secondary  border-white bg-black"} %>
+    </div>
+  </div>
 <% end %>
 
 

@@ -1,10 +1,29 @@
-<h1> Add Emergency Contact</h1>
+<main class="px-3">
+  <div class="cover-container d-flex p-3 mx-auto flex-column">
+    <h1> Add Emergency Contact</h1>
+  </div>
 
-<%= form_with url: users_emergency_contacts_path, local: true do |f| %>
-  <%= f.hidden_field :user_id, value: @user.id %>
-  <%= f.label :name, 'name' %>
-  <%= f.text_field :name%>
-  <%= f.label :phone_number, 'phone number' %>
-  <%= f.text_field :phone_number %>
-  <%= f.submit 'Create' %>
-<% end %>
+  <div class="row">
+    <div class="container col-md-8">
+      <%= form_with url: users_emergency_contacts_path, local: true do |f| %>
+      <div class="card mb-3">
+        <div class="card-body">
+        <%= f.hidden_field :user_id, value: @user.id %>
+        
+        <div class="mb-3">
+          <%= f.label :name, { class: "form-label fw-bold"} %>
+          <%= f.text_field :name, { class: "form-control"}%>
+        </div>
+
+        <div class="mb-3">
+          <%= f.label :phone_number, { class: "form-label fw-bold"} %>
+          <%= f.text_field :phone_number, { class: "form-control" } %>
+        </div>
+
+        <%= f.submit 'Create', {class: "btn btn-lg btn-secondary  border-white bg-black"}%>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</main>
