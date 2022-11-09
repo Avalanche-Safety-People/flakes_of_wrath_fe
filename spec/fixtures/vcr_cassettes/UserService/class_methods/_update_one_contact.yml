@@ -25,9 +25,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a6420d57-e27f-480d-b548-ec1984fbb192
+      - 64952eed-64bb-408a-9f83-5edb48792102
       X-Runtime:
-      - '0.001382'
+      - '0.001942'
       Transfer-Encoding:
       - chunked
     body:
@@ -59,9 +59,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5e0a6ab0-d60d-40f1-ab90-335906e215b9
+      - d8e7ca48-7722-4cd1-b6be-2731940d5878
       X-Runtime:
-      - '0.001493'
+      - '0.001981'
       Transfer-Encoding:
       - chunked
     body:
@@ -71,14 +71,16 @@ http_interactions:
         the contact you wanna call","phone_number":"911","user_id":1}}]}'
   recorded_at: Wed, 09 Nov 2022 03:37:27 GMT
 - request:
-    method: get
-    uri: http://localhost:5000/api/v1/users/1/emergency_contacts/1
+    method: patch
+    uri: http://localhost:5000/api/v1/users/1/emergency_contacts/1?id=1&name=Not%20the%20one&user_id=1
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       User-Agent:
       - Faraday v2.6.0
+      Content-Length:
+      - '0'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -91,18 +93,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"86ee26cc732d7c6892d74bd40596e106"
+      - W/"5fa7b708a1bab017b391b207b80edee8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c4a89968-8888-406f-b4c4-165f0770fc55
+      - 0433ff12-62d8-45eb-bff8-3d37da048c47
       X-Runtime:
-      - '0.001699'
+      - '0.008938'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"Dad","phone_number":"1
-        800 588 2300","user_id":1}}}'
+      string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"Not
+        the one","phone_number":"1 800 588 2300","user_id":1}}}'
   recorded_at: Wed, 09 Nov 2022 03:37:27 GMT
 recorded_with: VCR 6.1.0

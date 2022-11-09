@@ -20,13 +20,15 @@ class EmergencyContactsController < ApplicationController
   end
 
   def update
-    # require 'pry' ; binding.pry
-    # reponse = UserService.update_contact(params)
-    # if response
-    redirect_to edit_users_path
-    # else
-    #   flash[:error] = 'Something went wrong'
-    #   render :edit
+    response = UserFacade.update_one_contact(params)
+    if !response.nil?
+      flash[:success] = 'Emergency Contact updated'
+      @contact = response
+      redirect_to edit_users_path
+    else
+      flash[:error] = 'Something went wrong'
+      render :edit
+    end
   end
 
   def destroy
@@ -40,3 +42,7 @@ class EmergencyContactsController < ApplicationController
     end
   end
 end
+
+
+
+

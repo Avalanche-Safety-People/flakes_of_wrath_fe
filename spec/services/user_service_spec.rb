@@ -90,5 +90,17 @@ RSpec.describe UserService do
       expect(retrieved_contact[:data][:id]).to eq(contact.id)
       expect(retrieved_contact[:data][:attributes][:user_id]).to eq(bob.id.to_i)
     end
+
+    it '#update_one_contact', :vcr do
+      bob = UserFacade.get_user(1)
+      contact = UserFacade.emergency_contacts(bob.id).first
+      update_params = {user_id: bob.id, id: contact.id, name: 'Not the one'}
+      updated_contact = UserService.update_one_contact(update_params)
+
+      expect(updated_contact).to be_a Hash
+      expect(updated_contact[:data][:id]).to eq(contact.id)
+      expect(updated_contact[:data][:attributes][:name]).to eq(update_params[:name])
+      expect(updated_contact[:data][:attributes][:user_id]).to eq(bob.id.to_i)
+    end
   end
 end

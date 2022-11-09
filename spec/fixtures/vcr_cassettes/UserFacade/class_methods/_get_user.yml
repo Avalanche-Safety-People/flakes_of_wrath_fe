@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://flakes-of-wrath-be.herokuapp.com/api/v1/users/1
+    uri: http://localhost:5000/api/v1/users/1
     body:
       encoding: US-ASCII
       string: ''
@@ -18,12 +18,6 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Server:
-      - Cowboy
-      Date:
-      - Tue, 08 Nov 2022 21:26:01 GMT
-      Connection:
-      - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
@@ -31,15 +25,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d7283c17-ca6c-4ab3-bfea-b9a54bac68eb
+      - 51fec9d1-d41f-4b9d-9f43-e8006671408b
       X-Runtime:
-      - '0.035801'
+      - '0.050588'
       Transfer-Encoding:
       - chunked
-      Via:
-      - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Tue, 08 Nov 2022 21:26:02 GMT
+  recorded_at: Wed, 09 Nov 2022 03:37:01 GMT
 recorded_with: VCR 6.1.0

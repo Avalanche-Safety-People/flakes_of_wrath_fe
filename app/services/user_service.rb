@@ -56,10 +56,17 @@ class UserService
     conn.delete("/api/v1/users/#{user_id}/emergency_contacts/#{contact_id}")
   end
 
+  def self.update_one_contact(params)
+    response = conn.patch("/api/v1/users/#{params[:user_id]}/emergency_contacts/#{params[:id]}") do |req|
+      req.params = params
+    end
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   private
 
   def self.conn
-    if ENV['RAILS_ENV'] == 'development'
+    if ENV['RAILS_ENV'] == 'development' || ENV['RAILS_ENV'] == 'test'
       Faraday.new(url: 'http://localhost:5000/')
     else
       Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com/')
