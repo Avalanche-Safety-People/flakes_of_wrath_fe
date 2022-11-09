@@ -2,7 +2,7 @@
   <h3><%= "Details for #{@area.name}" %></h3>
 
     <p>Today's Avalanche Risk: <%= @area.current_av_risk_string %></p>
-    <p>Day of last forecast: <%= @area.start_date %></p> <%# make this smaller font than forecast risk%>
+    <p>Forecast expires: <%= @area.end_date %></p> <%# make this smaller font than forecast risk%>
     <p>Travel advice: <%= @area.description %></p>
     <a href="<%= @area.url %>">Check the NWAC forecast</a>
     <div>
