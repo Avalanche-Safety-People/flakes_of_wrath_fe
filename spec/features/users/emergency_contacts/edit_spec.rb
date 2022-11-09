@@ -37,6 +37,6 @@ RSpec.describe 'Emergency User edit' do
     click_on 'Update'
 
     expect(page).to have_content('Not the contact you wanna call')
-    expect(page).to_no have_content(contact.name)
+    expect(page).to_not have_content(contact.name)
   end
 end

@@ -46,6 +46,13 @@ class UserService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.update_one_contact(params)
+    response = conn.patch("/api/v1/users/#{params[:user_id]}/emergency_contacts/#{params[:id]}") do |req|
+      req.params = params
+    end
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   private
 
   def self.conn
