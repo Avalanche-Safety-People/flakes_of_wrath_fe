@@ -18,6 +18,8 @@ class UserFacade
 
   def self.emergency_contacts(user_id)
     contacts = UserService.all_emergency_contacts(user_id)
+    return [] if contacts.keys == [:error]
+
     contacts[:data].map do |contact_data|
       EmergencyContact.new(contact_data)
     end

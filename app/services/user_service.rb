@@ -36,6 +36,12 @@ class UserService
     end
   end
 
+  def self.create_emergency_contact(contact_params)
+    conn.post("/api/v1/users/#{contact_params[:user_id]}/emergency_contacts") do |req|
+      req.params = contact_params
+    end
+  end
+
   def self.all_emergency_contacts(user_id)
     response = conn.get("/api/v1/users/#{user_id}/emergency_contacts")
     JSON.parse(response.body, symbolize_names: true)
@@ -44,6 +50,10 @@ class UserService
   def self.one_emergency_contact(user_id, contact_id)
     response = conn.get("/api/v1/users/#{user_id}/emergency_contacts/#{contact_id}")
     JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.delete_contact(user_id, contact_id)
+    conn.delete("/api/v1/users/#{user_id}/emergency_contacts/#{contact_id}")
   end
 
   def self.update_one_contact(params)

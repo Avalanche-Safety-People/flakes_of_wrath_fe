@@ -11,6 +11,8 @@ RSpec.describe 'Area Show Page' do
       # allow_any_instance_of(TripsController).to receive(:user_trips).and_return(bobs_trips)
 
       visit area_path(419)
+
+      expect(page).to have_content "Olympics"
     end
   end
 end
