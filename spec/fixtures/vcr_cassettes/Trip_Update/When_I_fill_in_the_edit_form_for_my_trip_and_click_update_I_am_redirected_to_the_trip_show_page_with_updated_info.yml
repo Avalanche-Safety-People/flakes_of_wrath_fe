@@ -21,19 +21,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fa66faa9d89ec0acb15cccaccf54bca6"
+      - W/"69136f84e19ea9af12ca868594d93634"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7638fc88-f37c-4442-af7d-00aeeefdd85c
+      - 3f283447-1bac-4d74-8033-f070bf830eb5
       X-Runtime:
-      - '0.001668'
+      - '0.002513'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Wed, 09 Nov 2022 03:37:21 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":427}}}'
+  recorded_at: Wed, 09 Nov 2022 04:03:21 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/trips
@@ -55,29 +55,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e2acd64f096ee73714e5497260a3d38a"
+      - W/"b153c03aaee55effa45ffeb389d10183"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - db241f40-ee4a-423f-a9e0-39ce07f80163
+      - 38f41258-cd75-455f-ab9f-40e4d9c32e09
       X-Runtime:
-      - '0.002146'
+      - '0.002478'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
         out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
-        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"4","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"5","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"6","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 03:37:21 GMT
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 04:03:21 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/areas/427
@@ -103,9 +95,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c8ec157d-e69d-4e2a-9a6c-aad4ce742ad4
+      - 0f0130f7-0512-43c2-9faf-fae6b9587662
       X-Runtime:
-      - '0.354172'
+      - '0.759187'
       Transfer-Encoding:
       - chunked
     body:
@@ -114,10 +106,10 @@ http_interactions:
         Pass","state":"WA","travel_advice":"Watch for signs of unstable snow such
         as recent avalanches, cracking in the snow, and audible collapsing. Avoid
         traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.43,-121.42]}}}'
-  recorded_at: Wed, 09 Nov 2022 03:37:22 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:22 GMT
 - request:
     method: patch
-    uri: http://localhost:5000/api/v1/users/1/trips/1?_method=patch&action=update&commit=Update&controller=trips&description=We're%20jumping%20out%20of%20helicopters%20now!&format=1&id=1&name=Heli-skiing%20nerds&start_date=2023-02-03&user_id=1&utf8=%E2%9C%93&zone_id=427
+    uri: http://localhost:5000/api/v1/users/1/trips/1?_method=patch&action=update&commit=Update&controller=trips&description=We're%20jumping%20out%20of%20helicopters%20now!&id=1&name=Heli-skiing%20nerds&start_date=2023-02-03&user_id=1&utf8=%E2%9C%93&zone_id=427
     body:
       encoding: UTF-8
       string: ''
@@ -142,16 +134,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 793b2606-7387-4ee4-917a-67238b032b6e
+      - 2aaadb2e-bbcb-4390-91b9-07a3000ba364
       X-Runtime:
-      - '0.020388'
+      - '0.026027'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"trip","attributes":{"name":"Heli-skiing nerds","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"We''re
         jumping out of helicopters now!","user_id":1}}}'
-  recorded_at: Wed, 09 Nov 2022 03:37:22 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:22 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/areas/427
@@ -177,9 +169,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fe76654d-226b-4edb-896f-7eabc5eddad9
+      - c9e3f939-05bf-4893-985f-b71cae8de8ef
       X-Runtime:
-      - '0.359533'
+      - '0.606022'
       Transfer-Encoding:
       - chunked
     body:
@@ -188,7 +180,7 @@ http_interactions:
         Pass","state":"WA","travel_advice":"Watch for signs of unstable snow such
         as recent avalanches, cracking in the snow, and audible collapsing. Avoid
         traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.43,-121.42]}}}'
-  recorded_at: Wed, 09 Nov 2022 03:37:22 GMT
+  recorded_at: Wed, 09 Nov 2022 04:03:23 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/trips
@@ -210,13 +202,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0e9acfbf5364f50d14f59e9254563a3d"
+      - W/"095b047127e4f90647bd9b6a139d595e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ad3952f7-253e-4224-a036-506ad9ab3759
+      - fb36dc53-7d6f-4735-b33d-65b43b3dd399
       X-Runtime:
-      - '0.003000'
+      - '0.003976'
       Transfer-Encoding:
       - chunked
     body:
@@ -224,14 +216,6 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Heli-skiing
         nerds","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"We''re
         jumping out of helicopters now!","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom
-        Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"4","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"5","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"6","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
-        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 03:37:22 GMT
+        Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 04:03:23 GMT
 recorded_with: VCR 6.1.0
