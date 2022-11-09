@@ -21,19 +21,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"69136f84e19ea9af12ca868594d93634"
+      - W/"fa66faa9d89ec0acb15cccaccf54bca6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b1f1831d-0dd3-4223-993c-f053fd56cb6c
+      - 28533df0-5422-4306-9871-49e119f1e7c6
       X-Runtime:
-      - '0.004140'
+      - '0.002796'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":427}}}'
-  recorded_at: Wed, 09 Nov 2022 04:03:23 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
+  recorded_at: Wed, 09 Nov 2022 07:26:27 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/trips
@@ -55,22 +55,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"095b047127e4f90647bd9b6a139d595e"
+      - W/"ceab67384389733fabcc6b4abaaaca52"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4b9c37e6-a454-428c-b601-de6a88f79eda
+      - 18536893-7f3b-4af9-8d06-6d38fe901b3a
       X-Runtime:
-      - '0.002943'
+      - '0.004271'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Heli-skiing
-        nerds","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"We''re
-        jumping out of helicopters now!","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom
-        Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 04:03:23 GMT
+      string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
+        out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 07:26:27 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/areas/427
@@ -96,9 +97,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2b5e267a-fba3-41ea-99cc-95d19e2ec6d2
+      - d3b3ce77-7de8-46c8-88d2-03b187c27ff4
       X-Runtime:
-      - '0.591106'
+      - '0.526351'
       Transfer-Encoding:
       - chunked
     body:
@@ -107,7 +108,7 @@ http_interactions:
         Pass","state":"WA","travel_advice":"Watch for signs of unstable snow such
         as recent avalanches, cracking in the snow, and audible collapsing. Avoid
         traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.43,-121.42]}}}'
-  recorded_at: Wed, 09 Nov 2022 04:03:23 GMT
+  recorded_at: Wed, 09 Nov 2022 07:26:27 GMT
 - request:
     method: patch
     uri: http://localhost:5000/api/v1/users/1/trips/1?_method=patch&action=update&commit=Update&controller=trips&description=very%20moist&id=1&name=Adventure%20is%20out%20there&start_date=2023-02-03&user_id=1&utf8=%E2%9C%93&zone_id=427
@@ -125,27 +126,134 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"13abc883dfa7090d716290320ceaac5b"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
+      - application/json; charset=UTF-8
       X-Request-Id:
-      - 8f2bf177-ab00-4c6d-b098-3c87f6790b19
+      - 60f4ccce-7108-4541-8af0-9c613877097b
       X-Runtime:
-      - '0.007890'
-      Transfer-Encoding:
-      - chunked
+      - '0.015267'
+      Content-Length:
+      - '10880'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"trip","attributes":{"name":"Adventure is
-        out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
-        moist","user_id":1}}}'
-  recorded_at: Wed, 09 Nov 2022 04:03:23 GMT
+      string: '{"status":404,"error":"Not Found","exception":"#\u003cActiveRecord::RecordNotFound:
+        Couldn''t find Trip without an ID\u003e","traces":{"Application Trace":[{"id":4,"trace":"app/controllers/api/v1/trips_controller.rb:14:in
+        `update''"}],"Framework Trace":[{"id":0,"trace":"activerecord (5.2.8.1) lib/active_record/relation/finder_methods.rb:433:in
+        `find_with_ids''"},{"id":1,"trace":"activerecord (5.2.8.1) lib/active_record/relation/finder_methods.rb:69:in
+        `find''"},{"id":2,"trace":"activerecord (5.2.8.1) lib/active_record/querying.rb:5:in
+        `find''"},{"id":3,"trace":"activerecord (5.2.8.1) lib/active_record/core.rb:177:in
+        `find''"},{"id":5,"trace":"actionpack (5.2.8.1) lib/action_controller/metal/basic_implicit_render.rb:6:in
+        `send_action''"},{"id":6,"trace":"actionpack (5.2.8.1) lib/abstract_controller/base.rb:194:in
+        `process_action''"},{"id":7,"trace":"actionpack (5.2.8.1) lib/action_controller/metal/rendering.rb:30:in
+        `process_action''"},{"id":8,"trace":"actionpack (5.2.8.1) lib/abstract_controller/callbacks.rb:42:in
+        `block in process_action''"},{"id":9,"trace":"activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in
+        `run_callbacks''"},{"id":10,"trace":"actionpack (5.2.8.1) lib/abstract_controller/callbacks.rb:41:in
+        `process_action''"},{"id":11,"trace":"actionpack (5.2.8.1) lib/action_controller/metal/rescue.rb:22:in
+        `process_action''"},{"id":12,"trace":"actionpack (5.2.8.1) lib/action_controller/metal/instrumentation.rb:34:in
+        `block in process_action''"},{"id":13,"trace":"activesupport (5.2.8.1) lib/active_support/notifications.rb:168:in
+        `block in instrument''"},{"id":14,"trace":"activesupport (5.2.8.1) lib/active_support/notifications/instrumenter.rb:23:in
+        `instrument''"},{"id":15,"trace":"activesupport (5.2.8.1) lib/active_support/notifications.rb:168:in
+        `instrument''"},{"id":16,"trace":"actionpack (5.2.8.1) lib/action_controller/metal/instrumentation.rb:32:in
+        `process_action''"},{"id":17,"trace":"actionpack (5.2.8.1) lib/action_controller/metal/params_wrapper.rb:256:in
+        `process_action''"},{"id":18,"trace":"activerecord (5.2.8.1) lib/active_record/railties/controller_runtime.rb:24:in
+        `process_action''"},{"id":19,"trace":"actionpack (5.2.8.1) lib/abstract_controller/base.rb:134:in
+        `process''"},{"id":20,"trace":"actionpack (5.2.8.1) lib/action_controller/metal.rb:191:in
+        `dispatch''"},{"id":21,"trace":"actionpack (5.2.8.1) lib/action_controller/metal.rb:252:in
+        `dispatch''"},{"id":22,"trace":"actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:52:in
+        `dispatch''"},{"id":23,"trace":"actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:34:in
+        `serve''"},{"id":24,"trace":"actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:52:in
+        `block in serve''"},{"id":25,"trace":"actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in
+        `each''"},{"id":26,"trace":"actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in
+        `serve''"},{"id":27,"trace":"actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in
+        `call''"},{"id":28,"trace":"rack (2.2.4) lib/rack/etag.rb:27:in `call''"},{"id":29,"trace":"rack
+        (2.2.4) lib/rack/conditional_get.rb:40:in `call''"},{"id":30,"trace":"rack
+        (2.2.4) lib/rack/head.rb:12:in `call''"},{"id":31,"trace":"activerecord (5.2.8.1)
+        lib/active_record/migration.rb:559:in `call''"},{"id":32,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call''"},{"id":33,"trace":"activesupport
+        (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks''"},{"id":34,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call''"},{"id":35,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"id":36,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call''"},{"id":37,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call''"},{"id":38,"trace":"railties
+        (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app''"},{"id":39,"trace":"railties
+        (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call''"},{"id":40,"trace":"activesupport
+        (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged''"},{"id":41,"trace":"activesupport
+        (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged''"},{"id":42,"trace":"activesupport
+        (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged''"},{"id":43,"trace":"railties
+        (5.2.8.1) lib/rails/rack/logger.rb:26:in `call''"},{"id":44,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call''"},{"id":45,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call''"},{"id":46,"trace":"rack
+        (2.2.4) lib/rack/runtime.rb:22:in `call''"},{"id":47,"trace":"activesupport
+        (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"id":48,"trace":"actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in
+        `call''"},{"id":49,"trace":"actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in
+        `call''"},{"id":50,"trace":"rack (2.2.4) lib/rack/sendfile.rb:110:in `call''"},{"id":51,"trace":"railties
+        (5.2.8.1) lib/rails/engine.rb:524:in `call''"},{"id":52,"trace":"puma (3.12.6)
+        lib/puma/configuration.rb:227:in `call''"},{"id":53,"trace":"puma (3.12.6)
+        lib/puma/server.rb:706:in `handle_request''"},{"id":54,"trace":"puma (3.12.6)
+        lib/puma/server.rb:476:in `process_client''"},{"id":55,"trace":"puma (3.12.6)
+        lib/puma/server.rb:334:in `block in run''"},{"id":56,"trace":"puma (3.12.6)
+        lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}],"Full Trace":[{"id":0,"trace":"activerecord
+        (5.2.8.1) lib/active_record/relation/finder_methods.rb:433:in `find_with_ids''"},{"id":1,"trace":"activerecord
+        (5.2.8.1) lib/active_record/relation/finder_methods.rb:69:in `find''"},{"id":2,"trace":"activerecord
+        (5.2.8.1) lib/active_record/querying.rb:5:in `find''"},{"id":3,"trace":"activerecord
+        (5.2.8.1) lib/active_record/core.rb:177:in `find''"},{"id":4,"trace":"app/controllers/api/v1/trips_controller.rb:14:in
+        `update''"},{"id":5,"trace":"actionpack (5.2.8.1) lib/action_controller/metal/basic_implicit_render.rb:6:in
+        `send_action''"},{"id":6,"trace":"actionpack (5.2.8.1) lib/abstract_controller/base.rb:194:in
+        `process_action''"},{"id":7,"trace":"actionpack (5.2.8.1) lib/action_controller/metal/rendering.rb:30:in
+        `process_action''"},{"id":8,"trace":"actionpack (5.2.8.1) lib/abstract_controller/callbacks.rb:42:in
+        `block in process_action''"},{"id":9,"trace":"activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in
+        `run_callbacks''"},{"id":10,"trace":"actionpack (5.2.8.1) lib/abstract_controller/callbacks.rb:41:in
+        `process_action''"},{"id":11,"trace":"actionpack (5.2.8.1) lib/action_controller/metal/rescue.rb:22:in
+        `process_action''"},{"id":12,"trace":"actionpack (5.2.8.1) lib/action_controller/metal/instrumentation.rb:34:in
+        `block in process_action''"},{"id":13,"trace":"activesupport (5.2.8.1) lib/active_support/notifications.rb:168:in
+        `block in instrument''"},{"id":14,"trace":"activesupport (5.2.8.1) lib/active_support/notifications/instrumenter.rb:23:in
+        `instrument''"},{"id":15,"trace":"activesupport (5.2.8.1) lib/active_support/notifications.rb:168:in
+        `instrument''"},{"id":16,"trace":"actionpack (5.2.8.1) lib/action_controller/metal/instrumentation.rb:32:in
+        `process_action''"},{"id":17,"trace":"actionpack (5.2.8.1) lib/action_controller/metal/params_wrapper.rb:256:in
+        `process_action''"},{"id":18,"trace":"activerecord (5.2.8.1) lib/active_record/railties/controller_runtime.rb:24:in
+        `process_action''"},{"id":19,"trace":"actionpack (5.2.8.1) lib/abstract_controller/base.rb:134:in
+        `process''"},{"id":20,"trace":"actionpack (5.2.8.1) lib/action_controller/metal.rb:191:in
+        `dispatch''"},{"id":21,"trace":"actionpack (5.2.8.1) lib/action_controller/metal.rb:252:in
+        `dispatch''"},{"id":22,"trace":"actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:52:in
+        `dispatch''"},{"id":23,"trace":"actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:34:in
+        `serve''"},{"id":24,"trace":"actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:52:in
+        `block in serve''"},{"id":25,"trace":"actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in
+        `each''"},{"id":26,"trace":"actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in
+        `serve''"},{"id":27,"trace":"actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in
+        `call''"},{"id":28,"trace":"rack (2.2.4) lib/rack/etag.rb:27:in `call''"},{"id":29,"trace":"rack
+        (2.2.4) lib/rack/conditional_get.rb:40:in `call''"},{"id":30,"trace":"rack
+        (2.2.4) lib/rack/head.rb:12:in `call''"},{"id":31,"trace":"activerecord (5.2.8.1)
+        lib/active_record/migration.rb:559:in `call''"},{"id":32,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call''"},{"id":33,"trace":"activesupport
+        (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks''"},{"id":34,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call''"},{"id":35,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"id":36,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call''"},{"id":37,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call''"},{"id":38,"trace":"railties
+        (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app''"},{"id":39,"trace":"railties
+        (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call''"},{"id":40,"trace":"activesupport
+        (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged''"},{"id":41,"trace":"activesupport
+        (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged''"},{"id":42,"trace":"activesupport
+        (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged''"},{"id":43,"trace":"railties
+        (5.2.8.1) lib/rails/rack/logger.rb:26:in `call''"},{"id":44,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call''"},{"id":45,"trace":"actionpack
+        (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call''"},{"id":46,"trace":"rack
+        (2.2.4) lib/rack/runtime.rb:22:in `call''"},{"id":47,"trace":"activesupport
+        (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"id":48,"trace":"actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in
+        `call''"},{"id":49,"trace":"actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in
+        `call''"},{"id":50,"trace":"rack (2.2.4) lib/rack/sendfile.rb:110:in `call''"},{"id":51,"trace":"railties
+        (5.2.8.1) lib/rails/engine.rb:524:in `call''"},{"id":52,"trace":"puma (3.12.6)
+        lib/puma/configuration.rb:227:in `call''"},{"id":53,"trace":"puma (3.12.6)
+        lib/puma/server.rb:706:in `handle_request''"},{"id":54,"trace":"puma (3.12.6)
+        lib/puma/server.rb:476:in `process_client''"},{"id":55,"trace":"puma (3.12.6)
+        lib/puma/server.rb:334:in `block in run''"},{"id":56,"trace":"puma (3.12.6)
+        lib/puma/thread_pool.rb:135:in `block in spawn_thread''"}]}}'
+  recorded_at: Wed, 09 Nov 2022 07:26:27 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/areas/427
@@ -171,9 +279,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e245438a-1fa8-4507-a43a-ba2b278042e8
+      - 3e2337b1-0df2-4c4e-8938-6c27ed637bf5
       X-Runtime:
-      - '0.705850'
+      - '0.510436'
       Transfer-Encoding:
       - chunked
     body:
@@ -182,7 +290,7 @@ http_interactions:
         Pass","state":"WA","travel_advice":"Watch for signs of unstable snow such
         as recent avalanches, cracking in the snow, and audible collapsing. Avoid
         traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.43,-121.42]}}}'
-  recorded_at: Wed, 09 Nov 2022 04:03:24 GMT
+  recorded_at: Wed, 09 Nov 2022 07:26:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/trips
@@ -204,19 +312,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b153c03aaee55effa45ffeb389d10183"
+      - W/"ceab67384389733fabcc6b4abaaaca52"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f405fd95-4f9d-4f7e-843c-b2ae197cd77d
+      - 37567534-b2db-413f-9b2f-2844b0ab15cf
       X-Runtime:
-      - '0.003249'
+      - '0.002734'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
         out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
-        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 04:03:24 GMT
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 07:26:28 GMT
 recorded_with: VCR 6.1.0

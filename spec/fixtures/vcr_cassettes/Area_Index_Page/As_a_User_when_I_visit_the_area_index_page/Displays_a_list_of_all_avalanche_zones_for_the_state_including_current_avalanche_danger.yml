@@ -25,9 +25,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b98b23ed-49b1-4a9e-92b1-00a09c3a4bb8
+      - 28ca5860-e545-4682-8910-afa609daa1a2
       X-Runtime:
-      - '7.617853'
+      - '7.034362'
       Transfer-Encoding:
       - chunked
     body:
@@ -62,7 +62,7 @@ http_interactions:
         Slopes South","state":"WA","travel_advice":"Watch for signs of unstable snow
         such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
         traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-south","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[46.94,-121.08]}}]}'
-  recorded_at: Wed, 09 Nov 2022 04:02:57 GMT
+  recorded_at: Wed, 09 Nov 2022 07:26:06 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/areas
@@ -88,9 +88,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 82d188a4-e3e0-4c98-8881-d4f945ccef96
+      - 22a38611-0f09-41ae-831f-4946e45c4aa6
       X-Runtime:
-      - '4.905929'
+      - '5.107594'
       Transfer-Encoding:
       - chunked
     body:
@@ -125,5 +125,5 @@ http_interactions:
         Slopes South","state":"WA","travel_advice":"Watch for signs of unstable snow
         such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
         traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-south","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[46.94,-121.08]}}]}'
-  recorded_at: Wed, 09 Nov 2022 04:03:02 GMT
+  recorded_at: Wed, 09 Nov 2022 07:26:11 GMT
 recorded_with: VCR 6.1.0

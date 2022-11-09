@@ -21,13 +21,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ceab67384389733fabcc6b4abaaaca52"
+      - W/"c431ed6369f118d0a0b33197d4b23608"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 355b500b-2f75-4076-931c-8f4492e39233
+      - 7d7f9111-2143-4a4a-99bb-105a6eb48df3
       X-Runtime:
-      - '0.001896'
+      - '0.002104'
       Transfer-Encoding:
       - chunked
     body:
@@ -36,6 +36,8 @@ http_interactions:
         out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
         moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
         Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}},{"id":"4","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 04:03:32 GMT
+  recorded_at: Wed, 09 Nov 2022 07:26:38 GMT
 recorded_with: VCR 6.1.0

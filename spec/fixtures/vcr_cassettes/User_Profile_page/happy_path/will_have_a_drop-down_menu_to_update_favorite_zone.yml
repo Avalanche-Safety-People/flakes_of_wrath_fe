@@ -21,19 +21,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"69136f84e19ea9af12ca868594d93634"
+      - W/"fa66faa9d89ec0acb15cccaccf54bca6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4f55f1a6-3698-4c31-823a-7f356d709863
+      - f4a8fb9f-92ff-48fa-a7c6-548ccefe64ce
       X-Runtime:
-      - '0.002841'
+      - '0.001905'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":427}}}'
-  recorded_at: Wed, 09 Nov 2022 04:03:25 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
+  recorded_at: Wed, 09 Nov 2022 07:26:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/trips
@@ -55,21 +55,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b153c03aaee55effa45ffeb389d10183"
+      - W/"ceab67384389733fabcc6b4abaaaca52"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fc469e19-c7ff-4f86-9b82-e39bd2173d75
+      - 1e8e1ff1-8ac4-4d96-88d2-aedca215ce38
       X-Runtime:
-      - '0.003754'
+      - '0.002250'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
         out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
-        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 04:03:25 GMT
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
+  recorded_at: Wed, 09 Nov 2022 07:26:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -91,21 +93,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f670bbf60f248fe9e512dd6ec78c57f3"
+      - W/"7fd14203ea8b410c6395510d4d367a68"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 18682223-c4a9-4a2b-b3d8-6c0183ad2640
+      - e878c695-5316-4edd-bcbb-c857e70b3fe1
       X-Runtime:
-      - '0.002182'
+      - '0.001992'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
-        800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
+      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"Not
+        the one","phone_number":"1 800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 04:03:25 GMT
+  recorded_at: Wed, 09 Nov 2022 07:26:28 GMT
 - request:
     method: patch
     uri: http://localhost:5000/api/v1/users/1?_method=patch&action=update&commit=Update&controller=users&favorite_zone=419&id=1&utf8=%E2%9C%93
@@ -133,15 +135,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 18ef729d-9d70-4af1-954f-6a9e4a0b8c09
+      - 3a01e913-15ad-4231-a86f-d353f26e618a
       X-Runtime:
-      - '0.004578'
+      - '0.004155'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 04:03:25 GMT
+  recorded_at: Wed, 09 Nov 2022 07:26:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -163,21 +165,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f670bbf60f248fe9e512dd6ec78c57f3"
+      - W/"7fd14203ea8b410c6395510d4d367a68"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 53ecd379-57da-4404-aa6d-b06b714a8b61
+      - ca400955-bb98-4f64-a945-86aa0acbdbcd
       X-Runtime:
-      - '0.001831'
+      - '0.002567'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
-        800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
+      string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"Not
+        the one","phone_number":"1 800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 04:03:25 GMT
+  recorded_at: Wed, 09 Nov 2022 07:26:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -203,13 +205,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 77a66a0b-3883-4f5d-8633-976b01a6686e
+      - e3d49a55-b2a1-45ce-9f0e-cb7143f93b8e
       X-Runtime:
-      - '0.001700'
+      - '0.001588'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 04:03:25 GMT
+  recorded_at: Wed, 09 Nov 2022 07:26:28 GMT
 recorded_with: VCR 6.1.0

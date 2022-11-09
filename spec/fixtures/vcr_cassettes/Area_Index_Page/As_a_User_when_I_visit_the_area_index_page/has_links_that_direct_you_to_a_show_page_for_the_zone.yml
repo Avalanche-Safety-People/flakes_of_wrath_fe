@@ -25,9 +25,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2ecd9490-abc0-43ce-a461-c6750614ead6
+      - 5aa6bd1c-77f7-427c-83a4-fefda20be944
       X-Runtime:
-      - '5.675162'
+      - '4.052428'
       Transfer-Encoding:
       - chunked
     body:
@@ -62,7 +62,7 @@ http_interactions:
         Slopes South","state":"WA","travel_advice":"Watch for signs of unstable snow
         such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
         traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-south","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[46.94,-121.08]}}]}'
-  recorded_at: Wed, 09 Nov 2022 04:03:08 GMT
+  recorded_at: Wed, 09 Nov 2022 07:26:15 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/areas
@@ -88,9 +88,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 68425219-910d-4995-8cc3-1cc6a92ff91b
+      - 518e91c6-def2-4739-9e92-ad1c7db45783
       X-Runtime:
-      - '5.313369'
+      - '3.980597'
       Transfer-Encoding:
       - chunked
     body:
@@ -125,7 +125,7 @@ http_interactions:
         Slopes South","state":"WA","travel_advice":"Watch for signs of unstable snow
         such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
         traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-south","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[46.94,-121.08]}}]}'
-  recorded_at: Wed, 09 Nov 2022 04:03:13 GMT
+  recorded_at: Wed, 09 Nov 2022 07:26:19 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/areas/419
@@ -151,9 +151,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ff7c2866-263d-4e12-a30f-95c233912aef
+      - e43e3b45-1620-4e69-9e99-160d7a19eaf1
       X-Runtime:
-      - '0.803599'
+      - '0.577894'
       Transfer-Encoding:
       - chunked
     body:
@@ -161,5 +161,5 @@ http_interactions:
       string: '{"data":{"id":"419","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Olympics","state":"WA","travel_advice":"Watch
         for signs of unstable snow such as recent avalanches, cracking in the snow,
         and audible collapsing. Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/olympics","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.98,-123.49]}}}'
-  recorded_at: Wed, 09 Nov 2022 04:03:14 GMT
+  recorded_at: Wed, 09 Nov 2022 07:26:19 GMT
 recorded_with: VCR 6.1.0
