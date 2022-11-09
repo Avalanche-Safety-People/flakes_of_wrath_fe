@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 
 #bootstrap related gems
 gem 'bootstrap-sass'
+
 # gem 'bootstrap-sprockets'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

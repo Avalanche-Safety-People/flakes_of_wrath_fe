@@ -4,7 +4,7 @@
   </div>
 
   <div class="row">
-    <div class="container col-lg-10 card-bg h-50">
+    <div class="container col-lg-10 card-bg p-3">
       <%= form_with url: users_emergency_contacts_path, local: true do |f| %>
       <%# <div class="card mb-3">
         <div class="card-body"> %>
@@ -20,7 +20,7 @@
           <%= f.text_field :phone_number, { class: "form-control" } %>
         </div>
 
-        <%= f.submit 'Create', {class: "btn btn-lg btn-secondary  border-white bg-black"}%>
+        <%= f.submit 'Create', {class: "btn btn-lg btn-secondary border-white bg-black"}%>
         <%# </div>
       </div> %>
       <% end %>
