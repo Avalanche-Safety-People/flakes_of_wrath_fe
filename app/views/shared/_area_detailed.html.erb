@@ -4,15 +4,22 @@
     <p>Today's Avalanche Risk: <%= @area.current_av_risk_string %></p>
     <p>Forecast expires: <%= @area.end_date %></p> <%# make this smaller font than forecast risk%>
     <p>Travel advice: <%= @area.description %></p>
-    <a href="<%= @area.url %>">Check the NWAC forecast</a>
-    <div>
+  <table align="center" class="table table-sm table-striped  ml-4"style="max-width: 40rem;">
+    <thead>
+      <tr>
+        <th><%= link_to 'Check the NWAC forecast', @area.url%></th>
+      </tr>
+    </thead>
+    <tbody>
       <% i = 0 %>
-      <ul><% @area.av_forecast_string.each do |day| %>
-        <li>Avalanche forecast for  <%= "#{(Date.today + i).strftime("%A")}: #{day}" %>
-              <% i += 1 %>
-      <% end %></ul>
-    </div>
+      <% @area.av_forecast_string.each do |day| %>
+        <tr>
+          <td>Avalanche forecast for  <%= "#{(Date.today + i).strftime("%A")}: #{day}" %>
+                <% i += 1 %></td>
+        </tr>
+      <% end  %>
+    </tbody>
+  </table>
 </div>
-
 
 

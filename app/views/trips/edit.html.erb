@@ -1,18 +1,39 @@
 
-<h1>Edit <%= @trip.name %> Trip</h1>
+<main class="px-3">
+  <div class="cover-container d-flex p-3 mx-auto flex-column">
+    <h1> Edit <%= @trip.name %> </h1>
+  </div>
+<br>
 
- <h2>Your Trip</h2>
- <%= form_with url: users_trip_path(@trip.id), method: :patch, local: true  do |form| %>
-   <%= form.hidden_field :user_id, value: @user.id %>
-   <%= form.hidden_field :id, value: @trip.id %>
-   <p><%= form.label :name %>
-   <%= form.text_field :name, value: @trip.name %></p>
-   <p><%= form.label :start_date %>
-   <%= form.date_field :start_date, value: @trip.start_date %></p>
-   <p><%= form.label :description %>
-   <%= form.text_area :description, value: @trip.description %></p>
-   <p><%= form.label :zone_id %>
-   <%= form.select :zone_id, options_for_select(avalanche_zones, @trip.zone_id) %></p>
-   <%= form.submit "Update"%>
- <% end %>
+  <div class="row">
+    <div class="container col-lg-10 card-bg p-3">
+      <%= form_with url: users_trip_path(@trip.id), method: :patch, local: true do |f| %>
+        <%= f.hidden_field :user_id, value: @user.id %>
+        <%= f.hidden_field :id, value: @trip.id %>
+          <div class="mb-3">
+              <%= f.label :name, 'Trip name', class: "form-label fw-bold" %>
+              <%= f.text_field :name, value: @trip.name, class: 'form-control' %>
+          </div>
+
+          <div class="mb-3">
+            <%= f.label :zone_id, 'Forecast zone', class: "form-label fw-bold" %>
+            <%= f.select :zone_id, options_for_select(avalanche_zones, @trip.zone_id), class: 'form-control' %>
+          </div>
+
+          <div class="mb-3">
+              <%= f.label :start_date, "Date:", class: 'form-label fw-bold' %>
+              <%= f.date_field :start_date, value: @trip.start_date, class: 'form-control' %>
+          </div>
+
+          <div class="mb-3">
+              <%= f.label :description, "Trip description:", class: 'form-label fw-bold' %>
+              <%= f.text_area :description, value: @trip.description, class: 'form-control' %>
+          </div>
+
+
+            <%= f.submit 'Update', class: "btn btn-lg btn-secondary border-white bg-black" %>
+      <% end %>
+      </div>
+    </div>
+</main>
 
