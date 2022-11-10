@@ -21,8 +21,8 @@ class TripsController < ApplicationController
     if response != nil
       redirect_to users_trip_path(@trip.id)
     else
-      flash[:error] = 'Unable to update trip. Try Again.'
       redirect_to edit_users_trip_path(@trip.id)
+      flash[:error] = 'Unable to update trip. Try Again.'
     end
   end
 
