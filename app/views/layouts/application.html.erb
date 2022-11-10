@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <%= javascript_include_tag 'application' %>
-    <link href="/assets/custom.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
 
   </head>
 
@@ -42,7 +42,7 @@
   </header>
   <div 
     class="masthead"
-    style="background-image: url('/assets/bg-image.jpg');">
+    style="background-image: url('bg-image.jpg');">
     <div class="color-overlay d-flex justify-content-center align-items-top">
       <% flash.each do |key, value| %>
         <div class="<%= flash_class(key) %>">
