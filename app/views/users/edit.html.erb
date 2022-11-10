@@ -1,8 +1,10 @@
-<h1><%= @user.name %>'s Profile</h1>
+<div class="vstack">
+<h1 class="text-center fs-1"><%= @user.name %>'s Profile</h1>
 <br>
 
+<row>
 <div class="zone">
-<center><h2>Favorite Zone</h2>
+<center><h2 class="fw-lighter">Favorite Zone</h2>
 <%= form_with url: users_path, method: :patch, local: true  do |form| %>
   <%= form.hidden_field :id, value: @user.id %>
   <%= form.label :favorite_zone %>
@@ -10,16 +12,17 @@
   <%= form.submit "Update"%>
 <% end %>
 </center></div>
+</row>
 <br>
 
-
+<row>
 <center class="contacts">
-<h2>Emergency Contacts</h2>
+<h2 class="fw-lighter">Emergency Contacts</h2>
 <table align="center" class="table table-sm table-striped  ml-4"style="max-width: 40rem;">
   <thead>
     <tr>
-      <stong><th>Name</th>
-      <th>Phone Number</th></strong>
+      <th class="fw-lighter">Name</th>
+      <th class="fw-lighter">Phone Number</th>
     </tr>
   </thead>
   <tbody>
@@ -34,4 +37,5 @@
   </tbody>
 </table>
   <%= button_to 'Add an Emergency Contact', new_users_emergency_contact_path, method: :get, local: true %>
-  </center>
+</center>
+</row>
