@@ -11,7 +11,7 @@ RSpec.describe 'New trip' do
       allow_any_instance_of(TripsController).to receive(:user_trips).and_return(bobs_trips)
 
       visit new_users_trip_path
-      expect(page).to have_content('Adventure is out there')
+      expect(page).to have_content('Create a Trip')
     end
 
     it 'When I fill out the form with valid data and click submit,
@@ -36,14 +36,5 @@ RSpec.describe 'New trip' do
 
       expect(current_path).to eq(users_path)
     end
-
-    # create_table "trips", force: :cascade do |t|
-    #   t.bigint "user_id"
-    #   t.string "name"
-    #   t.integer "zone_id"
-    #   t.datetime "start_date"
-    #   t.string "description"
-    #   t.index ["user_id"], name: "index_trips_on_user_id"
-    # end
   end
 end

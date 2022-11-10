@@ -11,7 +11,7 @@ RSpec.describe 'Trip Update' do
 
    visit users_trip_path(first_trip.id)
    
-   expect(page).to have_link("Edit #{first_trip.name}")
+   expect(page).to have_button("Edit #{first_trip.name}")
  end
 
  it 'When I click the link I am taken to a page with a form to update my trip', :vcr do
@@ -24,10 +24,10 @@ RSpec.describe 'Trip Update' do
 
    visit users_trip_path(first_trip.id)
    
-   click_link "Edit #{first_trip.name}"
+   click_on "Edit #{first_trip.name}"
    expect(current_path).to eq(edit_users_trip_path(first_trip.id))
 
-   expect(page).to have_content("Edit #{first_trip.name} Trip")
+   expect(page).to have_content("Edit #{first_trip.name}")
  end
 
  xit 'When I fill in the edit form for my trip and click update I am redirected to the trip show page with updated info', :vcr do
@@ -40,7 +40,7 @@ RSpec.describe 'Trip Update' do
 
    visit users_trip_path(first_trip.id)
    
-   click_link "Edit #{first_trip.name}"
+   click_on "Edit #{first_trip.name}"
    expect(current_path).to eq(edit_users_trip_path(first_trip.id))
    visit edit_users_trip_path(first_trip.id)
 
@@ -67,7 +67,7 @@ RSpec.describe 'Trip Update' do
 
    visit users_trip_path(first_trip.id)
    
-   click_link "Edit #{first_trip.name}"
+   click_on "Edit #{first_trip.name}"
    expect(current_path).to eq(edit_users_trip_path(first_trip.id))
    visit edit_users_trip_path(first_trip.id)
 
