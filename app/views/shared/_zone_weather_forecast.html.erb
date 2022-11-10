@@ -1,7 +1,6 @@
 <div class="weather_forecast rounded-2 card-bg px-3">
   <h3>Weather Forecast For <%= @area.name %></h3>
-  <p>lat: <%= @area.lat%></p>
-  <p>long: <%= @area.long%></p>
+  <p> <%= @area.lat%>, <%= @area.long%></p>
 
 
   <iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=<%= @area.lat %>&lon=<%= @area.long %>&detailLat=<%= @area.lat %>&detailLon=<%= @area.long %>&width=650&height=450&zoom=10&level=surface&overlay=snowcover&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>

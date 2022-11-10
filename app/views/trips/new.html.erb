@@ -1,15 +1,36 @@
-<h1> Create a trip </h1>
-<%= render 'shared/upcoming_trips' %>
+<main class="px-3">
+  <div class="cover-container d-flex p-3 mx-auto flex-column">
+    <h1>Create a Trip </h1>
+  </div>
+<br>
 
-<%= form_with url: users_trips_path(@user.id), local: true do |f| %>
-  <%= f.hidden_field :user_id, value: @user.id %>
-  <%= f.label :name, 'Trip name' %>
-  <%= f.text_field :name %>
-  <%= f.label :zone_id, 'Forecast zone' %>
-  <%= f.select :zone_id, options_for_select(avalanche_zones) %>
-  <%= f.label :start_date, "Date:" %>
-  <%= f.date_field :start_date %>
-   <%= f.label :description, "Trip description:" %>
-  <%= f.text_area :description %>
-  <%= f.submit "Create"%>
-<% end %>
+  <div class="row">
+    <div class="container col-lg-10 card-bg p-3">
+      <%= form_with url: users_trips_path(@user.id), local: true do |f| %>
+        <%= f.hidden_field :user_id, value: @user.id %>
+          <div class="mb-3">
+              <%= f.label :name, 'Trip name', class: "form-label fw-bold" %>
+              <%= f.text_field :name, class: 'form-control' %>
+          </div>
+
+          <div class="mb-3">
+            <%= f.label :zone_id, 'Forecast zone', class: "form-label fw-bold" %>
+            <%= f.select :zone_id, options_for_select(avalanche_zones), class: 'form-control' %>
+          </div>
+
+          <div class="mb-3">
+              <%= f.label :start_date, "Date:", class: 'form-label fw-bold' %>
+              <%= f.date_field :start_date, class: 'form-control' %>
+          </div>
+
+          <div class="mb-3">
+              <%= f.label :description, "Trip description:", class: 'form-label fw-bold' %>
+              <%= f.text_area :description, class: 'form-control' %>
+          </div>
+
+
+            <%= f.submit 'Create', class: "btn btn-lg btn-secondary border-white bg-black" %>
+      <% end %>
+      </div>
+    </div>
+</main>
