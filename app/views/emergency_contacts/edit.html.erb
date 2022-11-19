@@ -14,7 +14,7 @@
 
           <div class="mb-3">
             <%= f.label :phone_number, { class: "form-label fw-bold"} %>
-            <%= f.text_field :phone_number, value: @contact.phone_number, class: "form-control"%>
+            <%= f.text_field :phone_number, value: @contact.phone_number, maxlength: 10, class: "form-control"%>
 
           </div>
             <%= f.submit 'Update', {class: "btn btn-lg btn-secondary border-white bg-black"} %>
