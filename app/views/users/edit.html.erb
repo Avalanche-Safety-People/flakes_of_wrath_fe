@@ -29,7 +29,7 @@
     <% @emergency_contacts.each do |contact| %>
       <tr id="one_contact-<%= contact.id%>">
         <td><%= contact.name %></td>
-        <td><%= number_to_phone(contact.phone_number.to_i) %></td>
+        <td><%= number_to_phone(contact.phone_number, area_code: true) %></td>
         <td><%= button_to "Edit", edit_users_emergency_contact_path(contact.id), method: :get %></td>
         <td><%= button_to "Delete", users_emergency_contact_path(@user.id), params: { contact_id: contact.id }, method: :delete %></td>
       </tr>
