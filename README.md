@@ -77,10 +77,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
     </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#apis">APIs</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -141,7 +138,7 @@ Individual contributors :
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-We are immensely grateful to the US Forest Service, Northwest Avalanche Center and the  National Avalanche Center. None of this would be possible without the work of hundreds of individual weather stations and field observers taking snowpack measurements throughout the united states. 
+We are immensely grateful to the US Forest Service, Northwest Avalanche Center and the  National Avalanche Center. None of this would be possible without the work of hundreds of individual forecasters and field observers taking snowpack measurements throughout the united states. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
