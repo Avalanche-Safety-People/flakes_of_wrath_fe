@@ -28,12 +28,11 @@
 <h1 align="center"><strong>Flakes of Wrath</strong></h1>
 
   <p align="center">
-    <h2> A way to predict further out in time the potential danger of avalanches so you can plan your backcountry trips earlier than ONE day before! </h2>
+    <h2> Plan winter trips into the backcountry with smart forecasts and a proprietary avalanche prediction algorithm.  </h2>
     <br />
-    <a href="https://github.com/Avalanche-Safety-People/flakes_of_wrath_fe"><strong>Explore the docs »</strong></a>
+    <a href="https://flakes-of-wrath.fly.dev"><strong>See it live</strong></a>
     <br />
     <br />
-    ·
     <a href="https://github.com/Avalanche-Safety-People/flakes_of_wrath_fe/issues">Report Bug</a>
     ·
     <a href="https://github.com/Avalanche-Safety-People/flakes_of_wrath_fe/issues">Request Feature</a>
@@ -64,11 +63,11 @@
 
 </center>
 
-<center>
+
 <!-- TABLE OF CONTENTS -->
 
 ### About The Project
-<details>
+
   <h1><summary>Table of Contents</summary></h1>
   <ol>
     <li>
@@ -78,14 +77,11 @@
     <li>
       <a href="#getting-started">Getting Started</a>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
     </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#apis">APIs</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
-</details>
+
 
 
 <!-- ABOUT THE PROJECT -->
@@ -96,7 +92,7 @@ Database tables are stored on the back end of the app, but to make sure you can 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-</center>
+
 <!-- GETTING STARTED -->
 
 ## Prerequisites
@@ -123,41 +119,10 @@ This project requires Ruby 2.7.4
 
 * Run `rails db:{create,migrate}`
 * Run the test suite with `bundle exec rspec`.
-* To see the app in production go to [Flakes of Wrath](https://flakes-of-wrath.herokuapp.com/) on Heroku
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/Avalanche-Safety-People/flakes_of_wrath_fe/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- API -->
-## APIs
-
+* To see the app in production go to [Flakes of Wrath](https://flakes-of-wrath.fly.dev) on Fly.io
 
 <!-- CONTACT -->
 ## Contact
-
-Heroku Link: [Flakes of Wrath](https://flakes-of-wrath.herokuapp.com/)
-
-Project Link: [Flakes of Wrath FE](https://github.com/Avalanche-Safety-People/flakes_of_wrath_fe)
 
 Individual contributors :
 * [Gavin Carew](https://github.com/gjcarew)
@@ -173,9 +138,7 @@ Individual contributors :
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+We are immensely grateful to the US Forest Service, Northwest Avalanche Center and the  National Avalanche Center. None of this would be possible without the work of hundreds of individual forecasters and field observers taking snowpack measurements throughout the united states. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
