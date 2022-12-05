@@ -16,7 +16,7 @@ private
     if ENV['RAILS_ENV'] == 'development' || ENV['RAILS_ENV'] == 'test'
       Faraday.new(url: 'http://localhost:5000/')
     else
-      Faraday.new(url: 'https://flakes-of-wrath-be.herokuapp.com/')
+      Faraday.new(url: 'https://flakes-of-wrath-be.fly.dev')
     end
   end
 end
