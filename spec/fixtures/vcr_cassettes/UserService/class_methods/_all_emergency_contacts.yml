@@ -25,15 +25,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dc945624-b05e-440b-a254-1e2bd1571491
+      - 73fe0359-9a11-46c5-84c5-81973b35b594
       X-Runtime:
-      - '0.001497'
+      - '0.005441'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Wed, 09 Nov 2022 16:43:01 GMT
+  recorded_at: Thu, 19 Jan 2023 16:40:20 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -59,9 +59,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e02b8a7f-81b4-49a6-b77e-5f4db629dd93
+      - ab3afa05-4329-4841-9651-7f999562caec
       X-Runtime:
-      - '0.001610'
+      - '0.004610'
       Transfer-Encoding:
       - chunked
     body:
@@ -69,5 +69,5 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"Not
         the contact you wanna call","phone_number":"1 800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 16:43:01 GMT
+  recorded_at: Thu, 19 Jan 2023 16:40:20 GMT
 recorded_with: VCR 6.1.0

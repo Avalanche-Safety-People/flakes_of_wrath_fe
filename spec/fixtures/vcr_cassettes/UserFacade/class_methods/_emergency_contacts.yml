@@ -25,9 +25,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2c5608a1-81bf-4576-892a-ea8eec11ccae
+      - 42b23bb4-1f44-4ca2-a813-2f9c5406b648
       X-Runtime:
-      - '0.002994'
+      - '0.017543'
       Transfer-Encoding:
       - chunked
     body:
@@ -35,5 +35,5 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
         800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 16:42:20 GMT
+  recorded_at: Thu, 19 Jan 2023 16:39:28 GMT
 recorded_with: VCR 6.1.0

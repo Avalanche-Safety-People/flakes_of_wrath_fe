@@ -21,17 +21,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"69136f84e19ea9af12ca868594d93634"
+      - W/"e620465731db103811652ac0a584acab"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 207d6771-fc32-4d77-b88e-9b5e9712f249
+      - c0a8c808-f6c3-4364-9840-faab3100dda2
       X-Runtime:
-      - '0.012365'
+      - '0.047053'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":427}}}'
-  recorded_at: Wed, 09 Nov 2022 16:42:20 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":1136}}}'
+  recorded_at: Thu, 19 Jan 2023 16:39:28 GMT
 recorded_with: VCR 6.1.0

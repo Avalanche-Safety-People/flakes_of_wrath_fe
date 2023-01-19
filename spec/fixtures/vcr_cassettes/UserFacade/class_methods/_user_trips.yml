@@ -21,19 +21,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b153c03aaee55effa45ffeb389d10183"
+      - W/"e2846e4c5b7c3bec3e776095a764472f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c07ef70a-ec19-4705-abc4-c94e0bdfbd71
+      - '09c71233-673c-436d-b734-9c7b4976de7d'
       X-Runtime:
-      - '0.010733'
+      - '0.009935'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
-        out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
-        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 16:42:20 GMT
+        out there","zone_id":1136,"start_date":"2023-02-03T00:00:00.000Z","description":"very
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":1139,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
+  recorded_at: Thu, 19 Jan 2023 16:39:28 GMT
 recorded_with: VCR 6.1.0

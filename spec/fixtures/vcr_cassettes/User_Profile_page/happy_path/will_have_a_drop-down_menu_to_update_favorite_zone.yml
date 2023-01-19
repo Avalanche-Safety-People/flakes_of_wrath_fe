@@ -21,19 +21,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"69136f84e19ea9af12ca868594d93634"
+      - W/"e620465731db103811652ac0a584acab"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - df6e837f-ee2a-4cfc-a058-50292711289e
+      - 623c45ee-be1a-412d-a6c1-55e9464d3f7d
       X-Runtime:
-      - '0.002370'
+      - '0.008775'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":427}}}'
-  recorded_at: Wed, 09 Nov 2022 16:42:50 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":1136}}}'
+  recorded_at: Thu, 19 Jan 2023 16:40:12 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/trips
@@ -55,21 +55,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b153c03aaee55effa45ffeb389d10183"
+      - W/"e2846e4c5b7c3bec3e776095a764472f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ada00fd8-6ea7-4c96-97be-38639b15ee87
+      - 00da4e64-7154-4d47-8e55-2633a1d62ec3
       X-Runtime:
-      - '0.001767'
+      - '0.002647'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
-        out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
-        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 16:42:50 GMT
+        out there","zone_id":1136,"start_date":"2023-02-03T00:00:00.000Z","description":"very
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":1139,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
+  recorded_at: Thu, 19 Jan 2023 16:40:12 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -95,9 +95,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 29a0da8a-5ba7-4e56-8ba5-408f84b49f39
+      - f6c7597e-4eef-4d92-9f34-a5821264e3c1
       X-Runtime:
-      - '0.002381'
+      - '0.002349'
       Transfer-Encoding:
       - chunked
     body:
@@ -105,10 +105,10 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
         800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 16:42:50 GMT
+  recorded_at: Thu, 19 Jan 2023 16:40:12 GMT
 - request:
     method: patch
-    uri: http://localhost:5000/api/v1/users/1?_method=patch&action=update&commit=Update&controller=users&favorite_zone=419&id=1&utf8=%E2%9C%93
+    uri: http://localhost:5000/api/v1/users/1?_method=patch&action=update&commit=Update&controller=users&favorite_zone=1128&id=1&utf8=%E2%9C%93
     body:
       encoding: UTF-8
       string: ''
@@ -129,19 +129,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fb50acf9158d0b39d8501cc4858de0c0"
+      - W/"89b88d97fe23c7d4d1b8e65e1941ff08"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f6bbf8bc-17d2-4ea1-b7b4-d5d743c9c0d4
+      - '009a7d2a-b1c5-4016-83d9-e2a9a008b63d'
       X-Runtime:
-      - '0.005204'
+      - '0.005172'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 16:42:50 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":1128}}}'
+  recorded_at: Thu, 19 Jan 2023 16:40:12 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/emergency_contacts
@@ -167,9 +167,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a17bfc2d-de76-405f-ae3e-634c85373e1a
+      - 303511fc-0579-44a2-bf75-c33eb74126a4
       X-Runtime:
-      - '0.001856'
+      - '0.001604'
       Transfer-Encoding:
       - chunked
     body:
@@ -177,7 +177,7 @@ http_interactions:
       string: '{"data":[{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
         800 588 2300","user_id":1}},{"id":"2","type":"emergency_contact","attributes":{"name":"Darth
         Vader","phone_number":"911","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 16:42:50 GMT
+  recorded_at: Thu, 19 Jan 2023 16:40:12 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1
@@ -199,17 +199,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fb50acf9158d0b39d8501cc4858de0c0"
+      - W/"89b88d97fe23c7d4d1b8e65e1941ff08"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d332b486-335b-4c73-a3bf-3c69ce0256aa
+      - ece17e70-7d07-4496-8f1b-265a01b2ac36
       X-Runtime:
-      - '0.001640'
+      - '0.001351'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 16:42:50 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":1128}}}'
+  recorded_at: Thu, 19 Jan 2023 16:40:12 GMT
 recorded_with: VCR 6.1.0
