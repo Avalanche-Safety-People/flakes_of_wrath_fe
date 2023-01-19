@@ -21,19 +21,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fb50acf9158d0b39d8501cc4858de0c0"
+      - W/"89b88d97fe23c7d4d1b8e65e1941ff08"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 99081e1e-176b-4a6c-83e9-6edca8a417b1
+      - 02e698a7-c257-477d-9598-8d7dec6fb96a
       X-Runtime:
-      - '0.001619'
+      - '0.012394'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 16:42:51 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":1128}}}'
+  recorded_at: Thu, 19 Jan 2023 16:40:12 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/trips
@@ -55,19 +55,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b153c03aaee55effa45ffeb389d10183"
+      - W/"e2846e4c5b7c3bec3e776095a764472f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d5fc4b74-e1f9-4f82-b633-65bbb0549bc8
+      - e40086de-16f8-4417-9824-4f872637cc9c
       X-Runtime:
-      - '0.001742'
+      - '0.003014'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
-        out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
-        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 16:42:51 GMT
+        out there","zone_id":1136,"start_date":"2023-02-03T00:00:00.000Z","description":"very
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":1139,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}}]}'
+  recorded_at: Thu, 19 Jan 2023 16:40:12 GMT
 recorded_with: VCR 6.1.0

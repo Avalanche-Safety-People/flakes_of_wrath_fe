@@ -25,14 +25,14 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 423bd270-7c27-4bcb-afed-1cbb213dcdd9
+      - 39170d4d-08b2-41e4-9bfc-1240a7ab97e4
       X-Runtime:
-      - '0.002001'
+      - '0.003186'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"emergency_contact","attributes":{"name":"mommy","phone_number":"1
         800 588 2300","user_id":1}}}'
-  recorded_at: Wed, 09 Nov 2022 16:42:20 GMT
+  recorded_at: Thu, 19 Jan 2023 16:39:28 GMT
 recorded_with: VCR 6.1.0

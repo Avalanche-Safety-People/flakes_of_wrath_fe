@@ -21,19 +21,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fa66faa9d89ec0acb15cccaccf54bca6"
+      - W/"89b88d97fe23c7d4d1b8e65e1941ff08"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e626bdac-b5b6-4a1c-922a-df552e9064e2
+      - 94727930-450e-4b80-8782-cabec3706b8a
       X-Runtime:
-      - '0.002634'
+      - '0.003367'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":430}}}'
-  recorded_at: Wed, 09 Nov 2022 21:23:06 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":1128}}}'
+  recorded_at: Thu, 19 Jan 2023 16:40:16 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/trips
@@ -55,26 +55,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ceab67384389733fabcc6b4abaaaca52"
+      - W/"36fc53c8b276d211e8ea080430125899"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f546c3b5-25fc-43c4-929f-569c66d811a7
+      - 3e9dc73d-68a8-4d98-8592-f3fe32ccf682
       X-Runtime:
-      - '0.009173'
+      - '0.002616'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
-        out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
-        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        out there","zone_id":1136,"start_date":"2023-02-03T00:00:00.000Z","description":"very
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":1139,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":1136,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 21:23:06 GMT
+  recorded_at: Thu, 19 Jan 2023 16:40:16 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/areas/430
+    uri: http://localhost:5000/api/v1/areas/1128
     body:
       encoding: US-ASCII
       string: ''
@@ -93,22 +93,21 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"785d4051a15d44a684c98b82b5df4b7d"
+      - W/"ef19775699f8d7fefadc14409afb5743"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5312489a-0f74-4380-bd53-e27dd0f61c0e
+      - 7f745002-6536-49d6-9a5b-7a34e630c0ca
       X-Runtime:
-      - '0.580149'
+      - '0.382277'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"430","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"East
-        Slopes South","state":"WA","travel_advice":"Watch for signs of unstable snow
-        such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
-        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-south","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[46.94,-121.08]}}}'
-  recorded_at: Wed, 09 Nov 2022 21:23:07 GMT
+      string: '{"data":{"id":"1128","type":"area","attributes":{"current_av_risk":-1,"start_date":"2023-01-19T02:00:00","end_date":"2023-01-20T02:00:00","name":"Olympics","state":"WA","travel_advice":"Watch
+        for signs of unstable snow such as recent avalanches, cracking in the snow,
+        and audible collapsing. Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/olympics","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.98,-123.49]}}}'
+  recorded_at: Thu, 19 Jan 2023 16:40:16 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/areas
@@ -130,51 +129,51 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"2acbc33384e85a4276387ee6f81d417c"
+      - W/"a7821c336884c083e03e6da6a0e07bd7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9c221128-c477-4a94-9a9c-c27f381bfcd4
+      - 17f11a17-d3be-4e95-ab61-ef979a513d79
       X-Runtime:
-      - '3.645831'
+      - '2.530330'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"419","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Olympics","state":"WA","travel_advice":"Watch
+      string: '{"data":[{"id":"1138","type":"area","attributes":{"current_av_risk":2,"start_date":"2023-01-19T02:00:00","end_date":"2023-01-20T02:00:00","name":"East
+        Slopes Central","state":"WA","travel_advice":"Heightened avalanche conditions
+        on specific terrain features. Evaluate snow and terrain carefully; identify
+        features of concern.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-central","av_danger":[2,1,1,1,1,1,1,1],"lat_long":[47.35,-120.57]}},{"id":"1137","type":"area","attributes":{"current_av_risk":2,"start_date":"2023-01-19T02:03:00","end_date":"2023-01-20T02:00:00","name":"East
+        Slopes North","state":"WA","travel_advice":"Heightened avalanche conditions
+        on specific terrain features. Evaluate snow and terrain carefully; identify
+        features of concern.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-north","av_danger":[2,1,1,1,1,1,1,1],"lat_long":[48.53,-120.65]}},{"id":"1139","type":"area","attributes":{"current_av_risk":2,"start_date":"2023-01-19T02:00:00","end_date":"2023-01-20T02:00:00","name":"East
+        Slopes South","state":"WA","travel_advice":"Heightened avalanche conditions
+        on specific terrain features. Evaluate snow and terrain carefully; identify
+        features of concern.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-south","av_danger":[2,1,1,1,1,1,1,1],"lat_long":[46.94,-121.08]}},{"id":"1140","type":"area","attributes":{"current_av_risk":3,"start_date":"2023-01-19T02:04:00","end_date":"2023-01-20T02:00:00","name":"Mt
+        Hood","state":"OR","travel_advice":"Dangerous avalanche conditions. Careful
+        snowpack evaluation, cautious route-finding and conservative decision-making
+        essential.","url":"http://www.nwac.us/avalanche-forecast/#/mt-hood","av_danger":[3,2,1,1,1,1,1,1],"lat_long":[45.31,-121.77]}},{"id":"1128","type":"area","attributes":{"current_av_risk":-1,"start_date":"2023-01-19T02:00:00","end_date":"2023-01-20T02:00:00","name":"Olympics","state":"WA","travel_advice":"Watch
         for signs of unstable snow such as recent avalanches, cracking in the snow,
-        and audible collapsing. Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/olympics","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.98,-123.49]}},{"id":"431","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Mt
-        Hood","state":"OR","travel_advice":"Watch for signs of unstable snow such
-        as recent avalanches, cracking in the snow, and audible collapsing. Avoid
-        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/mt-hood\n","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[45.31,-121.77]}},{"id":"423","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Stevens
-        Pass","state":"WA","travel_advice":"Watch for signs of unstable snow such
-        as recent avalanches, cracking in the snow, and audible collapsing. Avoid
-        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/stevens-pass","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.75,-121.09]}},{"id":"427","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Snoqualmie
-        Pass","state":"WA","travel_advice":"Watch for signs of unstable snow such
-        as recent avalanches, cracking in the snow, and audible collapsing. Avoid
-        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.43,-121.42]}},{"id":"420","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"West
-        Slopes North","state":"WA","travel_advice":"Watch for signs of unstable snow
-        such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
-        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/west-slopes-north","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[46.18,-121.93]}},{"id":"421","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"West
-        Slopes Central","state":"WA","travel_advice":"Watch for signs of unstable
-        snow such as recent avalanches, cracking in the snow, and audible collapsing.
-        Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/west-slopes-central","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[48.68,-121.11]}},{"id":"422","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"West
-        Slopes South","state":"WA","travel_advice":"Watch for signs of unstable snow
-        such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
-        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/west-slopes-south","av_danger":[-1,1,1,2,3,4,5,5],"lat_long":[46.61,-121.66]}},{"id":"428","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"East
-        Slopes North","state":"WA","travel_advice":"Watch for signs of unstable snow
-        such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
-        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-north","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[48.53,-120.65]}},{"id":"429","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"East
-        Slopes Central","state":"WA","travel_advice":"Watch for signs of unstable
-        snow such as recent avalanches, cracking in the snow, and audible collapsing.
-        Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-central","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.35,-120.57]}},{"id":"430","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"East
-        Slopes South","state":"WA","travel_advice":"Watch for signs of unstable snow
-        such as recent avalanches, cracking in the snow, and audible collapsing. Avoid
-        traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/east-slopes-south","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[46.94,-121.08]}}]}'
-  recorded_at: Wed, 09 Nov 2022 21:23:10 GMT
+        and audible collapsing. Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/olympics","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.98,-123.49]}},{"id":"1136","type":"area","attributes":{"current_av_risk":3,"start_date":"2023-01-19T13:50:00","end_date":"2023-01-20T02:00:00","name":"Snoqualmie
+        Pass","state":"WA","travel_advice":"Dangerous avalanche conditions. Careful
+        snowpack evaluation, cautious route-finding and conservative decision-making
+        essential.","url":"http://www.nwac.us/avalanche-forecast/#/snoqualmie-pass","av_danger":[3,2,3,2,1,1,1,1],"lat_long":[47.43,-121.42]}},{"id":"1132","type":"area","attributes":{"current_av_risk":2,"start_date":"2023-01-19T02:00:00","end_date":"2023-01-20T02:00:00","name":"Stevens
+        Pass","state":"WA","travel_advice":"Heightened avalanche conditions on specific
+        terrain features. Evaluate snow and terrain carefully; identify features of
+        concern.","url":"http://www.nwac.us/avalanche-forecast/#/stevens-pass","av_danger":[2,1,2,1,1,1,1,1],"lat_long":[47.75,-121.09]}},{"id":"1130","type":"area","attributes":{"current_av_risk":2,"start_date":"2023-01-19T02:00:00","end_date":"2023-01-20T02:00:00","name":"West
+        Slopes Central","state":"WA","travel_advice":"Heightened avalanche conditions
+        on specific terrain features. Evaluate snow and terrain carefully; identify
+        features of concern.","url":"http://www.nwac.us/avalanche-forecast/#/west-slopes-central","av_danger":[2,1,2,1,1,1,1,1],"lat_long":[48.68,-121.11]}},{"id":"1129","type":"area","attributes":{"current_av_risk":3,"start_date":"2023-01-19T02:00:00","end_date":"2023-01-20T02:00:00","name":"West
+        Slopes North","state":"WA","travel_advice":"Dangerous avalanche conditions.
+        Careful snowpack evaluation, cautious route-finding and conservative decision-making
+        essential.","url":"http://www.nwac.us/avalanche-forecast/#/west-slopes-north","av_danger":[3,2,2,1,1,1,1,1],"lat_long":[46.86,-121.69]}},{"id":"1131","type":"area","attributes":{"current_av_risk":2,"start_date":"2023-01-19T02:00:00","end_date":"2023-01-20T02:00:00","name":"West
+        Slopes South","state":"WA","travel_advice":"Heightened avalanche conditions
+        on specific terrain features. Evaluate snow and terrain carefully; identify
+        features of concern.","url":"http://www.nwac.us/avalanche-forecast/#/west-slopes-south","av_danger":[2,1,1,1,1,1,1,1],"lat_long":[46.78,-121.74]}}]}'
+  recorded_at: Thu, 19 Jan 2023 16:40:19 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/areas/419
+    uri: http://localhost:5000/api/v1/areas/1128
     body:
       encoding: US-ASCII
       string: ''
@@ -193,19 +192,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3a4887672a4e5f36780137aedb3dd92a"
+      - W/"ef19775699f8d7fefadc14409afb5743"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1eebd228-3aec-4b26-bb82-8aa31c4b35d1
+      - d4fbf10d-5857-46b2-88e0-488536a1a8b9
       X-Runtime:
-      - '0.416063'
+      - '0.500186'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"419","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Olympics","state":"WA","travel_advice":"Watch
+      string: '{"data":{"id":"1128","type":"area","attributes":{"current_av_risk":-1,"start_date":"2023-01-19T02:00:00","end_date":"2023-01-20T02:00:00","name":"Olympics","state":"WA","travel_advice":"Watch
         for signs of unstable snow such as recent avalanches, cracking in the snow,
         and audible collapsing. Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/olympics","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.98,-123.49]}}}'
-  recorded_at: Wed, 09 Nov 2022 21:23:11 GMT
+  recorded_at: Thu, 19 Jan 2023 16:40:19 GMT
 recorded_with: VCR 6.1.0

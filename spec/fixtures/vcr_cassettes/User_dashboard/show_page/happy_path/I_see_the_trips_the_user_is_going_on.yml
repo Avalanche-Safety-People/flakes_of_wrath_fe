@@ -21,19 +21,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fb50acf9158d0b39d8501cc4858de0c0"
+      - W/"89b88d97fe23c7d4d1b8e65e1941ff08"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1a3e963d-2c71-4c58-a943-ecd759dbff6b
+      - ad33cdda-1a55-4344-bf4c-7fcb02ed8385
       X-Runtime:
-      - '0.002680'
+      - '0.001749'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":419}}}'
-  recorded_at: Wed, 09 Nov 2022 16:42:52 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"bob","favorite_zone":1128}}}'
+  recorded_at: Thu, 19 Jan 2023 16:40:13 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/users/1/trips
@@ -55,26 +55,26 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"d66d0ba965a7e6a0a32f4e1d93e0e456"
+      - W/"36fc53c8b276d211e8ea080430125899"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f6336776-1408-41af-8635-aeee58fe5b99
+      - 78484b33-9e8c-4c31-9b37-8e3aec4a5fc8
       X-Runtime:
-      - '0.002160'
+      - '0.002457'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"trip","attributes":{"name":"Adventure is
-        out there","zone_id":427,"start_date":"2023-02-03T00:00:00.000Z","description":"very
-        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":430,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"5","type":"trip","attributes":{"name":"Avalanche
-        Mountain","zone_id":427,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
+        out there","zone_id":1136,"start_date":"2023-02-03T00:00:00.000Z","description":"very
+        moist","user_id":1}},{"id":"2","type":"trip","attributes":{"name":"Prom Night!","zone_id":1139,"start_date":"2023-07-03T00:00:00.000Z","description":"#YOLO","user_id":1}},{"id":"3","type":"trip","attributes":{"name":"Avalanche
+        Mountain","zone_id":1136,"start_date":"2023-12-30T00:00:00.000Z","description":"Head
         over the Snoqualmie Mt Notch, then climb the S ridge of Avalanche Mt","user_id":1}}]}'
-  recorded_at: Wed, 09 Nov 2022 16:42:52 GMT
+  recorded_at: Thu, 19 Jan 2023 16:40:13 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/areas/419
+    uri: http://localhost:5000/api/v1/areas/1128
     body:
       encoding: US-ASCII
       string: ''
@@ -93,19 +93,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3a4887672a4e5f36780137aedb3dd92a"
+      - W/"ef19775699f8d7fefadc14409afb5743"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1171e190-4ef9-4d88-b0a7-290011f62c11
+      - a3e5aa5c-0011-46f8-b8eb-783eb989f46c
       X-Runtime:
-      - '0.518944'
+      - '0.377367'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"419","type":"area","attributes":{"current_av_risk":-1,"start_date":"2022-11-04T22:00:00","end_date":"2022-11-17T02:30:00","name":"Olympics","state":"WA","travel_advice":"Watch
+      string: '{"data":{"id":"1128","type":"area","attributes":{"current_av_risk":-1,"start_date":"2023-01-19T02:00:00","end_date":"2023-01-20T02:00:00","name":"Olympics","state":"WA","travel_advice":"Watch
         for signs of unstable snow such as recent avalanches, cracking in the snow,
         and audible collapsing. Avoid traveling on or under similar slopes.","url":"http://www.nwac.us/avalanche-forecast/#/olympics","av_danger":[-1,1,1,1,1,1,1,1],"lat_long":[47.98,-123.49]}}}'
-  recorded_at: Wed, 09 Nov 2022 16:42:52 GMT
+  recorded_at: Thu, 19 Jan 2023 16:40:13 GMT
 recorded_with: VCR 6.1.0
